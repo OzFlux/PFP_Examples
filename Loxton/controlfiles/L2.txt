@@ -1,0 +1,366 @@
+level = L2
+[Files]
+    file_path = ../PFP_Examples/Loxton/Data/Tower/
+    in_filename = Loxton_L1.nc
+    out_filename = Loxton_L2.nc
+    plot_path = ../PFP_Examples/Loxton/Plots/
+[Options]
+    irga_type = Li-7500
+[Variables]
+    [[Fld]]
+        [[[RangeCheck]]]
+            lower = 150
+            upper = 700
+    [[Flu]]
+        [[[RangeCheck]]]
+            lower = 100
+            upper = 700
+    [[Fsu]]
+        [[[RangeCheck]]]
+            lower = -10
+            upper = 500
+    [[Fsd]]
+        [[[RangeCheck]]]
+            lower = -10
+            upper = 1500
+    [[UzT]]
+        [[[RangeCheck]]]
+            lower = -0.5
+            upper = 0.5
+    [[UxT]]
+        [[[RangeCheck]]]
+            lower = -2
+            upper = 2
+    [[UyT]]
+        [[[RangeCheck]]]
+            lower = -2
+            upper = 2
+    [[UzA]]
+        [[[RangeCheck]]]
+            lower = -0.01
+            upper = 0.5
+    [[UxA]]
+        [[[RangeCheck]]]
+            lower = -1
+            upper = 1
+    [[UyA]]
+        [[[RangeCheck]]]
+            lower = -1
+            upper = 1
+    [[UzC]]
+        [[[RangeCheck]]]
+            lower = -2
+            upper = 2
+    [[UxC]]
+        [[[RangeCheck]]]
+            lower = -5
+            upper = 5
+    [[UyC]]
+        [[[RangeCheck]]]
+            lower = -5
+            upper = 5
+    [[UxUz]]
+        [[[RangeCheck]]]
+            lower = -2
+            upper = 2
+    [[UyUz]]
+        [[[RangeCheck]]]
+            lower = -2
+            upper = 2
+    [[UxUy]]
+        [[[RangeCheck]]]
+            lower = -1
+            upper = 1
+    [[Ux_Sd]]
+        [[[RangeCheck]]]
+            lower = -0.1
+            upper = 4
+    [[Uy_Sd]]
+        [[[RangeCheck]]]
+            lower = -0.1
+            upper = 4
+    [[Uz_Sd]]
+        [[[RangeCheck]]]
+            lower = -0.1
+            upper = 2
+    [[CO2_IRGA_Av]]
+        [[[RangeCheck]]]
+            lower = 580
+            upper = 750
+    [[Ah_IRGA_Av]]
+        [[[RangeCheck]]]
+            lower = 0
+            upper = 35
+    [[Ah_HMP_10m]]
+        [[[RangeCheck]]]
+            lower = 0
+            upper = 35
+    [[Tv_SONIC_Av]]
+        [[[RangeCheck]]]
+            lower = -10
+            upper = 50
+    [[Ta_HMP_10m]]
+        [[[RangeCheck]]]
+            lower = -10
+            upper = 50
+    [[Ah_IRGA_Vr]]
+        [[[RangeCheck]]]
+            lower = 0
+            upper = 100
+    [[Ah_IRGA_Sd]]
+        [[[RangeCheck]]]
+            lower = 0
+            upper = 10
+    [[CO2_IRGA_Vr]]
+        [[[RangeCheck]]]
+            lower = 0
+            upper = 2500
+    [[CO2_IRGA_Sd]]
+        [[[RangeCheck]]]
+            lower = 0
+            upper = 50
+    [[Wd_034B_Av]]
+        [[[RangeCheck]]]
+            lower = 0
+            upper = 360
+    [[Ws_034B_Av]]
+        [[[RangeCheck]]]
+            lower = 0
+            upper = 20
+    [[Wd_SONIC_Av]]
+        [[[RangeCheck]]]
+            lower = 0
+            upper = 360
+        [[[CorrectWindDirection]]]
+            0 = 2008-08-19 17:00, 2009-06-09 10:30, 0.0
+    [[Ws_SONIC_Av]]
+        [[[RangeCheck]]]
+            lower = 0
+            upper = 20
+    [[Ux]]
+        [[[RangeCheck]]]
+            lower = -20
+            upper = 20
+    [[Uy]]
+        [[[RangeCheck]]]
+            lower = -20
+            upper = 20
+    [[Uz]]
+        [[[RangeCheck]]]
+            lower = -1
+            upper = 1
+    [[Precip]]
+        [[[RangeCheck]]]
+            lower = 0
+            upper = 50
+    [[Irrigation]]
+        [[[RangeCheck]]]
+            lower = 0
+            upper = 10
+    [[ps]]
+        [[[RangeCheck]]]
+            lower = 95
+            upper = 105
+    [[ps_CS100]]
+        [[[RangeCheck]]]
+            lower = 950
+            upper = 1050
+    [[Fg_10cma]]
+        [[[RangeCheck]]]
+            lower = -100
+            upper = 150
+    [[Fg_10cmb]]
+        [[[RangeCheck]]]
+            lower = -100
+            upper = 150
+    [[Fg_10cmc]]
+        [[[RangeCheck]]]
+            lower = -100
+            upper = 150
+    [[Fg_10cmd]]
+        [[[RangeCheck]]]
+            lower = -100
+            upper = 150
+    [[Fg_10cme]]
+        [[[RangeCheck]]]
+            lower = -100
+            upper = 150
+    [[Fg_10cmf]]
+        [[[RangeCheck]]]
+            lower = -100
+            upper = 150
+    [[Fg_10cmg]]
+        [[[RangeCheck]]]
+            lower = -100
+            upper = 150
+    [[Sws_005cm]]
+        [[[RangeCheck]]]
+            lower = 0
+            upper = 50
+    [[Sws_015cm]]
+        [[[RangeCheck]]]
+            lower = 0
+            upper = 50
+    [[Sws_045cm]]
+        [[[RangeCheck]]]
+            lower = 0
+            upper = 50
+    [[Sws_070cm]]
+        [[[RangeCheck]]]
+            lower = 0
+            upper = 50
+    [[Sws_100cm]]
+        [[[RangeCheck]]]
+            lower = 0
+            upper = 50
+    [[Ts_2cma]]
+        [[[RangeCheck]]]
+            lower = 0
+            upper = 60
+    [[Ts_2cmb]]
+        [[[RangeCheck]]]
+            lower = 0
+            upper = 60
+    [[Ts_2cmc]]
+        [[[RangeCheck]]]
+            lower = 0
+            upper = 60
+    [[Ts_2cmd]]
+        [[[RangeCheck]]]
+            lower = 0
+            upper = 60
+    [[Ts_6cma]]
+        [[[RangeCheck]]]
+            lower = 0
+            upper = 60
+    [[Ts_6cmb]]
+        [[[RangeCheck]]]
+            lower = 0
+            upper = 60
+    [[Ts_6cmc]]
+        [[[RangeCheck]]]
+            lower = 0
+            upper = 60
+    [[Ts_6cmd]]
+        [[[RangeCheck]]]
+            lower = 0
+            upper = 60
+    [[Ts_15cm]]
+        [[[RangeCheck]]]
+            lower = 0
+            upper = 60
+    [[Ts_45cm]]
+        [[[RangeCheck]]]
+            lower = 0
+            upper = 60
+    [[Ts_70cm]]
+        [[[RangeCheck]]]
+            lower = 0
+            upper = 60
+    [[Ts_100cm]]
+        [[[RangeCheck]]]
+            lower = 0
+            upper = 60
+    [[Diag_SONIC]]
+        [[[RangeCheck]]]
+            lower = -0.5
+            upper = 20.5
+    [[Diag_IRGA]]
+        [[[RangeCheck]]]
+            lower = -0.5
+            upper = 10.5
+    [[AGC_IRGA]]
+        [[[RangeCheck]]]
+            lower = 0
+            upper = 70
+    [[PAR]]
+        [[[RangeCheck]]]
+            lower = -200
+            upper = 2500
+    [[rad_global]]
+        [[[RangeCheck]]]
+            lower = -10
+            upper = 1500
+    [[rad_diffuse]]
+        [[[RangeCheck]]]
+            lower = -10
+            upper = 1500
+    [[Fm_EPFlag]]
+        [[[RangeCheck]]]
+            lower = -0.5
+            upper = 0.5
+    [[Fm_EP]]
+        [[[RangeCheck]]]
+            lower = -10
+            upper = 10
+        [[[DependencyCheck]]]
+            source = Fm_EPFlag
+    [[Fh_EPFlag]]
+        [[[RangeCheck]]]
+            lower = -0.5
+            upper = 0.5
+    [[Fh_EP]]
+        [[[RangeCheck]]]
+            lower = -800
+            upper = 800
+        [[[DependencyCheck]]]
+            source = Fh_EPFlag
+    [[Fe_EPFlag]]
+        [[[RangeCheck]]]
+            lower = -0.5
+            upper = 0.5
+    [[Fe_EP]]
+        [[[RangeCheck]]]
+            lower = -200
+            upper = 1500
+        [[[DependencyCheck]]]
+            source = Fe_EPFlag
+    [[Fc_EPFlag]]
+        [[[RangeCheck]]]
+            lower = -0.5
+            upper = 0.5
+    [[Fc_EP]]
+        [[[RangeCheck]]]
+            lower = -50
+            upper = 50
+        [[[DependencyCheck]]]
+            source = Fc_EPFlag
+    [[ustar_EP]]
+        [[[RangeCheck]]]
+            lower = 0
+            upper = 2
+    [[Fc_profile]]
+        [[[RangeCheck]]]
+            lower = -50
+            upper = 50
+        [[[DependencyCheck]]]
+            source = Fc_EPFlag
+[Plots]
+    [[Radiative fluxes]]
+        variables = Fsd,Fsu,Fld,Flu
+    [[EddyPro fluxes]]
+        variables = ustar_EP,Fm_EP,Fh_EP,Fe_EP,Fc_EP
+    [[Covariances (SONIC)]]
+        variables = UzT,UxT,UyT,Uz_Sd,Ux_Sd,Uy_Sd
+    [[Covariances (SONIC & IRGA)]]
+        variables = UzA,UxA,UyA,UzC,UxC,UyC
+    [[Air temperature & humidity]]
+        variables = Ta_HMP_10m,Tv_SONIC_Av,Ah_HMP_10m,Ah_IRGA_Av,CO2_IRGA_Av
+    [[Wind speed and direction]]
+        variables = Wd_034B_Av,Wd_SONIC_Av,Ws_034B_Av,Ws_SONIC_Av
+    [[Soil temperature (2cm)]]
+        variables = Ts_2cma,Ts_2cmb,Ts_2cmc,Ts_2cmd
+    [[Soil temperature (6cm)]]
+        variables = Ts_6cma,Ts_6cmb,Ts_6cmc,Ts_6cmd
+    [[Soil temperature (15 to 100 cm)]]
+        variables = Ts_15cm,Ts_45cm,Ts_70cm,Ts_100cm
+    [[Soil moisture]]
+        variables = Sws_005cm,Sws_015cm,Sws_045cm,Sws_070cm,Sws_100cm
+    [[Soil heat flux]]
+        variables = Fg_10cma,Fg_10cmb,Fg_10cmc,Fg_10cmd,Fg_10cme,Fg_10cmf,Fg_10cmg
+    [[Diagnostics (Fh)]]
+        variables = UzT,Fh_EP,Fh_EPFlag,Diag_SONIC
+    [[Diagnostics (Fe)]]
+        variables = UzA,Fe_EP,Fe_EPFlag,Diag_IRGA,AGC_IRGA,Ah_IRGA_Sd,CO2_IRGA_Sd
+    [[Diagnostics (Fc)]]
+        variables = UzC,Fc_EP,Fc_EPFlag,Diag_IRGA,AGC_IRGA,Ah_IRGA_Sd,CO2_IRGA_Sd

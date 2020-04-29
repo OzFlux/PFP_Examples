@@ -1,0 +1,39 @@
+level = L5
+[Files]
+    plot_path = ../PFP_Examples/Loxton/Plots/
+    file_path = ../PFP_Examples/Loxton/Data/Tower/
+    in_filename = Loxton_L4.nc
+    out_filename = Loxton_L5.nc
+    cpd_filename = Loxton_L3_CPD_McHugh.xls
+[Options]
+    MaxGapInterpolate = 3
+    FilterList = Fc
+    TurbulenceFilter = ustar
+    DayNightFilter = Fsd
+    AcceptDayTimes = Yes
+    TruncateToImports = Yes
+[Fluxes]
+    [[ustar]]
+        [[[MergeSeries]]]
+            source = ustar,ustar_SOLO
+        [[[GapFillUsingSOLO]]]
+            [[[[ustar_SOLO]]]]
+                drivers = Fsd,Ta,SH,Ws
+    [[Fe]]
+        [[[MergeSeries]]]
+            source = Fe,Fe_SOLO
+        [[[GapFillUsingSOLO]]]
+            [[[[Fe_SOLO]]]]
+                drivers = Fn,Fg,SH,VPD,Ta,Ts
+    [[Fh]]
+        [[[MergeSeries]]]
+            source = Fh,Fh_SOLO
+        [[[GapFillUsingSOLO]]]
+            [[[[Fh_SOLO]]]]
+                drivers = Fn,Fg,SH,VPD,Ta,Ts
+    [[Fc]]
+        [[[MergeSeries]]]
+            source = Fc,Fc_SOLO
+        [[[GapFillUsingSOLO]]]
+            [[[[Fc_SOLO]]]]
+                drivers = Fn,Fg,SH,VPD,Ta,Ts

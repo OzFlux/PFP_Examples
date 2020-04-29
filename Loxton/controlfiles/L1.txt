@@ -1,0 +1,916 @@
+level = L1
+[Files]
+    file_path = ../PFP_Examples/Loxton/Data/Tower/
+    in_filename = Loxton_L1.xls
+    in_headerrow = 2
+    in_firstdatarow = 5
+    out_filename = Loxton_L1.nc
+[Global]
+    acknowledgement = '''This work used eddy covariance data collected by SARDI the South Australian Research and 
+Development Institute. OzFlux would like to acknowledge the financial support from the National Action Plan for 
+Salinity via the Centre for Natural Resource Management, and the River Murray Levy. The participation in the project 
+of Samantha Connor was supported by a summer scholarship from the National Program for Sustainable Irrigation.'''
+    altitude = 40m
+    canopy_height = 5.5m (Stevens et al. 2012)
+    comment = CF metadata, OzFlux standard variable names
+    contact = Cacilia.Ewenz@internode.on.net
+    conventions = CF-1.6
+    conventions_names = CF convention standard names table version 27, 28 Nov 2013, audited 4 Jan 2015
+    data_url = http://data.ozflux.org.au/
+    history = N/A
+    institution = South Australian Research and Development Institute/Flinders University/Airborne Research Australia
+    latitude = -34.47035
+    license_type = CC BY 4.0
+    license_url = https://creativecommons.org/licenses/by/4.0/
+    longitude = 140.65512
+    ozflux_url = http://ozflux.org.au/
+    references = Stevens, R., Ewenz, C., Grigson, G., and Conner, S., 2012: Water use by an irrigated almond (Prunus amygdalus) orchard. Irrigation Sciences, 29-2, Online First 16 March 2011 (http://www.springerlink.com/content/100432/), DOI 10.1007/s00271-011-0270-8.
+    site_name = Loxton
+    site_id = AU-Lox
+    site_pi = Robert Stevens and Cacilia Ewenz
+    soil = loamy sand (0 - 50cm), sandy loam (50 - 85cm), sandy clay loam (85 - 170cm)
+    source = 10m flux tower plus array of soil temperature and moisture sensors
+    title = Flux tower data set from the Loxton site for the time 19/08/2008 to 09/06/2009
+    time_step = 30
+    time_zone = Australia/Adelaide
+    tower_height = 10m
+    vegetation = Almond orchard, 5.5 m canopy height
+[Variables]
+    [[Fld]]
+        [[[xl]]]
+            sheet = slow_flux
+            name = Rl_downwell_Avg
+        [[[Attr]]]
+            height = 10m
+            instrument = Kipp and Zonen CNR1
+            long_name = Down-welling long wave
+            serial_number = FM007122
+            standard_name = surface_downwelling_longwave_flux_in_air
+            units = W/m2
+    [[Flu]]
+        [[[xl]]]
+            sheet = slow_flux
+            name = Rl_upwell_Avg
+        [[[Attr]]]
+            height = 10m
+            instrument = Kipp and Zonen CNR1
+            long_name = Up-welling long wave
+            serial_number = FM007122
+            standard_name = surface_upwelling_longwave_flux_in_air
+            units = W/m2
+    [[Fsu]]
+        [[[xl]]]
+            sheet = slow_flux
+            name = Rs_upwell_Avg
+        [[[Attr]]]
+            height = 10m
+            instrument = Kipp and Zonen CNR1
+            long_name = Up-welling short wave
+            serial_number = FM007122
+            standard_name = surface_upwelling_shortwave_flux_in_air
+            units = W/m2
+    [[Fsd]]
+        [[[xl]]]
+            sheet = slow_flux
+            name = Rs_downwell_Avg
+        [[[Attr]]]
+            height = 10m
+            instrument = Kipp and Zonen CNR1
+            long_name = Down-welling short wave
+            serial_number = FM007122
+            standard_name = surface_downwelling_shortwave_flux_in_air
+            units = W/m2
+    [[UzT]]
+        [[[xl]]]
+            sheet = slow_flux
+            name = cov_Ts_Uz
+        [[[Attr]]]
+            height = 10m
+            instrument = CSAT3
+            long_name = Covariance of Uz and T
+            serial_number = FM007120
+            standard_name = not defined
+            units = mC/s
+    [[UxT]]
+        [[[xl]]]
+            sheet = slow_flux
+            name = cov_Ts_Ux
+        [[[Attr]]]
+            height = 10m
+            instrument = CSAT3
+            long_name = Covariance of Ux and T
+            serial_number = FM007120
+            standard_name = not defined
+            units = mC/s
+    [[UyT]]
+        [[[xl]]]
+            sheet = slow_flux
+            name = cov_Ts_Uy
+        [[[Attr]]]
+            height = 10m
+            instrument = CSAT3
+            long_name = Covariance of Uy and T
+            serial_number = FM007120
+            standard_name = not defined
+            units = mC/s
+    [[UzA]]
+        [[[xl]]]
+            sheet = slow_flux
+            name = cov_h2o_Uz
+        [[[Attr]]]
+            height = 10m
+            instrument = CSAT3, Li-7500
+            long_name = Covariance of Uz and H2O
+            serial_number = FM007120 and FM007121
+            standard_name = not defined
+            units = g/m2/s
+    [[UxA]]
+        [[[xl]]]
+            sheet = slow_flux
+            name = cov_h2o_Ux
+        [[[Attr]]]
+            height = 10m
+            instrument = CSAT3, Li-7500
+            long_name = Covariance of Ux and H2O
+            serial_number = FM007120 and FM007121
+            standard_name = not defined
+            units = g/m2/s
+    [[UyA]]
+        [[[xl]]]
+            sheet = slow_flux
+            name = cov_h2o_Uy
+        [[[Attr]]]
+            height = 10m
+            instrument = CSAT3, Li-7500
+            long_name = Covariance of Uy and H2O
+            serial_number = FM007120 and FM007121
+            standard_name = not defined
+            units = g/m2/s
+    [[UzC]]
+        [[[xl]]]
+            sheet = slow_flux
+            name = cov_co2_Uz
+        [[[Attr]]]
+            height = 10m
+            instrument = CSAT3, Li-7500
+            long_name = Covariance of Uz and CO2
+            serial_number = FM007120 and FM007121
+            standard_name = not defined
+            units = mg/m2/s
+    [[UxC]]
+        [[[xl]]]
+            sheet = slow_flux
+            name = cov_co2_Ux
+        [[[Attr]]]
+            height = 10m
+            instrument = CSAT3, Li-7500
+            long_name = Covariance of Ux and CO2
+            serial_number = FM007120 and FM007121
+            standard_name = not defined
+            units = mg/m2/s
+    [[UyC]]
+        [[[xl]]]
+            sheet = slow_flux
+            name = cov_co2_Uy
+        [[[Attr]]]
+            height = 10m
+            instrument = CSAT3, Li-7500
+            long_name = Covariance of Uy and CO2
+            serial_number = FM007120 and FM007121
+            standard_name = not defined
+            units = mg/m2/s
+    [[UxUz]]
+        [[[xl]]]
+            sheet = slow_flux
+            name = cov_Ux_Uz
+        [[[Attr]]]
+            height = 10m
+            instrument = CSAT3
+            long_name = Covariance of Ux and Uz
+            serial_number = FM007120
+            standard_name = not defined
+            units = m2/s2
+    [[UyUz]]
+        [[[xl]]]
+            sheet = slow_flux
+            name = cov_Uy_Uz
+        [[[Attr]]]
+            height = 10m
+            instrument = CSAT3
+            long_name = Covariance of Uy and Uz
+            serial_number = FM007120
+            standard_name = not defined
+            units = m2/s2
+    [[UxUy]]
+        [[[xl]]]
+            sheet = slow_flux
+            name = cov_Ux_Uy
+        [[[Attr]]]
+            height = 10m
+            instrument = CSAT
+            long_name = Covariance of Ux and Uy
+            serial_number = FM007120
+            standard_name = not defined
+            units = m2/s2
+    [[Uz_Sd]]
+        [[[xl]]]
+            sheet = slow_flux
+            name = stdev_Uz
+        [[[Attr]]]
+            height = 10m
+            instrument = CSAT
+            long_name = Vertical wind speed (CSAT coordinates), standard deviation
+            serial_number = FM007120
+            standard_name = not defined
+            units = m/s
+    [[Ux_Sd]]
+        [[[xl]]]
+            sheet = slow_flux
+            name = stdev_Ux
+        [[[Attr]]]
+            height = 10m
+            instrument = CSAT
+            long_name = Longitudinal wind speed (CSAT coordinates), standard deviation
+            serial_number = FM007120
+            standard_name = not defined
+            units = m/s
+    [[Uy_Sd]]
+        [[[xl]]]
+            sheet = slow_flux
+            name = stdev_Uy
+        [[[Attr]]]
+            height = 10m
+            instrument = CSAT
+            long_name = Lateral wind speed component (CSAT coordinates), standard deviation
+            serial_number = FM007120
+            standard_name = not defined
+            units = m/s
+    [[Tv_SONIC_Av]]
+        [[[xl]]]
+            sheet = slow_flux
+            name = Ts_mean
+        [[[Attr]]]
+            height = 10m
+            instrument = CSAT
+            long_name = Virtual air temperature
+            serial_number = FM007120
+            standard_name = not defined
+            units = C
+    [[T_CNR1]]
+        [[[xl]]]
+            sheet = slow_flux
+            name = T_cnr1_Avg
+        [[[Attr]]]
+            height = 10m
+            instrument = CNR1
+            long_name = CNR1 body temperature
+            serial_number = FM007122
+            standard_name = not defined
+            units = C
+    [[CO2_IRGA_Av]]
+        [[[xl]]]
+            sheet = slow_flux
+            name = CO2_mean_corr
+        [[[Attr]]]
+            height = 10m
+            instrument = Li-7500
+            long_name = CO2 concentration, average
+            serial_number = FM007121
+            standard_name = not defined
+            units = mg/m3
+    [[Ah_IRGA_Av]]
+        [[[xl]]]
+            sheet = slow_flux
+            name = h2o_Avg
+        [[[Attr]]]
+            height = 10m
+            instrument = Li-7500
+            long_name = Absolute humidity, average
+            serial_number = FM007121
+            standard_name = not defined
+            units = g/m3
+    [[Ah_IRGA_Sd]]
+        [[[xl]]]
+            sheet = slow_flux
+            name = stdev_h2o
+        [[[Attr]]]
+            height = 10m
+            instrument = Li-7500
+            long_name = Absolute humidity, stdev
+            serial_number = FM007121
+            standard_name = not defined
+            units = g/m3
+    [[CO2_IRGA_Sd]]
+        [[[xl]]]
+            sheet = slow_flux
+            name = stdev_co2
+        [[[Attr]]]
+            height = 10m
+            instrument = Li-7500
+            long_name = CO2 concentration, stdev
+            serial_number = FM007121
+            standard_name = not defined
+            units = mg/m3
+    [[Ah_HMP_10m]]
+        [[[xl]]]
+            sheet = slow_flux
+            name = h2o_hmp_mean
+        [[[Attr]]]
+            height = 10m
+            instrument = HMP45A
+            long_name = Absolute humidity, average
+            serial_number = 
+            standard_name = not defined
+            units = g/m3
+    [[Ta_HMP_10m]]
+        [[[xl]]]
+            sheet = slow_flux
+            name = t_hmp_mean
+        [[[Attr]]]
+            height = 10m
+            instrument = HMP45A
+            long_name = Air temperature, average
+            serial_number = 
+            standard_name = not defined
+            units = C
+    [[Fg_10cma]]
+        [[[xl]]]
+            sheet = slow_flux
+            name = shf_cn3_Avg(1)
+        [[[Attr]]]
+            height = -0.1m
+            instrument = Middleton CN3
+            long_name = Ground heat flux, sensor 1a
+            serial_number = 
+            standard_name = not defined
+            units = W/m2
+    [[Fg_10cmb]]
+        [[[xl]]]
+            sheet = slow_flux
+            name = shf_cn3_Avg(2)
+        [[[Attr]]]
+            height = -0.1m
+            instrument = Middleton CN3
+            long_name = Ground heat flux, sensor 1b
+            serial_number = 
+            standard_name = not defined
+            units = W/m2
+    [[Fg_10cmc]]
+        [[[xl]]]
+            sheet = slow_flux
+            name = shf_cn3_Avg(3)
+        [[[Attr]]]
+            height = -0.1m
+            instrument = Middleton CN3
+            long_name = Ground heat flux, sensor 1c
+            serial_number = 
+            standard_name = not defined
+            units = W/m2
+    [[Fg_10cmd]]
+        [[[xl]]]
+            sheet = slow_flux
+            name = shf_cn3_Avg(4)
+        [[[Attr]]]
+            height = -0.1m
+            instrument = Middleton CN3
+            long_name = Ground heat flux, sensor 1d
+            serial_number = 
+            standard_name = not defined
+            units = W/m2
+    [[Fg_10cme]]
+        [[[xl]]]
+            sheet = slow_flux
+            name = shf_cn3_Avg(5)
+        [[[Attr]]]
+            height = -0.1m
+            instrument = Middleton CN3
+            long_name = Ground heat flux, sensor 1e
+            serial_number = 
+            standard_name = not defined
+            units = W/m2
+    [[Fg_10cmf]]
+        [[[xl]]]
+            sheet = slow_flux
+            name = shf_cn3_Avg(6)
+        [[[Attr]]]
+            height = -0.1m
+            instrument = Middleton CN3
+            long_name = Ground heat flux, sensor 1f
+            serial_number = 
+            standard_name = not defined
+            units = W/m2
+    [[Fg_10cmg]]
+        [[[xl]]]
+            sheet = slow_flux
+            name = hfp01sc_Avg
+        [[[Attr]]]
+            height = -0.1m
+            instrument = Hukseflux self calibrating
+            long_name = Ground heat flux, sensor 1g
+            serial_number = 
+            standard_name = not defined
+            units = W/m2
+    [[Sws_005cm]]
+        [[[xl]]]
+            sheet = slow_soil
+            name = Sws_616_005_Avg
+        [[[Attr]]]
+            height = -0.05m
+            instrument = Campbell Scientific CS616
+            long_name = Soil water fraction, sensor 1avg
+            serial_number = 
+            standard_name = not defined
+            units = frac
+    [[Sws_015cm]]
+        [[[xl]]]
+            sheet = slow_soil
+            name = Sws_616_015_Avg
+        [[[Attr]]]
+            height = -0.15m
+            instrument = Campbell Scientific CS616
+            long_name = Soil water fraction, sensor 2avg
+            serial_number = 
+            standard_name = not defined
+            units = frac
+    [[Sws_045cm]]
+        [[[xl]]]
+            sheet = slow_soil
+            name = Sws_616_045_Avg
+        [[[Attr]]]
+            height = -0.45m
+            instrument = Campbell Scientific CS616
+            long_name = Soil water fraction, sensor 3avg
+            serial_number = 
+            standard_name = not defined
+            units = frac
+    [[Sws_070cm]]
+        [[[xl]]]
+            sheet = slow_soil
+            name = Sws_616_070_Avg
+        [[[Attr]]]
+            height = -0.70m
+            instrument = Campbell Scientific CS616
+            long_name = Soil water fraction, sensor 4avg
+            serial_number = 
+            standard_name = not defined
+            units = frac
+    [[Sws_100cm]]
+        [[[xl]]]
+            sheet = slow_soil
+            name = Sws_616_100_Avg
+        [[[Attr]]]
+            height = -1.00m
+            instrument = Campbell Scientific CS616
+            long_name = Soil water fraction, sensor 5avg
+            serial_number = 
+            standard_name = not defined
+            units = frac
+    [[Ts_2cma]]
+        [[[xl]]]
+            sheet = slow_flux
+            name = Tsoil_avg_2
+        [[[Attr]]]
+            height = -0.02m
+            instrument = Campbell Scientific 105T
+            long_name = Soil temperature, sensor 135cm d2cm
+            serial_number = 
+            standard_name = not defined
+            units = C
+    [[Ts_2cmb]]
+        [[[xl]]]
+            sheet = slow_flux
+            name = Tsoil_avg_4
+        [[[Attr]]]
+            height = -0.02m
+            instrument = Campbell Scientific 105T
+            long_name = Soil temperature, sensor 275cm d2cm
+            serial_number = 
+            standard_name = not defined
+            units = C
+    [[Ts_2cmc]]
+        [[[xl]]]
+            sheet = slow_flux
+            name = Tsoil_avg_6
+        [[[Attr]]]
+            height = -0.02m
+            instrument = Campbell Scientific 105T
+            long_name = Soil temperature, sensor 425cm d2cm
+            serial_number = 
+            standard_name = not defined
+            units = C
+    [[Ts_2cmd]]
+        [[[xl]]]
+            sheet = slow_flux
+            name = Tsoil_avg_8
+        [[[Attr]]]
+            height = -0.02m
+            instrument = Campbell Scientific 105T
+            long_name = Soil temperature, sensor 565cm d2cm
+            serial_number = 
+            standard_name = not defined
+            units = C
+    [[Ts_6cma]]
+        [[[xl]]]
+            sheet = slow_flux
+            name = Tsoil_avg_1
+        [[[Attr]]]
+            height = -0.06m
+            instrument = Campbell Scientific 105T
+            long_name = Soil temperature, sensor 135cm d6cm
+            serial_number = 
+            standard_name = not defined
+            units = C
+    [[Ts_6cmb]]
+        [[[xl]]]
+            sheet = slow_flux
+            name = Tsoil_avg_3
+        [[[Attr]]]
+            height = -0.06m
+            instrument = Campbell Scientific 105T
+            long_name = Soil temperature, sensor 275cm d6cm
+            serial_number = 
+            standard_name = not defined
+            units = C
+    [[Ts_6cmc]]
+        [[[xl]]]
+            sheet = slow_flux
+            name = Tsoil_avg_5
+        [[[Attr]]]
+            height = -0.06m
+            instrument = Campbell Scientific 105T
+            long_name = Soil temperature, sensor 425cm d6cm
+            serial_number = 
+            standard_name = not defined
+            units = C
+    [[Ts_6cmd]]
+        [[[xl]]]
+            sheet = slow_flux
+            name = Tsoil_avg_7
+        [[[Attr]]]
+            height = -0.06m
+            instrument = Campbell Scientific 105T
+            long_name = Soil temperature, sensor 565cm d6cm
+            serial_number = 
+            standard_name = not defined
+            units = C
+    [[Ts_15cm]]
+        [[[xl]]]
+            sheet = slow_flux
+            name = Tsoil_avg_9
+        [[[Attr]]]
+            height = -0.15m
+            instrument = Campbell Scientific 105T
+            long_name = Soil temperature, sensor 70cm d15cm
+            serial_number = 
+            standard_name = not defined
+            units = C
+    [[Ts_45cm]]
+        [[[xl]]]
+            sheet = slow_flux
+            name = Tsoil_avg_10
+        [[[Attr]]]
+            height = -0.45m
+            instrument = Campbell Scientific 105T
+            long_name = Soil temperature, sensor 70cm d45cm
+            serial_number = 
+            standard_name = not defined
+            units = C
+    [[Ts_70cm]]
+        [[[xl]]]
+            sheet = slow_flux
+            name = Tsoil_avg_11
+        [[[Attr]]]
+            height = -0.70m
+            instrument = Campbell Scientific 105T
+            long_name = Soil temperature, sensor 70cm d70cm
+            serial_number = 
+            standard_name = not defined
+            units = C
+    [[Ts_100cm]]
+        [[[xl]]]
+            sheet = slow_flux
+            name = Tsoil_avg_12
+        [[[Attr]]]
+            height = -1.00m
+            instrument = Campbell Scientific 105T
+            long_name = Soil temperature, sensor 70cm d100cm
+            serial_number = 
+            standard_name = not defined
+            units = C
+    [[Precip]]
+        [[[xl]]]
+            sheet = slow_flux
+            name = precip_Tot
+        [[[Attr]]]
+            height = 5.5m
+            instrument = TE525MM
+            long_name = Rainfall, 30 minute total
+            serial_number = 
+            standard_name = not defined
+            units = mm
+    [[Irrigation]]
+        [[[xl]]]
+            sheet = extra
+            name = Irrigation
+        [[[Attr]]]
+            height = 0m
+            instrument = sprinkler
+            long_name = Irrigation, 30 minute total
+            serial_number = 
+            standard_name = not defined
+            units = mm
+    [[Wd_034B_Av]]
+        [[[xl]]]
+            sheet = slow_flux
+            name = 034B_dir_avg
+        [[[Attr]]]
+            height = 10m
+            instrument = WindSet 034B
+            long_name = Wind direction
+            serial_number = 
+            standard_name = wind_from_direction
+            units = deg
+    [[Ws_034B_Av]]
+        [[[xl]]]
+            sheet = slow_flux
+            name = 034B_spd_avg
+        [[[Attr]]]
+            height = 10m
+            instrument = WindSet 034B
+            long_name = Wind speed
+            serial_number = 
+            standard_name = wind_speed
+            units = m/s
+    [[Wd_SONIC_Av]]
+        [[[xl]]]
+            sheet = slow_flux
+            name = wnd_dir_compass
+        [[[Attr]]]
+            height = 10m
+            instrument = CSAT
+            long_name = Wind direction
+            serial_number = FM007120
+            standard_name = not defined
+            units = deg
+    [[Ws_SONIC_Av]]
+        [[[xl]]]
+            sheet = slow_flux
+            name = wnd_spd
+        [[[Attr]]]
+            height = 10m
+            instrument = CSAT
+            long_name = Wind speed
+            serial_number = FM007120
+            standard_name = not defined
+            units = m/s
+    [[Ux]]
+        [[[xl]]]
+            sheet = slow_flux
+            name = Ux_Avg
+        [[[Attr]]]
+            height = 10m
+            instrument = CSAT
+            long_name = Wind speed, longitudinal component
+            serial_number = FM007120
+            standard_name = not defined
+            units = m/s
+    [[Uy]]
+        [[[xl]]]
+            sheet = slow_flux
+            name = Uy_Avg
+        [[[Attr]]]
+            height = 10m
+            instrument = CSAT
+            long_name = Wind speed, lateral component
+            serial_number = FM007120
+            standard_name = not defined
+            units = m/s
+    [[Uz]]
+        [[[xl]]]
+            sheet = slow_flux
+            name = Uz_Avg
+        [[[Attr]]]
+            height = 10m
+            instrument = CSAT
+            long_name = Wind speed, vertical component
+            serial_number = FM007120
+            standard_name = not defined
+            units = m/s
+    [[ps]]
+        [[[xl]]]
+            sheet = slow_flux
+            name = press_mean
+        [[[Attr]]]
+            height = 10m
+            instrument = Li7500
+            long_name = Air pressure, average
+            serial_number = FM007121
+            standard_name = surface_air_pressure
+            units = kPa
+    [[ps_CS100]]
+        [[[xl]]]
+            sheet = slow_flux
+            name = atm_press_Avg
+        [[[Attr]]]
+            height = 1.20m
+            instrument = CS100
+            long_name = Air pressure, average
+            serial_number = 
+            standard_name = surface_air_pressure
+            units = hPa
+    [[Diag_SONIC]]
+        [[[xl]]]
+            sheet = slow_flux
+            name = csat_warnings
+        [[[Attr]]]
+            height = 10m
+            instrument = CSAT
+            long_name = CSAT diagnostic value
+            serial_number = FM007120
+            standard_name = not defined
+            units = none
+    [[Diag_IRGA]]
+        [[[xl]]]
+            sheet = slow_flux
+            name = irga_warnings
+        [[[Attr]]]
+            height = 10m
+            instrument = Li-7500
+            long_name = Li-7500 diagnostic value
+            serial_number = FM007121
+            standard_name = not defined
+            units = none
+    [[AGC_IRGA]]
+        [[[xl]]]
+            sheet = slow_flux
+            name = agc_Avg
+        [[[Attr]]]
+            height = 10m
+            instrument = Li-7500
+            long_name = Li-7500 automatic gain control
+            serial_number = FM007121
+            standard_name = not defined
+            units = none
+    [[PAR]]
+        [[[xl]]]
+            sheet = slow_flux
+            name = par_Avg
+        [[[Attr]]]
+            height = 10m
+            instrument = Li190SB
+            long_name = photosynthetically active radiation
+            serial_number = 
+            standard_name = not defined
+            units = umol/m2/s
+    [[rad_global]]
+        [[[xl]]]
+            sheet = slow_flux
+            name = global_rad_Avg
+        [[[Attr]]]
+            height = 10m
+            instrument = BF3/Delta-T Devices
+            long_name = global radiation
+            serial_number = 
+            standard_name = not defined
+            units = W/m2
+    [[rad_diffuse]]
+        [[[xl]]]
+            sheet = slow_flux
+            name = diffuse_rad_Avg
+        [[[Attr]]]
+            height = 10m
+            instrument = BF3/Delta-T Devices
+            long_name = diffuse radiation
+            serial_number = 
+            standard_name = not defined
+            units = W/m2
+    [[Vbat]]
+        [[[xl]]]
+            sheet = slow_flux
+            name = batt_volt_Avg
+        [[[Attr]]]
+            instrument = Campbell Scientific CR5000 logger
+            long_name = Battery voltage at logger
+            serial_number = 
+            standard_name = not defined
+            units = V
+    [[Tpanel]]
+        [[[xl]]]
+            sheet = slow_flux
+            name = panel_temp_Avg
+        [[[Attr]]]
+            instrument = Campbell Scientific CR5000 logger
+            long_name = Panel temperature at logger
+            serial_number = 
+            standard_name = not defined
+            units = C
+    [[ustar_EP]]
+        [[[xl]]]
+            sheet = eddy_pro
+            name = u*
+        [[[Attr]]]
+            height = 10m
+            instrument = CSAT3
+            long_name = friction velocity from 10Hz data
+            serial_number = FM007120
+            standard_name = not defined
+            units = m/s
+    [[Fm_EP]]
+        [[[xl]]]
+            sheet = eddy_pro
+            name = Tau
+        [[[Attr]]]
+            height = 10m
+            instrument = CSAT3
+            long_name = Tau from 10Hz data
+            serial_number = FM007120
+            standard_name = not defined
+            units = kg/m/s2
+    [[Fm_EPFlag]]
+        [[[xl]]]
+            sheet = eddy_pro
+            name = qc_Tau
+        [[[Attr]]]
+            height = 10m
+            instrument = CSAT3
+            long_name = QC Tau from 10Hz data
+            serial_number = FM007120
+            standard_name = not defined
+            units = unit
+    [[Fh_EP]]
+        [[[xl]]]
+            sheet = eddy_pro
+            name = H
+        [[[Attr]]]
+            height = 10m
+            instrument = CSAT3 and Li-7500
+            long_name = sensible heat flux from 10Hz data
+            serial_number = FM007120 and FM007121
+            standard_name = not defined
+            units = W/m2
+    [[Fh_EPFlag]]
+        [[[xl]]]
+            sheet = eddy_pro
+            name = qc_H
+        [[[Attr]]]
+            height = 10m
+            instrument = CSAT3 and Li-7500
+            long_name = QC sensible heat flux from 10Hz data
+            serial_number = FM007120 and FM007121
+            standard_name = not defined
+            units = unit
+    [[Fe_EP]]
+        [[[xl]]]
+            sheet = eddy_pro
+            name = LE
+        [[[Attr]]]
+            height = 10m
+            instrument = CSAT3 and Li-7500
+            long_name = latent heat flux from 10Hz data
+            serial_number = FM007120 and FM007121
+            standard_name = not defined
+            units = W/m2
+    [[Fe_EPFlag]]
+        [[[xl]]]
+            sheet = eddy_pro
+            name = qc_LE
+        [[[Attr]]]
+            height = 10m
+            instrument = CSAT3 and Li-7500
+            long_name = QC latent heat flux from 10Hz data
+            serial_number = FM007120 and FM007121
+            standard_name = not defined
+            units = unit
+    [[Fc_EP]]
+        [[[xl]]]
+            sheet = eddy_pro
+            name = co2_flux
+        [[[Attr]]]
+            height = 10m
+            instrument = CSAT3 and Li-7500
+            long_name = CO2 flux from 10Hz data
+            serial_number = FM007120 and FM007121
+            standard_name = not defined
+            units = umol/m2/s
+    [[Fc_EPFlag]]
+        [[[xl]]]
+            sheet = eddy_pro
+            name = qc_co2_flux
+        [[[Attr]]]
+            height = 10m
+            instrument = CSAT3 and Li-7500
+            long_name = QC CO2 flux from 10Hz data
+            serial_number = FM007120 and FM007121
+            standard_name = not defined
+            units = unit
+    [[Fc_profile]]
+        [[[xl]]]
+            sheet = dummy
+            name = Fc_profile
+        [[[Attr]]]
+            height = 0.5m to 10m
+            instrument = dummy profile
+            long_name = dummy profile for test
+            serial_number = 
+            standard_name = not defined
+            units = umol/m2/s
