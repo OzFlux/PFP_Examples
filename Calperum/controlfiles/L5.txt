@@ -1,9 +1,9 @@
 level = L5
 [Files]
-    file_path = ../PFP_Examples/Calperum/Data/Portal/
+    file_path = ../PFP_examples/Calperum/Data/Portal/
     in_filename = Calperum_L4.nc
     out_filename = Calperum_L5.nc
-    plot_path = ../PFP_Examples/Calperum/Plots/
+    plot_path = ../PFP_examples/Calperum/Plots/
     cpd_filename = Calperum_L3_CPD_McHugh.xls
 [Options]
     MaxGapInterpolate = 3

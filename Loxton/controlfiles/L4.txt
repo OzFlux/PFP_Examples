@@ -1,12 +1,12 @@
 level = L4
 [Files]
-    plot_path = ../PFP_Examples/Loxton/Plots/
-    file_path = /home/peter/PFP_Examples/Loxton/Data/Tower/
+    plot_path = ../PFP_examples/Loxton/Plots/
+    file_path = /home/peter/PFP_examples/Loxton/Data/Tower/
     in_filename = Loxton_L3.nc
     out_filename = Loxton_L4.nc
-    era5 = ../PFP_Examples/Loxton/Data/ERA5/Loxton_ERA5.nc
-    climatology = /home/peter/PFP_Examples/Loxton/Data/Tower/Loxton_L3_Climatology.xls
-    aws = ../PFP_Examples/Loxton/Data/AWS/Loxton_AWS.nc
+    era5 = ../PFP_examples/Loxton/Data/ERA5/Loxton_ERA5.nc
+    climatology = /home/peter/PFP_examples/Loxton/Data/Tower/Loxton_L3_Climatology.xls
+    aws = ../PFP_examples/Loxton/Data/AWS/Loxton_AWS.nc
 [Options]
     MaxGapInterpolate = 3
 [Drivers]

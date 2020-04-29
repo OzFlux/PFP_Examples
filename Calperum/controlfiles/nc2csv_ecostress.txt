@@ -1,6 +1,6 @@
 level = nc2csv_ecostress
 [Files]
-    file_path = /home/peter/PFP_Examples/Calperum/Data/Portal/
+    file_path = ../PFP_examples/Calperum/Data/Portal/
     in_filename = Calperum_L6.nc
     out_filename = Calperum_ECOSTRESS.csv
 [General]

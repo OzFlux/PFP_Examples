@@ -1,9 +1,9 @@
 level = L3
 [Files]
-    file_path = ../PFP_Examples/Loxton/Data/Tower/
+    file_path = ../PFP_examples/Loxton/Data/Tower/
     in_filename = Loxton_L2.nc
     out_filename = Loxton_L3.nc
-    plot_path = ../PFP_Examples/Loxton/Plots/
+    plot_path = ../PFP_examples/Loxton/Plots/
 [Options]
     zms = 10
     CO2Units = umol/mol

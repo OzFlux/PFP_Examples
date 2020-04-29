@@ -3,15 +3,15 @@ level = concatenate
     MaxGapInterpolate = 0
 [Files]
     [[Out]]
-        ncFileName = ../PFP_Examples/Calperum/Data/Portal/Calperum_L3.nc
+        ncFileName = ../PFP_examples/Calperum/Data/Portal/Calperum_L3.nc
     [[In]]
-        0 = ../PFP_Examples/Calperum/Data/Portal/Calperum_2010_L3.nc
-        1 = ../PFP_Examples/Calperum/Data/Portal/Calperum_2011_L3.nc
-        2 = ../PFP_Examples/Calperum/Data/Portal/Calperum_2012_L3.nc
-        3 = ../PFP_Examples/Calperum/Data/Portal/Calperum_2013_L3.nc
-        4 = ../PFP_Examples/Calperum/Data/Portal/Calperum_2014_L3.nc
-        5 = ../PFP_Examples/Calperum/Data/Portal/Calperum_2015_L3.nc
-        6 = ../PFP_Examples/Calperum/Data/Portal/Calperum_2016_L3.nc
-        7 = ../PFP_Examples/Calperum/Data/Portal/Calperum_2017_L3.nc
-        8 = ../PFP_Examples/Calperum/Data/Portal/Calperum_2018_L3.nc
-        9 = ../PFP_Examples/Calperum/Data/Portal/Calperum_2019_L3.nc
+        0 = ../PFP_examples/Calperum/Data/Portal/Calperum_2010_L3.nc
+        1 = ../PFP_examples/Calperum/Data/Portal/Calperum_2011_L3.nc
+        2 = ../PFP_examples/Calperum/Data/Portal/Calperum_2012_L3.nc
+        3 = ../PFP_examples/Calperum/Data/Portal/Calperum_2013_L3.nc
+        4 = ../PFP_examples/Calperum/Data/Portal/Calperum_2014_L3.nc
+        5 = ../PFP_examples/Calperum/Data/Portal/Calperum_2015_L3.nc
+        6 = ../PFP_examples/Calperum/Data/Portal/Calperum_2016_L3.nc
+        7 = ../PFP_examples/Calperum/Data/Portal/Calperum_2017_L3.nc
+        8 = ../PFP_examples/Calperum/Data/Portal/Calperum_2018_L3.nc
+        9 = ../PFP_examples/Calperum/Data/Portal/Calperum_2019_L3.nc

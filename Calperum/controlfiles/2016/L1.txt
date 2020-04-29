@@ -1,6 +1,6 @@
 level = L1
 [Files]
-    file_path = ../PFP_Examples/Calperum/Data/Tower/2016/
+    file_path = ../PFP_examples/Calperum/Data/Tower/2016/
     in_filename = Calperum_2016_L1.xls
     in_headerrow = 2
     in_firstdatarow = 5

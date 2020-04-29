@@ -1,9 +1,9 @@
 level = L2
 [Files]
-    file_path = ../PFP_Examples/Loxton/Data/Tower/
+    file_path = ../PFP_examples/Loxton/Data/Tower/
     in_filename = Loxton_L1.nc
     out_filename = Loxton_L2.nc
-    plot_path = ../PFP_Examples/Loxton/Plots/
+    plot_path = ../PFP_examples/Loxton/Plots/
 [Options]
     irga_type = Li-7500
 [Variables]

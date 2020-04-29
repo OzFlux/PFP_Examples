@@ -1,6 +1,6 @@
 level = nc2csv_fluxnet
 [Files]
-    file_path = /home/peter/PFP_Examples/Calperum/Data/Tower/2016/
+    file_path = ../PFP_examples/Calperum/Data/Tower/2016/
     in_filename = Calperum_2016_L3.nc
     out_filename = Calperum_2016_FluxNet.csv
 [General]

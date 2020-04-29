@@ -1,6 +1,6 @@
 level = L1
 [Files]
-    file_path = ../PFP_Examples/Loxton/Data/Tower/
+    file_path = ../PFP_examples/Loxton/Data/Tower/
     in_filename = Loxton_L1.xls
     in_headerrow = 2
     in_firstdatarow = 5
