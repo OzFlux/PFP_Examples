@@ -1,13 +1,13 @@
 level = L5
 [Files]
-    file_path = ../PFP_examples/Calperum/Data/Portal/
+    file_path = ../PFP3_examples/Calperum/Data/Portal/
     in_filename = Calperum_L4.nc
     out_filename = Calperum_L5.nc
-    plot_path = ../PFP_examples/Calperum/Plots/
+    plot_path = ../PFP3_examples/Calperum/Plots/
     cpd_filename = Calperum_L3_CPD_McHugh.xls
 [Options]
     MaxGapInterpolate = 3
-    FilterList = Fc
+    FilterList = Fco2
     TurbulenceFilter = ustar
     DayNightFilter = Fsd
     AcceptDayTimes = Yes
@@ -30,9 +30,9 @@ level = L5
                 drivers = Fn,Fg,SH,VPD,Ta,Ts
         [[[MergeSeries]]]
             source = Fh,Fh_SOLO
-    [[Fc]]
+    [[Fco2]]
         [[[GapFillUsingSOLO]]]
-            [[[[Fc_SOLO]]]]
+            [[[[Fco2_SOLO]]]]
                 drivers = Fn,Fg,SH,VPD,Ta,Ts
         [[[MergeSeries]]]
-            source = Fc,Fc_SOLO
+            source = Fco2,Fco2_SOLO

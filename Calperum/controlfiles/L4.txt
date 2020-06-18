@@ -1,29 +1,29 @@
 level = L4
 [Files]
-    plot_path = ../PFP_examples/Calperum/Plots/
-    file_path = ../PFP_examples/Calperum/Data/Portal/
+    plot_path = ../PFP3_examples/Calperum/Plots/
+    file_path = ../PFP3_examples/Calperum/Data/Portal/
     in_filename = Calperum_L3.nc
     out_filename = Calperum_L4.nc
-    aws = ../PFP_examples/Calperum/Data/AWS/Calperum_AWS.nc
-    access = ../PFP_examples/Calperum/Data/ACCESS/Calperum_ACCESS.nc
-    era5 = ../PFP_examples/Calperum/Data/ERA5/Calperum_ERA5.nc
-    climatology = ../PFP_examples/Calperum/Data/Portal/Calperum_L3_Climatology.xls
+    aws = ../PFP3_examples/Calperum/Data/AWS/Calperum_AWS.nc
+    access = ../PFP3_examples/Calperum/Data/ACCESS/Calperum_ACCESS.nc
+    era5 = ../PFP3_examples/Calperum/Data/ERA5/Calperum_ERA5.nc
+    climatology = ../PFP3_examples/Calperum/Data/Portal/Calperum_L3_Climatology.xls
 [Options]
     MaxGapInterpolate = 3
 [Drivers]
-    [[Ah]]
+    [[AH]]
         [[[GapFillFromAlternate]]]
-            [[[[Ah_aws]]]]
+            [[[[AH_aws]]]]
                 source = AWS
-            [[[[Ah_access]]]]
+            [[[[AH_access]]]]
                 source = ACCESS
-            [[[[Ah_era5]]]]
+            [[[[AH_era5]]]]
                 source = ERA5
         [[[GapFillFromClimatology]]]
-            [[[[Ah_cli]]]]
+            [[[[AH_cli]]]]
                 method = interpolated daily
         [[[MergeSeries]]]
-            source = Ah,Ah_aws,Ah_access,Ah_era5,Ah_cli
+            source = AH,AH_aws,AH_access,AH_era5,AH_cli
     [[CO2]]
         [[[GapFillFromClimatology]]]
             [[[[CO2_cli]]]]

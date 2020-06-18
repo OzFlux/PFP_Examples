@@ -75,14 +75,6 @@ level = L2
         [[[RangeCheck]]]
             lower = -10
             upper = 10
-    [[UxUx]]
-        [[[RangeCheck]]]
-            lower = -10
-            upper = 10
-    [[UyUy]]
-        [[[RangeCheck]]]
-            lower = -10
-            upper = 10
     [[Tv_SONIC_Av]]
         [[[RangeCheck]]]
             lower = 0
@@ -95,23 +87,11 @@ level = L2
         [[[RangeCheck]]]
             lower = 0
             upper = 20
-    [[Ux]]
-        [[[RangeCheck]]]
-            lower = -20
-            upper = 20
-    [[Uy]]
-        [[[RangeCheck]]]
-            lower = -20
-            upper = 20
-    [[Uz]]
-        [[[RangeCheck]]]
-            lower = -1
-            upper = 1
     [[Diag_SONIC]]
         [[[RangeCheck]]]
             lower = -0.5
             upper = 10.5
-    [[Ah_IRGA_Av]]
+    [[AH_IRGA_Av]]
         [[[RangeCheck]]]
             lower = 0
             upper = 35
@@ -119,7 +99,7 @@ level = L2
         [[[RangeCheck]]]
             lower = 500
             upper = 1200
-    [[Ah_IRGA_Sd]]
+    [[AH_IRGA_Sd]]
         [[[RangeCheck]]]
             lower = 0
             upper = 3
@@ -139,7 +119,7 @@ level = L2
         [[[RangeCheck]]]
             lower = 0
             upper = 65
-    [[Ah_HMP_2m]]
+    [[AH_HMP_2m]]
         [[[RangeCheck]]]
             lower = 0
             upper = 25
@@ -407,22 +387,46 @@ level = L2
             upper = 60
         [[[ExcludeDates]]]
             0 = 2016-7-07 10:00,2016-7-07 11:00
+    [[Ux_SONIC_Vr]]
+        [[[RangeCheck]]]
+            lower = -10
+            upper = 10
+    [[Uy_SONIC_Vr]]
+        [[[RangeCheck]]]
+            lower = -10
+            upper = 10
+    [[Uz_SONIC_Vr]]
+        [[[RangeCheck]]]
+            upper = 2
+            lower = -2
+    [[Ux_SONIC_Av]]
+        [[[RangeCheck]]]
+            lower = -20
+            upper = 20
+    [[Uy_SONIC_Av]]
+        [[[RangeCheck]]]
+            lower = -20
+            upper = 20
+    [[Uz_SONIC_Av]]
+        [[[RangeCheck]]]
+            lower = -1
+            upper = 1
 [Plots]
     [[Radiative fluxes]]
         variables = Fsd_Li,Fsd,Fsu,Fld,Flu
     [[Covariances (CSAT)]]
-        variables = UzT,UxT,UyT,UxUz,UyUz,UxUy,UxUx,UyUy
+        variables = UzT,UxT,UyT,UxUz,UyUz,UxUy,Ux_SONIC_Vr,Uy_SONIC_Vr,Uz_SONIC_Vr
     [[Covariances (CSAT&7500)]]
         variables = UzA,UxA,UyA,UzC,UxC,UyC
     [[Air temperature, humidity and CO2]]
-        variables = Ta_HMP_2m,Tv_SONIC_Av,Ah_HMP_2m,Ah_IRGA_Av,CO2_IRGA_Av
+        variables = Ta_HMP_2m,Tv_SONIC_Av,AH_HMP_2m,AH_IRGA_Av,CO2_IRGA_Av
     [[Rainfall and diagnostics]]
-        variables = Precip,Ah_IRGA_Sd,CO2_IRGA_Sd,AGC_IRGA,Diag_IRGA,Diag_SONIC
+        variables = Precip,AH_IRGA_Sd,CO2_IRGA_Sd,AGC_IRGA,Diag_IRGA,Diag_SONIC
     [[Soil temperature and heat flux]]
         variables = Ts_8cma,Ts_8cmb,Ts_8cmc,Fg_8cma,Fg_8cmb,Fg_8cmc
     [[Soil temperature and water content at 10cm]]
         variables = Ts_10cma,Ts_10cmb,Ts_10cmc,Sws_10cma,Sws_10cmb,Sws_10cmc
     [[Pressure, wind components and rainfall]]
-        variables = ps,Ux,Uy,Uz,Precip,Vbat,Tpanel
+        variables = ps,Ux_SONIC_Av,Uy_SONIC_Av,Uz_SONIC_Av,Precip,Vbat,Tpanel
     [[Wind speed and direction]]
         variables = Ws_SONIC_Av,Ws_RMY_2m,Ws_RMY_10m,Wd_SONIC_Av,Wd_RMY_2m,Wd_RMY_10m

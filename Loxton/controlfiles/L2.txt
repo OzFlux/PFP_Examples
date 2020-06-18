@@ -1,9 +1,9 @@
 level = L2
 [Files]
-    file_path = ../PFP_examples/Loxton/Data/Tower/
+    file_path = ../PFP3_examples/Loxton/Data/Tower/
     in_filename = Loxton_L1.nc
     out_filename = Loxton_L2.nc
-    plot_path = ../PFP_examples/Loxton/Plots/
+    plot_path = ../PFP3_examples/Loxton/Plots/
 [Options]
     irga_type = Li-7500
 [Variables]
@@ -71,15 +71,15 @@ level = L2
         [[[RangeCheck]]]
             lower = -1
             upper = 1
-    [[Ux_Sd]]
+    [[Ux_SONIC_Sd]]
         [[[RangeCheck]]]
             lower = -0.1
             upper = 4
-    [[Uy_Sd]]
+    [[Uy_SONIC_Sd]]
         [[[RangeCheck]]]
             lower = -0.1
             upper = 4
-    [[Uz_Sd]]
+    [[Uz_SONIC_Sd]]
         [[[RangeCheck]]]
             lower = -0.1
             upper = 2
@@ -87,11 +87,11 @@ level = L2
         [[[RangeCheck]]]
             lower = 580
             upper = 750
-    [[Ah_IRGA_Av]]
+    [[AH_IRGA_Av]]
         [[[RangeCheck]]]
             lower = 0
             upper = 35
-    [[Ah_HMP_10m]]
+    [[AH_HMP_10m]]
         [[[RangeCheck]]]
             lower = 0
             upper = 35
@@ -103,11 +103,11 @@ level = L2
         [[[RangeCheck]]]
             lower = -10
             upper = 50
-    [[Ah_IRGA_Vr]]
+    [[AH_IRGA_Vr]]
         [[[RangeCheck]]]
             lower = 0
             upper = 100
-    [[Ah_IRGA_Sd]]
+    [[AH_IRGA_Sd]]
         [[[RangeCheck]]]
             lower = 0
             upper = 10
@@ -137,15 +137,15 @@ level = L2
         [[[RangeCheck]]]
             lower = 0
             upper = 20
-    [[Ux]]
+    [[Ux_SONIC_Av]]
         [[[RangeCheck]]]
             lower = -20
             upper = 20
-    [[Uy]]
+    [[Uy_SONIC_Av]]
         [[[RangeCheck]]]
             lower = -20
             upper = 20
-    [[Uz]]
+    [[Uz_SONIC_Av]]
         [[[RangeCheck]]]
             lower = -1
             upper = 1
@@ -315,37 +315,37 @@ level = L2
             upper = 1500
         [[[DependencyCheck]]]
             source = Fe_EPFlag
-    [[Fc_EPFlag]]
+    [[Fco2_EPFlag]]
         [[[RangeCheck]]]
             lower = -0.5
             upper = 0.5
-    [[Fc_EP]]
+    [[Fco2_EP]]
         [[[RangeCheck]]]
             lower = -50
             upper = 50
         [[[DependencyCheck]]]
-            source = Fc_EPFlag
+            source = Fco2_EPFlag
     [[ustar_EP]]
         [[[RangeCheck]]]
             lower = 0
             upper = 2
-    [[Fc_profile]]
+    [[Fco2_profile]]
         [[[RangeCheck]]]
             lower = -50
             upper = 50
         [[[DependencyCheck]]]
-            source = Fc_EPFlag
+            source = Fco2_EPFlag
 [Plots]
     [[Radiative fluxes]]
         variables = Fsd,Fsu,Fld,Flu
     [[EddyPro fluxes]]
-        variables = ustar_EP,Fm_EP,Fh_EP,Fe_EP,Fc_EP
+        variables = ustar_EP,Fm_EP,Fh_EP,Fe_EP,Fco2_EP
     [[Covariances (SONIC)]]
-        variables = UzT,UxT,UyT,Uz_Sd,Ux_Sd,Uy_Sd
+        variables = UzT,UxT,UyT,Uz_SONIC_Sd,Ux_SONIC_Sd,Uy_SONIC_Sd
     [[Covariances (SONIC & IRGA)]]
         variables = UzA,UxA,UyA,UzC,UxC,UyC
     [[Air temperature & humidity]]
-        variables = Ta_HMP_10m,Tv_SONIC_Av,Ah_HMP_10m,Ah_IRGA_Av,CO2_IRGA_Av
+        variables = Ta_HMP_10m,Tv_SONIC_Av,AH_HMP_10m,AH_IRGA_Av,CO2_IRGA_Av
     [[Wind speed and direction]]
         variables = Wd_034B_Av,Wd_SONIC_Av,Ws_034B_Av,Ws_SONIC_Av
     [[Soil temperature (2cm)]]
@@ -361,6 +361,6 @@ level = L2
     [[Diagnostics (Fh)]]
         variables = UzT,Fh_EP,Fh_EPFlag,Diag_SONIC
     [[Diagnostics (Fe)]]
-        variables = UzA,Fe_EP,Fe_EPFlag,Diag_IRGA,AGC_IRGA,Ah_IRGA_Sd,CO2_IRGA_Sd
+        variables = UzA,Fe_EP,Fe_EPFlag,Diag_IRGA,AGC_IRGA,AH_IRGA_Sd,CO2_IRGA_Sd
     [[Diagnostics (Fc)]]
-        variables = UzC,Fc_EP,Fc_EPFlag,Diag_IRGA,AGC_IRGA,Ah_IRGA_Sd,CO2_IRGA_Sd
+        variables = UzC,Fco2_EP,Fco2_EPFlag,Diag_IRGA,AGC_IRGA,AH_IRGA_Sd,CO2_IRGA_Sd

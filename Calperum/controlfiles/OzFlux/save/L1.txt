@@ -1,0 +1,1062 @@
+level = L1
+[Files]
+    file_path = ../PFP_examples/Calperum/Data/Tower/2016/
+    in_filename = Calperum_2016_L1.xls
+    in_headerrow = 2
+    in_firstdatarow = 5
+    out_filename = Calperum_2016_L1.nc
+[Global]
+    contact = ozfluxtech@adelaide.edu.au
+    canopy_height = 3m eucalyptus, 0.7 grass
+    comment = CF metadata, OzFlux standard variable names
+    data_url = http://ozflux.its.monash.edu.au/
+    history = "Cleaned by cleanup_netcdf_files.py"
+    institution = University of Adelaide
+    latitude = -34.00206
+    license_type = CC BY 4.0
+    license_url = https://creativecommons.org/licenses/by/4.0/
+    longitude = 140.58912
+    metadata_url = http://www.ozflux.org.au/monitoringsites/calperum/index.html
+    ozflux_url = http://ozflux.org.au/
+    references = None
+    site_name = Calperum
+    site_pi = Wayne Meyer
+    soil = Reddish brown, yellowish red, loamy sand, free grain structure; low organic matter, loose consistence; pH 6
+    source = 20m flux tower plus array of soil sensors
+    title = Flux tower data set from the Calperum site for the calendar year 2016
+    time_step = 30
+    time_zone = Australia/Adelaide
+    tower_height = 20m
+    vegetation = Mallee
+[Variables]
+    [[Fld]]
+        [[[xl]]]
+            sheet = slow_rad
+            name = Fld_CNR4_Avg
+        [[[Attr]]]
+            height = 20m
+            instrument = Kipp and Zonen CNR4
+            long_name = Down-welling longwave radiation
+            serial_number = 
+            standard_name = surface_downwelling_longwave_flux_in_air
+            units = W/m^2
+            group_name = radiation
+            statistic_type = average
+    [[Flu]]
+        [[[xl]]]
+            sheet = slow_rad
+            name = Flu_CNR4_Avg
+        [[[Attr]]]
+            height = 20m
+            instrument = Kipp and Zonen CNR4
+            long_name = Up-welling longwave radiation
+            serial_number = 
+            standard_name = surface_upwelling_longwave_flux_in_air
+            units = W/m^2
+            group_name = radiation
+            statistic_type = average
+    [[Fsu]]
+        [[[xl]]]
+            sheet = slow_rad
+            name = Fsu_CNR4_Avg
+        [[[Attr]]]
+            height = 20m
+            instrument = Kipp and Zonen CNR4
+            long_name = Up-welling shortwave radiation
+            serial_number = 
+            standard_name = surface_upwelling_shortwave_flux_in_air
+            units = W/m^2
+            group_name = radiation
+            statistic_type = average
+    [[Fsd]]
+        [[[xl]]]
+            sheet = slow_rad
+            name = Fsd_CNR4_Avg
+        [[[Attr]]]
+            height = 20m
+            instrument = Kipp and Zonen CNR4
+            long_name = Down-welling shortwave radiation
+            serial_number = 
+            standard_name = surface_downwelling_shortwave_flux_in_air
+            units = W/m^2
+            group_name = radiation
+            statistic_type = average
+    [[Fsd_Li]]
+        [[[xl]]]
+            sheet = slow_extras
+            name = SlrW_Avg
+        [[[Attr]]]
+            height = 20m
+            instrument = Li-cor 200X
+            long_name = Down-welling shortwave radiation
+            serial_number = 
+            standard_name = not defined
+            units = W/m^2
+            group_name = radiation
+            statistic_type = average
+    [[UzT]]
+        [[[xl]]]
+            sheet = slow_flux
+            name = covUzTv
+        [[[Attr]]]
+            height = 20m
+            instrument = CSAT3
+            long_name = Covariance of Uz and T
+            serial_number = 
+            standard_name = not defined
+            units = m.degC/s
+            group_name = 
+    [[UxT]]
+        [[[xl]]]
+            sheet = slow_flux
+            name = covUxTv
+        [[[Attr]]]
+            height = 20m
+            instrument = CSAT3
+            long_name = Covariance of Ux and T
+            serial_number = 
+            standard_name = not defined
+            units = m.degC/s
+            group_name = 
+    [[UyT]]
+        [[[xl]]]
+            sheet = slow_flux
+            name = covUyTv
+        [[[Attr]]]
+            height = 20m
+            instrument = CSAT3
+            long_name = Covariance of Uy and T
+            serial_number = 
+            standard_name = not defined
+            units = m.degC/s
+            group_name = 
+    [[UzA]]
+        [[[xl]]]
+            sheet = slow_flux
+            name = covUzAh
+        [[[Attr]]]
+            height = 20m
+            instrument = CSAT3, Li-7500
+            long_name = Covariance of Uz and H2O
+            serial_number = 
+            standard_name = not defined
+            units = g/m^2/s
+            group_name = covariances
+            statistic_type = average
+    [[UxA]]
+        [[[xl]]]
+            sheet = slow_flux
+            name = covUxAh
+        [[[Attr]]]
+            height = 20m
+            instrument = CSAT3, Li-7500
+            long_name = Covariance of Ux and H2O
+            serial_number = 
+            standard_name = not defined
+            units = g/m^2/s
+            group_name = covariances
+            statistic_type = average
+    [[UyA]]
+        [[[xl]]]
+            sheet = slow_flux
+            name = covUyAh
+        [[[Attr]]]
+            height = 20m
+            instrument = CSAT3, Li-7500
+            long_name = Covariance of Uy and H2O
+            serial_number = 
+            standard_name = not defined
+            units = g/m^2/s
+            group_name = covariances
+            statistic_type = average
+    [[UzC]]
+        [[[xl]]]
+            sheet = slow_flux
+            name = covUzCc
+        [[[Attr]]]
+            height = 20m
+            instrument = CSAT3, Li-7500
+            long_name = Covariance of Uz and CO2
+            serial_number = 
+            standard_name = not defined
+            units = mg/m^2/s
+            group_name = covariances
+            statistic_type = average
+    [[UxC]]
+        [[[xl]]]
+            sheet = slow_flux
+            name = covUxCc
+        [[[Attr]]]
+            height = 20m
+            instrument = CSAT3, Li-7500
+            long_name = Covariance of Ux and CO2
+            serial_number = 
+            standard_name = not defined
+            units = mg/m^2/s
+            group_name = covariances
+            statistic_type = average
+    [[UyC]]
+        [[[xl]]]
+            sheet = slow_flux
+            name = covUyCc
+        [[[Attr]]]
+            height = 20m
+            instrument = CSAT3, Li-7500
+            long_name = Covariance of Uy and CO2
+            serial_number = 
+            standard_name = not defined
+            units = mg/m^2/s
+            group_name = covariances
+            statistic_type = average
+    [[UxUz]]
+        [[[xl]]]
+            sheet = slow_flux
+            name = covUzUx
+        [[[Attr]]]
+            height = 20m
+            instrument = CSAT3
+            long_name = Covariance of Ux and Uz
+            serial_number = 
+            standard_name = not defined
+            units = m^2/s^2
+            group_name = covariances
+            statistic_type = average
+    [[UyUz]]
+        [[[xl]]]
+            sheet = slow_flux
+            name = covUzUy
+        [[[Attr]]]
+            height = 20m
+            instrument = CSAT3
+            long_name = Covariance of Uy and Uz
+            serial_number = 
+            standard_name = not defined
+            units = m^2/s^2
+            group_name = covariances
+            statistic_type = average
+    [[UxUy]]
+        [[[xl]]]
+            sheet = slow_flux
+            name = covUxUy
+        [[[Attr]]]
+            height = 20m
+            instrument = CSAT3
+            long_name = Covariance of Ux and Uy
+            serial_number = 
+            standard_name = not defined
+            units = m^2/s^2
+            group_name = covariances
+            statistic_type = average
+    [[Tv_SONIC_Av]]
+        [[[xl]]]
+            sheet = slow_met
+            name = Tv_CSAT_Avg
+        [[[Attr]]]
+            height = 20m
+            instrument = CSAT
+            long_name = Virtual temperature
+            serial_number = 
+            standard_name = not defined
+            units = degC
+            group_name = meteorology
+            statistic_type = average
+    [[Tv_SONIC_Vr]]
+        [[[xl]]]
+            sheet = slow_flux
+            name = covTvTv
+        [[[Attr]]]
+            height = 20m
+            instrument = CSAT
+            long_name = Virtual temperature
+            serial_number = 
+            standard_name = not defined
+            units = degC^2
+            group_name = meteorology
+            statistic_type = variance
+    [[CO2_IRGA_Av]]
+        [[[xl]]]
+            sheet = slow_met
+            name = Cc_7500_Avg
+        [[[Attr]]]
+            height = <height>m
+            instrument = Li-7500
+            long_name = CO2 concentration, average
+            serial_number = 
+            standard_name = not defined
+            units = mg/m^3
+            group_name = 
+    [[CO2_IRGA_Vr]]
+        [[[xl]]]
+            sheet = slow_flux
+            name = covCcCc
+        [[[Attr]]]
+            height = 20m
+            instrument = Li-7500
+            long_name = CO2 concentration
+            serial_number = 
+            standard_name = not defined
+            units = mg^2/m^6
+            group_name = meteorology
+            statistic_type = variance
+    [[AH_IRGA_Av]]
+        [[[xl]]]
+            sheet = slow_met
+            name = Ah_7500_Avg
+        [[[Attr]]]
+            height = 20m
+            instrument = Li-7500
+            long_name = Absolute humidity
+            serial_number = 
+            standard_name = not defined
+            units = g/m^3
+            group_name = meteorology
+            statistic_type = average
+    [[AH_IRGA_Vr]]
+        [[[xl]]]
+            sheet = slow_flux
+            name = covAhAh
+        [[[Attr]]]
+            height = 20m
+            instrument = Li-7500
+            long_name = Absolute humidity
+            serial_number = 
+            standard_name = not defined
+            units = g^2/m^6
+            group_name = meteorology
+            statistic_type = variance
+    [[AH_HMP_2m]]
+        [[[xl]]]
+            sheet = slow_met
+            name = Ah_HMP_01_Avg
+        [[[Attr]]]
+            height = 2m
+            instrument = HMP45C
+            long_name = Absolute humidity
+            serial_number = 
+            standard_name = not defined
+            units = g/m^3
+            group_name = meteorology
+            statistic_type = average
+    [[Ta_HMP_2m]]
+        [[[xl]]]
+            sheet = slow_met
+            name = Ta_HMP_01_Avg
+        [[[Attr]]]
+            height = 2m
+            instrument = HMP45C
+            long_name = Air temperature
+            serial_number = 
+            standard_name = not defined
+            units = degC
+            group_name = meteorology
+            statistic_type = average
+    [[Fg_8cma]]
+        [[[xl]]]
+            sheet = slow_soil
+            name = Fg_HFP01_01_Avg
+        [[[Attr]]]
+            height = -0.08m
+            instrument = Huskeflux HFP01
+            long_name = Ground heat flux
+            serial_number = 
+            standard_name = not defined
+            units = W/m^2
+            group_name = soil
+            statistic_type = average
+    [[Fg_8cmb]]
+        [[[xl]]]
+            sheet = slow_soil
+            name = Fg_HFP01_02_Avg
+        [[[Attr]]]
+            height = -0.08m
+            instrument = Huskeflux HFP01
+            long_name = Ground heat flux
+            serial_number = 
+            standard_name = not defined
+            units = W/m^2
+            group_name = soil
+            statistic_type = average
+    [[Fg_8cmc]]
+        [[[xl]]]
+            sheet = slow_soil
+            name = Fg_HFP01_03_Avg
+        [[[Attr]]]
+            height = -0.08m
+            instrument = Huskeflux HFP01
+            long_name = Ground heat flux
+            serial_number = 
+            standard_name = not defined
+            units = W/m^2
+            group_name = soil
+            statistic_type = average
+    [[Sws_10cma]]
+        [[[xl]]]
+            sheet = slow_soil
+            name = Sws_VWC100_A_Avg
+        [[[Attr]]]
+            height = -0.1m
+            instrument = Campbell Scientific CS650
+            long_name = Soil water content
+            serial_number = 
+            standard_name = not defined
+            units = m^3/m^3
+            group_name = soil
+            statistic_type = average
+    [[Sws_10cmb]]
+        [[[xl]]]
+            sheet = slow_soil
+            name = Sws_VWC100_B_Avg
+        [[[Attr]]]
+            height = -0.1m
+            instrument = Campbell Scientific CS650
+            long_name = Soil water content
+            serial_number = 
+            standard_name = not defined
+            units = m^3/m^3
+            group_name = soil
+            statistic_type = average
+    [[Sws_10cmc]]
+        [[[xl]]]
+            sheet = slow_soil
+            name = Sws_VWC100_C_Avg
+        [[[Attr]]]
+            height = -0.1m
+            instrument = Campbell Scientific CS650
+            long_name = Soil water content
+            serial_number = 
+            standard_name = not defined
+            units = m^3/m^3
+            group_name = soil
+            statistic_type = average
+    [[Sws_25cma]]
+        [[[xl]]]
+            sheet = slow_soil
+            name = Sws_VWC250_A_Avg
+        [[[Attr]]]
+            height = -0.25m
+            instrument = Campbell Scientific CS6650
+            long_name = Soil water content
+            serial_number = 
+            standard_name = not defined
+            units = m^3/m^3
+            group_name = soil
+            statistic_type = average
+    [[Sws_25cmb]]
+        [[[xl]]]
+            sheet = slow_soil
+            name = Sws_VWC250_B_Avg
+        [[[Attr]]]
+            height = -0.25m
+            instrument = Campbell Scientific CS650
+            long_name = Soil water content
+            serial_number = 
+            standard_name = not defined
+            units = m^3/m^3
+            group_name = soil
+            statistic_type = average
+    [[Sws_25cmc]]
+        [[[xl]]]
+            sheet = slow_soil
+            name = Sws_VWC250_C_Avg
+        [[[Attr]]]
+            height = -0.25m
+            instrument = Campbell Scientific CS650
+            long_name = Soil water content
+            serial_number = 
+            standard_name = not defined
+            units = m^3/m^3
+            group_name = soil
+            statistic_type = average
+    [[Sws_50cma]]
+        [[[xl]]]
+            sheet = slow_soil
+            name = Sws_VWC500_A_Avg
+        [[[Attr]]]
+            height = -0.5m
+            instrument = Campbell Scientific CS650
+            long_name = Soil water content
+            serial_number = 
+            standard_name = not defined
+            units = m^3/m^3
+            group_name = soil
+            statistic_type = average
+    [[Sws_50cmb]]
+        [[[xl]]]
+            sheet = slow_soil
+            name = Sws_VWC500_B_Avg
+        [[[Attr]]]
+            height = -0.5m
+            instrument = Campbell Scientific CS650
+            long_name = Soil water content
+            serial_number = 
+            standard_name = not defined
+            units = m^3/m^3
+            group_name = soil
+            statistic_type = average
+    [[Sws_50cmc]]
+        [[[xl]]]
+            sheet = slow_soil
+            name = Sws_VWC500_C_Avg
+        [[[Attr]]]
+            height = -0.5m
+            instrument = Campbell Scientific CS650
+            long_name = Soil water content
+            serial_number = 
+            standard_name = not defined
+            units = m^3/m^3
+            group_name = soil
+            statistic_type = average
+    [[Sws_100cma]]
+        [[[xl]]]
+            sheet = slow_soil
+            name = Sws_VWC1000_A_Avg
+        [[[Attr]]]
+            height = -1m
+            instrument = Campbell Scientific CS650
+            long_name = Soil water content
+            serial_number = 
+            standard_name = not defined
+            units = m^3/m^3
+            group_name = soil
+            statistic_type = average
+    [[Sws_100cmb]]
+        [[[xl]]]
+            sheet = slow_soil
+            name = Sws_VWC1000_B_Avg
+        [[[Attr]]]
+            height = -1m
+            instrument = Campbell Scientific CS650
+            long_name = Soil water content
+            serial_number = 
+            standard_name = not defined
+            units = m^3/m^3
+            group_name = soil
+            statistic_type = average
+    [[Sws_100cmc]]
+        [[[xl]]]
+            sheet = slow_soil
+            name = Sws_VWC1000_C_Avg
+        [[[Attr]]]
+            height = -1m
+            instrument = Campbell Scientific CS650
+            long_name = Soil water content
+            serial_number = 
+            standard_name = not defined
+            units = m^3/m^3
+            group_name = soil
+            statistic_type = average
+    [[Sws_180cma]]
+        [[[xl]]]
+            sheet = slow_soil
+            name = Sws_VWC1800_A_Avg
+        [[[Attr]]]
+            height = -1.8m
+            instrument = Campbell Scientific CS650
+            long_name = Soil water content
+            serial_number = 
+            standard_name = not defined
+            units = m^3/m^3
+            group_name = soil
+            statistic_type = average
+    [[Sws_180cmb]]
+        [[[xl]]]
+            sheet = slow_soil
+            name = Sws_VWC1800_B_Avg
+        [[[Attr]]]
+            height = -1.8m
+            instrument = Campbell Scientific CS650
+            long_name = Soil water content
+            serial_number = 
+            standard_name = not defined
+            units = m^3/m^3
+            group_name = soil
+            statistic_type = average
+    [[Sws_180cmc]]
+        [[[xl]]]
+            sheet = slow_soil
+            name = Sws_VWC1800_C_Avg
+        [[[Attr]]]
+            height = -1.8m
+            instrument = Campbell Scientific CS650
+            long_name = Soil water content
+            serial_number = 
+            standard_name = not defined
+            units = m^3/m^3
+            group_name = soil
+            statistic_type = average
+    [[Ts_8cma]]
+        [[[xl]]]
+            sheet = slow_soil
+            name = Ts_TCAV_01_Avg
+        [[[Attr]]]
+            height = -0.08m
+            instrument = Campbell Scientific TCAV
+            long_name = Soil temperature
+            serial_number = 
+            standard_name = not defined
+            units = degC
+            group_name = soil
+            statistic_type = average
+    [[Ts_8cmb]]
+        [[[xl]]]
+            sheet = slow_soil
+            name = Ts_TCAV_02_Avg
+        [[[Attr]]]
+            height = -0.08m
+            instrument = Campbell Scientific TCAV
+            long_name = Soil temperature
+            serial_number = 
+            standard_name = not defined
+            units = degC
+            group_name = soil
+            statistic_type = average
+    [[Ts_8cmc]]
+        [[[xl]]]
+            sheet = slow_soil
+            name = Ts_TCAV_03_Avg
+        [[[Attr]]]
+            height = -0.08m
+            instrument = Campbell Scientific TCAV
+            long_name = Soil temperature
+            serial_number = 
+            standard_name = not defined
+            units = degC
+            group_name = soil
+            statistic_type = average
+    [[Ts_10cma]]
+        [[[xl]]]
+            sheet = slow_soil
+            name = Sws_T100_A_Avg
+        [[[Attr]]]
+            height = -0.1m
+            instrument = Campbell Scientific CS650
+            long_name = Soil temperature
+            serial_number = 
+            standard_name = not defined
+            units = degC
+            group_name = soil
+            statistic_type = average
+    [[Ts_10cmb]]
+        [[[xl]]]
+            sheet = slow_soil
+            name = Sws_T100_B_Avg
+        [[[Attr]]]
+            height = -0.1m
+            instrument = Campbell Scientific CS650
+            long_name = Soil temperature
+            serial_number = 
+            standard_name = not defined
+            units = degC
+            group_name = soil
+            statistic_type = average
+    [[Ts_10cmc]]
+        [[[xl]]]
+            sheet = slow_soil
+            name = Sws_T100_C_Avg
+        [[[Attr]]]
+            height = -0.1m
+            instrument = Campbell Scientific CS650
+            long_name = Soil temperature
+            serial_number = 
+            standard_name = not defined
+            units = degC
+            group_name = soil
+            statistic_type = average
+    [[Ts_25cma]]
+        [[[xl]]]
+            sheet = slow_soil
+            name = Sws_T250_A_Avg
+        [[[Attr]]]
+            height = -0.25m
+            instrument = Campbell Scientific CS650
+            long_name = Soil temperature
+            serial_number = 
+            standard_name = not defined
+            units = degC
+            group_name = soil
+            statistic_type = average
+    [[Ts_25cmb]]
+        [[[xl]]]
+            sheet = slow_soil
+            name = Sws_T250_B_Avg
+        [[[Attr]]]
+            height = -0.25m
+            instrument = Campbell Scientific CS650
+            long_name = Soil temperature
+            serial_number = 
+            standard_name = not defined
+            units = degC
+            group_name = soil
+            statistic_type = average
+    [[Ts_25cmc]]
+        [[[xl]]]
+            sheet = slow_soil
+            name = Sws_T250_C_Avg
+        [[[Attr]]]
+            height = -0.25m
+            instrument = Campbell Scientific CS650
+            long_name = Soil temperature
+            serial_number = 
+            standard_name = not defined
+            units = degC
+            group_name = soil
+            statistic_type = average
+    [[Ts_50cma]]
+        [[[xl]]]
+            sheet = slow_soil
+            name = Sws_T500_A_Avg
+        [[[Attr]]]
+            height = -0.5m
+            instrument = Campbell Scientific CS650
+            long_name = Soil temperature
+            serial_number = 
+            standard_name = not defined
+            units = degC
+            group_name = soil
+            statistic_type = average
+    [[Ts_50cmb]]
+        [[[xl]]]
+            sheet = slow_soil
+            name = Sws_T500_B_Avg
+        [[[Attr]]]
+            height = -0.5m
+            instrument = Campbell Scientific CS650
+            long_name = Soil temperature
+            serial_number = 
+            standard_name = not defined
+            units = degC
+            group_name = soil
+            statistic_type = average
+    [[Ts_50cmc]]
+        [[[xl]]]
+            sheet = slow_soil
+            name = Sws_T500_C_Avg
+        [[[Attr]]]
+            height = -0.5m
+            instrument = Campbell Scientific CS650
+            long_name = Soil temperature
+            serial_number = 
+            standard_name = not defined
+            units = degC
+            group_name = soil
+            statistic_type = average
+    [[Ts_100cma]]
+        [[[xl]]]
+            sheet = slow_soil
+            name = Sws_T1000_A_Avg
+        [[[Attr]]]
+            height = -1m
+            instrument = Campbell Scientific CS650
+            long_name = Soil temperature
+            serial_number = 
+            standard_name = not defined
+            units = degC
+            group_name = soil
+            statistic_type = average
+    [[Ts_100cmb]]
+        [[[xl]]]
+            sheet = slow_soil
+            name = Sws_T1000_B_Avg
+        [[[Attr]]]
+            height = -1m
+            instrument = Campbell Scientific CS650
+            long_name = Soil temperature
+            serial_number = 
+            standard_name = not defined
+            units = degC
+            group_name = soil
+            statistic_type = average
+    [[Ts_100cmc]]
+        [[[xl]]]
+            sheet = slow_soil
+            name = Sws_T1000_C_Avg
+        [[[Attr]]]
+            height = -1m
+            instrument = Campbell Scientific CS650
+            long_name = Soil temperature
+            serial_number = 
+            standard_name = not defined
+            units = degC
+            group_name = soil
+            statistic_type = average
+    [[Ts_180cma]]
+        [[[xl]]]
+            sheet = slow_soil
+            name = Sws_T1800_A_Avg
+        [[[Attr]]]
+            height = -1.8m
+            instrument = Campbell Scientific CS650
+            long_name = Soil temperature
+            serial_number = 
+            standard_name = not defined
+            units = degC
+            group_name = soil
+            statistic_type = average
+    [[Ts_180cmb]]
+        [[[xl]]]
+            sheet = slow_soil
+            name = Sws_T1800_B_Avg
+        [[[Attr]]]
+            height = -1.8m
+            instrument = Campbell Scientific CS650
+            long_name = Soil temperature
+            serial_number = 
+            standard_name = not defined
+            units = degC
+            group_name = soil
+            statistic_type = average
+    [[Ts_180cmc]]
+        [[[xl]]]
+            sheet = slow_soil
+            name = Sws_T1800_C_Avg
+        [[[Attr]]]
+            height = -1.8m
+            instrument = Campbell Scientific CS650
+            long_name = Soil temperature
+            serial_number = 
+            standard_name = not defined
+            units = degC
+            group_name = soil
+            statistic_type = average
+    [[Precip]]
+        [[[xl]]]
+            sheet = slow_met
+            name = Rain_Tot
+        [[[Attr]]]
+            height = 0.6m
+            instrument = Hydrological Services CS7000
+            long_name = Rainfall
+            serial_number = 
+            standard_name = not defined
+            units = mm
+            group_name = meteorology
+            statistic_type = sum
+    [[Wd_RMY_2m]]
+        [[[xl]]]
+            sheet = slow_extras
+            name = Wind_Dir_mean@2m
+        [[[Attr]]]
+            height = 2m
+            instrument = RM Young
+            long_name = Wind direction
+            serial_number = 
+            standard_name = wind_from_direction
+            units = degrees
+            group_name = meteorology
+            statistic_type = average
+    [[Ws_RMY_2m]]
+        [[[xl]]]
+            sheet = slow_extras
+            name = Wind_speed_m/s@2m
+        [[[Attr]]]
+            height = 2m
+            instrument = RM Young
+            long_name = Wind speed
+            serial_number = 
+            standard_name = wind_speed
+            units = m/s
+            group_name = meteorology
+            statistic_type = average
+    [[Wd_RMY_10m]]
+        [[[xl]]]
+            sheet = slow_extras
+            name = Wind_Dir_mean@10m
+        [[[Attr]]]
+            height = 10m
+            instrument = RM Young
+            long_name = Wind direction
+            serial_number = 
+            standard_name = wind_from_direction
+            units = degrees
+            group_name = meteorology
+            statistic_type = average
+    [[Ws_RMY_10m]]
+        [[[xl]]]
+            sheet = slow_extras
+            name = Wind_speed_m/s@10m
+        [[[Attr]]]
+            height = 10m
+            instrument = RM Young
+            long_name = Wind speed
+            serial_number = 
+            standard_name = wind_speed
+            units = m/s
+            group_name = meteorology
+            statistic_type = average
+    [[Wd_SONIC_Av]]
+        [[[xl]]]
+            sheet = slow_met
+            name = WD_CSAT_correction_(degrees)
+        [[[Attr]]]
+            height = <height>m
+            instrument = CSAT
+            long_name = Wind direction
+            serial_number = 
+            standard_name = not defined
+            units = degrees
+            group_name = meteorology
+            statistic_type = average
+    [[Ws_SONIC_Av]]
+        [[[xl]]]
+            sheet = slow_met
+            name = WS_CSAT_Avg
+        [[[Attr]]]
+            height = <height>m
+            instrument = CSAT
+            long_name = Wind speed
+            serial_number = 
+            standard_name = not defined
+            units = m/s
+            group_name = meteorology
+            statistic_type = average
+    [[ps]]
+        [[[xl]]]
+            sheet = slow_met
+            name = ps_7500_Avg
+        [[[Attr]]]
+            height = <height>m
+            instrument = Li-7500
+            long_name = Surface air pressure
+            serial_number = 
+            standard_name = surface_air_pressure
+            units = kPa
+            group_name = meteorology
+            statistic_type = average
+    [[Diag_SONIC]]
+        [[[xl]]]
+            sheet = slow_flux
+            name = CSAT_Warn
+        [[[Attr]]]
+            height = <height>m
+            instrument = CSAT
+            long_name = CSAT diagnostic value
+            serial_number = 
+            standard_name = not defined
+            units = none
+            group_name = 
+    [[Diag_IRGA]]
+        [[[xl]]]
+            sheet = slow_flux
+            name = 7500_Warn
+        [[[Attr]]]
+            height = <height>m
+            instrument = Li-7500
+            long_name = Li-7500 diagnostic value
+            serial_number = 
+            standard_name = not defined
+            units = none
+            group_name = 
+    [[AGC_IRGA]]
+        [[[xl]]]
+            sheet = slow_flux
+            name = AGC_7500_Avg
+        [[[Attr]]]
+            height = <height>m
+            instrument = Li-7500
+            long_name = Li-7500 automatic gain control
+            serial_number = 
+            standard_name = not defined
+            units = none
+            group_name = 
+    [[Vbat]]
+        [[[xl]]]
+            sheet = slow_met
+            name = Vbat_Avg
+        [[[Attr]]]
+            instrument = Campbell Scientific CR3000 logger
+            long_name = Battery voltage at logger
+            serial_number = 
+            standard_name = not defined
+            units = V
+            group_name = 
+            height = 
+    [[Tpanel]]
+        [[[xl]]]
+            sheet = slow_met
+            name = Tpanel_Avg
+        [[[Attr]]]
+            instrument = Campbell Scientific CR3000 logger
+            long_name = Panel temperature at logger
+            serial_number = 
+            standard_name = not defined
+            units = degC
+            group_name = 
+            height = 
+    [[Uz_SONIC_Vr]]
+        [[[xl]]]
+            sheet = slow_flux
+            name = covUzUz
+        [[[Attr]]]
+            height = 20m
+            instrument = CSAT3
+            long_name = Vertical wind velocity component, sonic coordinates
+            serial_number = 
+            standard_name = not defined
+            units = m^2/s^2
+            group_name = meteorology
+            statistic_type = variance
+    [[Ux_SONIC_Vr]]
+        [[[xl]]]
+            sheet = slow_flux
+            name = covUxUx
+        [[[Attr]]]
+            height = 20m
+            instrument = CSAT3
+            long_name = Longitudinal wind velocity component, sonic coordinates
+            serial_number = 
+            standard_name = not defined
+            units = m^2/s^2
+            group_name = meteorology
+            statistic_type = variance
+    [[Uy_SONIC_Vr]]
+        [[[xl]]]
+            sheet = slow_flux
+            name = covUyUy
+        [[[Attr]]]
+            height = 20m
+            instrument = CSAT3
+            long_name = Lateral wind velocity component, sonic coordinates
+            serial_number = 
+            standard_name = not defined
+            units = m^2/s^2
+            group_name = meteorology
+            statistic_type = variance
+    [[Ux_SONIC_Av]]
+        [[[xl]]]
+            sheet = slow_met
+            name = Ux_CSAT_Avg
+        [[[Attr]]]
+            height = <height>m
+            instrument = CSAT
+            long_name = Longitudinal wind velocity component, sonic coordinates
+            serial_number = 
+            standard_name = not defined
+            units = m/s
+            group_name = meteorology
+            statistic_type = average
+    [[Uy_SONIC_Av]]
+        [[[xl]]]
+            sheet = slow_met
+            name = Uy_CSAT_Avg
+        [[[Attr]]]
+            height = <height>m
+            instrument = CSAT
+            long_name = Lateral wind velocity component, sonic coordinates
+            serial_number = 
+            standard_name = not defined
+            units = m/s
+            group_name = meteorology
+            statistic_type = average
+    [[Uz_SONIC_Av]]
+        [[[xl]]]
+            sheet = slow_met
+            name = Uz_CSAT_Avg
+        [[[Attr]]]
+            height = <height>m
+            instrument = CSAT
+            long_name = Vertical wind velocity component, sonic coordinates
+            serial_number = 
+            standard_name = not defined
+            units = m/s
+            group_name = meteorology
+            statistic_type = average

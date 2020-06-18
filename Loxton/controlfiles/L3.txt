@@ -1,14 +1,14 @@
 level = L3
 [Files]
-    file_path = ../PFP_examples/Loxton/Data/Tower/
+    file_path = ../PFP3_examples/Loxton/Data/Tower/
     in_filename = Loxton_L2.nc
     out_filename = Loxton_L3.nc
-    plot_path = ../PFP_examples/Loxton/Plots/
+    plot_path = ../PFP3_examples/Loxton/Plots/
 [Options]
     zms = 10
     CO2Units = umol/mol
-    FcUnits = umol/m2/s
-    ApplyFcStorage = Yes
+    Fco2Units = umol/m^2/s
+    ApplyFco2Storage = Yes
     UseL2Fluxes = No
     MassmanCorrection = No
 [Soil]
@@ -48,20 +48,18 @@ level = L3
         [[[RangeCheck]]]
             lower = -200
             upper = 1500
-    [[Fc_storage]]
+    [[Fco2_storage]]
         [[[MergeSeries]]]
-            source = Fc_profile,Fc_single
+            source = Fco2_profile,Fco2_single
         [[[RangeCheck]]]
             lower = -50
             upper = 50
-    [[Fc]]
+    [[Fco2]]
         [[[MergeSeries]]]
-            source = Fc,Fc_EP
+            source = Fco2,Fco2_EP
         [[[RangeCheck]]]
             lower = -50
             upper = 50
-        [[[ApplyFcStorage]]]
-            source = Fc_storage
     [[Fm]]
         [[[MergeSeries]]]
             source = Fm,Fm_EP
@@ -80,9 +78,9 @@ level = L3
         [[[RangeCheck]]]
             lower = -10
             upper = 50
-    [[Ah]]
+    [[AH]]
         [[[MergeSeries]]]
-            source = Ah_HMP_10m,Ah_IRGA_Av
+            source = AH_HMP_10m,AH_IRGA_Av
         [[[RangeCheck]]]
             lower = 0
             upper = 35
@@ -126,16 +124,16 @@ level = L3
     [[Radiative fluxes]]
         variables = Fsd,Fsu,Fld,Flu,Fn
     [[Turbulent fluxes]]
-        variables = Fh,Fe,Fc,ustar,Fm
+        variables = Fh,Fe,Fco2,ustar,Fm
     [[Fh diagnostics]]
-        variables = Fh,UzT,Diag_SONIC,Diag_IRGA,AGC_IRGA,Ah_IRGA_Sd,CO2_IRGA_Sd
+        variables = Fh,UzT,Diag_SONIC,Diag_IRGA,AGC_IRGA,AH_IRGA_Sd,CO2_IRGA_Sd
     [[Fe diagnostics]]
-        variables = Fe,UzA,Diag_SONIC,Diag_IRGA,AGC_IRGA,Ah_IRGA_Sd,CO2_IRGA_Sd
+        variables = Fe,UzA,Diag_SONIC,Diag_IRGA,AGC_IRGA,AH_IRGA_Sd,CO2_IRGA_Sd
     [[Fc diagnostics]]
-        variables = Fc,UzC,Diag_SONIC,Diag_IRGA,AGC_IRGA,Ah_IRGA_Sd,CO2_IRGA_Sd
+        variables = Fco2,UzC,Diag_SONIC,Diag_IRGA,AGC_IRGA,AH_IRGA_Sd,CO2_IRGA_Sd
     [[Air temperature, humidity and CO2]]
-        variables = Ta,Ta_HMP_10m,Ah,Ah_HMP_10m,CO2_IRGA_Av
+        variables = Ta,Ta_HMP_10m,AH,AH_HMP_10m,CO2_IRGA_Av
     [[Soil temperature, water content and heat flux]]
         variables = Precip,Ts,Sws,Sws_005cm,Fg
     [[Pressure, wind speed and direction]]
-        variables = ps,Ws,Ux,Uy,Uz,Wd
+        variables = ps,Ws,Ux_SONIC_Av,Uy_SONIC_Av,Uz_SONIC_Av,Wd

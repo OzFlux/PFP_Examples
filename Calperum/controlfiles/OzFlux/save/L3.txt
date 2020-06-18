@@ -7,7 +7,6 @@ level = L3
 [Options]
     MassmanCorrection = Yes
     CO2Units = umol/mol
-    FcUnits = umol/m2/s
     zms = 20
 [Soil]
     FgDepth = 0.08
@@ -42,7 +41,7 @@ level = L3
         [[[RangeCheck]]]
             lower = -100
             upper = 600
-    [[Fc]]
+    [[Fco2]]
         [[[RangeCheck]]]
             lower = -50
             upper = 50
@@ -60,9 +59,9 @@ level = L3
         [[[RangeCheck]]]
             lower = -5
             upper = 50
-    [[Ah]]
+    [[AH]]
         [[[MergeSeries]]]
-            source = Ah_HMP_2m,Ah_IRGA_Av
+            source = AH_HMP_2m,AH_IRGA_Av
         [[[RangeCheck]]]
             lower = 0
             upper = 25
@@ -112,18 +111,18 @@ level = L3
     [[Radiative fluxes]]
         variables = Fsd,Fsu,Fld,Flu,Fn
     [[Turbulent fluxes]]
-        variables = Fh,Fe,Fc,ustar,Fm
+        variables = Fh,Fe,Fco2,ustar,Fm
     [[Air temperature, humidity and CO2]]
-        variables = Ta,Ah,CO2,Precip
+        variables = Ta,AH,CO2,Precip
     [[Soil temperature, water content and heat flux]]
         variables = Ts,Sws,Fg,Precip
     [[Pressure, wind speed and direction]]
-        variables = ps,Ws,Ux,Uy,Uz,Wd
-    [[Fc, precip and ppm]]
-        variables = Fc,Precip,CO2
+        variables = ps,Ws,Ux_SONIC_Av,Uy_SONIC_Av,Uz_SONIC_Av,Wd
+    [[Fco2, precip and ppm]]
+        variables = Fco2,Precip,CO2
     [[Fh diagnostics]]
-        variables = Fh,UzT,Diag_SONIC,Diag_IRGA,AGC_IRGA,Ah_IRGA_Sd,CO2_IRGA_Sd
+        variables = Fh,UzT,Diag_SONIC,Diag_IRGA,AGC_IRGA,AH_IRGA_Sd,CO2_IRGA_Sd
     [[Fe diagnostics]]
-        variables = Fe,UzA,Diag_SONIC,Diag_IRGA,AGC_IRGA,Ah_IRGA_Sd,CO2_IRGA_Sd
-    [[Fc diagnostics]]
-        variables = Fc,UzC,Diag_SONIC,Diag_IRGA,AGC_IRGA,Ah_IRGA_Sd,CO2_IRGA_Sd
+        variables = Fe,UzA,Diag_SONIC,Diag_IRGA,AGC_IRGA,AH_IRGA_Sd,CO2_IRGA_Sd
+    [[Fco2 diagnostics]]
+        variables = Fco2,UzC,Diag_SONIC,Diag_IRGA,AGC_IRGA,AH_IRGA_Sd,CO2_IRGA_Sd

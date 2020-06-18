@@ -5,7 +5,7 @@ level = nc2csv_reddyproc
     out_filename = Calperum_L3_REddyProc.csv
 [Variables]
     [[NEE]]
-        name = Fc
+        name = Fco2
         format = 0.00
     [[Ustar]]
         name = ustar

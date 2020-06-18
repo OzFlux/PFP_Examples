@@ -26,7 +26,7 @@ level = nc2csv_fluxnet
     end_datetime = 2017-01-01 00:00
 [Variables]
     [[FC]]
-        name = Fc
+        name = Fco2
         format = 0.00
     [[CO2]]
         name = CO2
@@ -41,7 +41,7 @@ level = nc2csv_fluxnet
         name = Ta
         format = 0.00
     [[H2O]]
-        name = Ah
+        name = AH
         format = 0.00
     [[LE]]
         name = Fe
