@@ -1,11 +1,9 @@
 level = L2
 [Files]
-    file_path = ../OzFlux/Sites/Calperum/Data/Tower/2016/
+    file_path = ../PFP3_examples/Calperum/Data/Tower/2016/
     in_filename = Calperum_2016_L1.nc
     out_filename = Calperum_2016_L2.nc
-
 [Variables]
-    # Radiation
     [[Flu]]
         [[[RangeCheck]]]
             lower = 250
@@ -26,13 +24,10 @@ level = L2
         [[[RangeCheck]]]
             lower = -10
             upper = 1500
-    # Covariances: Temperature
     [[UzT]]
         [[[RangeCheck]]]
             lower = -0.2
             upper = 1
-    #        [[[DiurnalCheck]]]
-    #            NumSd      = "[5]*12"
     [[UxT]]
         [[[RangeCheck]]]
             lower = -2
@@ -41,13 +36,10 @@ level = L2
         [[[RangeCheck]]]
             lower = -2
             upper = 2
-    # Covariances: H2O
     [[UzA]]
         [[[RangeCheck]]]
             lower = -0.01
             upper = 0.1
-    #        [[[DiurnalCheck]]]
-    #            NumSd      = "[5]*12"
     [[UxA]]
         [[[RangeCheck]]]
             lower = -1
@@ -56,13 +48,10 @@ level = L2
         [[[RangeCheck]]]
             lower = -1
             upper = 1
-    # Covariances: CO2
     [[UzC]]
         [[[RangeCheck]]]
             lower = -2
             upper = 2
-    #        [[[DiurnalCheck]]]
-    #            NumSd      = "[5]*12"
     [[UxC]]
         [[[RangeCheck]]]
             lower = -4
@@ -71,38 +60,26 @@ level = L2
         [[[RangeCheck]]]
             lower = -4
             upper = 4
-    # Covariances and variances: Momentum
     [[UxUz]]
         [[[RangeCheck]]]
             lower = -10
             upper = 10
-    #        [[[DiurnalCheck]]]
-    #            NumSd      = "[5]*12"
     [[UyUz]]
         [[[RangeCheck]]]
             lower = -10
             upper = 10
-    #        [[[DiurnalCheck]]]
-    #            NumSd      = "[5]*12"
     [[UxUy]]
         [[[RangeCheck]]]
             lower = -10
             upper = 10
-    #        [[[DiurnalCheck]]]
-    #            NumSd      = "[5]*12"
     [[Ux_SONIC_Vr]]
         [[[RangeCheck]]]
             lower = -10
             upper = 10
-    #        [[[DiurnalCheck]]]
-    #            NumSd      = "[5]*12"
     [[Uy_SONIC_Vr]]
         [[[RangeCheck]]]
             lower = -10
             upper = 10
-    #        [[[DiurnalCheck]]]
-    #            NumSd      = "[5]*12"
-    # Meteorology: CSAT
     [[Tv_SONIC_Av]]
         [[[RangeCheck]]]
             lower = 0
@@ -131,7 +108,6 @@ level = L2
         [[[RangeCheck]]]
             lower = -0.5
             upper = 10.5
-    # Meteorology: LI-7500
     [[AH_IRGA_Av]]
         [[[RangeCheck]]]
             lower = 0
@@ -160,7 +136,6 @@ level = L2
         [[[RangeCheck]]]
             lower = 0
             upper = 65
-    # Meteorology: HMP45c
     [[AH_HMP_2m]]
         [[[RangeCheck]]]
             lower = 0
@@ -199,7 +174,6 @@ level = L2
             11 = 2016-8-26 03:00,2016-8-26 03:00
             12 = 2016-8-30 00:00,2016-8-30 02:00
             13 = 2016-8-31 05:00,2016-8-31 08:00
-    # Meteorology: RMYoung
     [[Ws_RMY_2m]]
         [[[RangeCheck]]]
             lower = 0
@@ -216,12 +190,10 @@ level = L2
         [[[RangeCheck]]]
             lower = 0
             upper = 360
-    # Meteorology: Precip
     [[Precip]]
         [[[RangeCheck]]]
             lower = 0
             upper = 20
-    # Soil: Ground heat flux
     [[Fg_8cma]]
         [[[RangeCheck]]]
             lower = -100
@@ -234,7 +206,6 @@ level = L2
         [[[RangeCheck]]]
             lower = -100
             upper = 100
-    # Soil: Soil moisture
     [[Sws_10cma]]
         [[[RangeCheck]]]
             lower = 0
@@ -325,7 +296,6 @@ level = L2
             upper = 0.5
         [[[ExcludeDates]]]
             0 = 2016-7-07 10:00,2016-7-07 11:00
-    # Soil: Soil temperature
     [[Ts_8cma]]
         [[[RangeCheck]]]
             lower = 2
@@ -434,14 +404,9 @@ level = L2
             upper = 60
         [[[ExcludeDates]]]
             0 = 2016-7-07 10:00,2016-7-07 11:00
-
 [Plots]
     [[Radiative fluxes]]
         variables = Fsd_Li,Fsd,Fsu,Fld,Flu
-    #        YLMin = "['Auto','Auto','Auto','Auto','0']"     # dimensions of the individual plots
-    #        YLMax = "['Auto','Auto','Auto','Auto','500']"   # all four lines must be uncommented to use
-    #        YRMin = "['Auto','Auto','Auto','Auto','0']"     # the number of items in these four lists must be equal
-    #        YRMax = "['Auto','Auto','Auto','Auto','500']"   #     to the number of items in the Variables list
     [[Covariances (CSAT)]]
         variables = UzT,UxT,UyT,UxUz,UyUz,UxUy,Ux_SONIC_Vr,Uy_SONIC_Vr
     [[Covariances (CSAT&7500)]]

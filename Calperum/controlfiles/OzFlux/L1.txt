@@ -929,11 +929,12 @@ level = L1
         [[[Attr]]]
             height = <height>m
             instrument = CSAT
-            long_name = CSAT diagnostic value
+            long_name = Sonic diagnostic value
             serial_number = 
             standard_name = not defined
             units = none
-            group_name = 
+            group_name = diagnostics
+            statistic_type = average
     [[Diag_IRGA]]
         [[[xl]]]
             sheet = slow_flux
@@ -941,11 +942,12 @@ level = L1
         [[[Attr]]]
             height = <height>m
             instrument = Li-7500
-            long_name = Li-7500 diagnostic value
+            long_name = IRGA diagnostic value
             serial_number = 
             standard_name = not defined
             units = none
-            group_name = 
+            group_name = diagnostics
+            statistic_type = average
     [[AGC_IRGA]]
         [[[xl]]]
             sheet = slow_flux
@@ -953,11 +955,12 @@ level = L1
         [[[Attr]]]
             height = <height>m
             instrument = Li-7500
-            long_name = Li-7500 automatic gain control
+            long_name = IRGA automatic gain control value
             serial_number = 
             standard_name = not defined
             units = none
-            group_name = 
+            group_name = diagnostics
+            statistic_type = average
     [[Vbat]]
         [[[xl]]]
             sheet = slow_met

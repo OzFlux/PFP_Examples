@@ -1,13 +1,13 @@
 level = L5
 [Files]
-    plot_path = ../PFP_examples/Loxton/Plots/
-    file_path = ../PFP_examples/Loxton/Data/Tower/
+    plot_path = ../PFP3_examples/Loxton/Plots/
+    file_path = ../PFP3_examples/Loxton/Data/Tower/
     in_filename = Loxton_L4.nc
     out_filename = Loxton_L5.nc
     cpd_filename = Loxton_L3_CPD_McHugh.xls
 [Options]
     MaxGapInterpolate = 3
-    FilterList = Fc
+    FilterList = Fco2
     TurbulenceFilter = ustar
     DayNightFilter = Fsd
     AcceptDayTimes = Yes
@@ -31,9 +31,9 @@ level = L5
         [[[GapFillUsingSOLO]]]
             [[[[Fh_SOLO]]]]
                 drivers = Fn,Fg,SH,VPD,Ta,Ts
-    [[Fc]]
+    [[Fco2]]
         [[[MergeSeries]]]
-            source = Fc,Fc_SOLO
+            source = Fco2,Fco2_SOLO
         [[[GapFillUsingSOLO]]]
-            [[[[Fc_SOLO]]]]
+            [[[[Fco2_SOLO]]]]
                 drivers = Fn,Fg,SH,VPD,Ta,Ts

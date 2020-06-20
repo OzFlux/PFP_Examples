@@ -99,7 +99,7 @@ of Samantha Connor was supported by a summer scholarship from the National Progr
             serial_number = FM007120
             standard_name = not defined
             units = m.degC/s
-            group_name = ""
+            group_name = 
     [[UxT]]
         [[[xl]]]
             sheet = slow_flux
@@ -111,7 +111,7 @@ of Samantha Connor was supported by a summer scholarship from the National Progr
             serial_number = FM007120
             standard_name = not defined
             units = m.degC/s
-            group_name = ""
+            group_name = 
     [[UyT]]
         [[[xl]]]
             sheet = slow_flux
@@ -123,7 +123,7 @@ of Samantha Connor was supported by a summer scholarship from the National Progr
             serial_number = FM007120
             standard_name = not defined
             units = m.degC/s
-            group_name = ""
+            group_name = 
     [[UzA]]
         [[[xl]]]
             sheet = slow_flux
@@ -304,7 +304,7 @@ of Samantha Connor was supported by a summer scholarship from the National Progr
             serial_number = FM007122
             standard_name = not defined
             units = degC
-            group_name = ""
+            group_name = 
     [[CO2_IRGA_Av]]
         [[[xl]]]
             sheet = slow_flux
@@ -316,7 +316,7 @@ of Samantha Connor was supported by a summer scholarship from the National Progr
             serial_number = FM007121
             standard_name = not defined
             units = mg/m^3
-            group_name = ""
+            group_name = 
     [[AH_IRGA_Av]]
         [[[xl]]]
             sheet = slow_flux
@@ -364,7 +364,7 @@ of Samantha Connor was supported by a summer scholarship from the National Progr
             height = 10m
             instrument = HMP45A
             long_name = Absolute humidity
-            serial_number = ""
+            serial_number = 
             standard_name = not defined
             units = g/m^3
             group_name = meteorology
@@ -377,7 +377,7 @@ of Samantha Connor was supported by a summer scholarship from the National Progr
             height = 10m
             instrument = HMP45A
             long_name = Air temperature
-            serial_number = ""
+            serial_number = 
             standard_name = not defined
             units = degC
             group_name = meteorology
@@ -390,7 +390,7 @@ of Samantha Connor was supported by a summer scholarship from the National Progr
             height = -0.1m
             instrument = Middleton CN3
             long_name = Ground heat flux
-            serial_number = ""
+            serial_number = 
             standard_name = not defined
             units = W/m^2
             group_name = soil
@@ -403,7 +403,7 @@ of Samantha Connor was supported by a summer scholarship from the National Progr
             height = -0.1m
             instrument = Middleton CN3
             long_name = Ground heat flux
-            serial_number = ""
+            serial_number = 
             standard_name = not defined
             units = W/m^2
             group_name = soil
@@ -416,7 +416,7 @@ of Samantha Connor was supported by a summer scholarship from the National Progr
             height = -0.1m
             instrument = Middleton CN3
             long_name = Ground heat flux
-            serial_number = ""
+            serial_number = 
             standard_name = not defined
             units = W/m^2
             group_name = soil
@@ -429,7 +429,7 @@ of Samantha Connor was supported by a summer scholarship from the National Progr
             height = -0.1m
             instrument = Middleton CN3
             long_name = Ground heat flux
-            serial_number = ""
+            serial_number = 
             standard_name = not defined
             units = W/m^2
             group_name = soil
@@ -442,7 +442,7 @@ of Samantha Connor was supported by a summer scholarship from the National Progr
             height = -0.1m
             instrument = Middleton CN3
             long_name = Ground heat flux
-            serial_number = ""
+            serial_number = 
             standard_name = not defined
             units = W/m^2
             group_name = soil
@@ -455,7 +455,7 @@ of Samantha Connor was supported by a summer scholarship from the National Progr
             height = -0.1m
             instrument = Middleton CN3
             long_name = Ground heat flux
-            serial_number = ""
+            serial_number = 
             standard_name = not defined
             units = W/m^2
             group_name = soil
@@ -468,7 +468,7 @@ of Samantha Connor was supported by a summer scholarship from the National Progr
             height = -0.1m
             instrument = Hukseflux self calibrating
             long_name = Ground heat flux
-            serial_number = ""
+            serial_number = 
             standard_name = not defined
             units = W/m^2
             group_name = soil
@@ -481,7 +481,7 @@ of Samantha Connor was supported by a summer scholarship from the National Progr
             height = -0.05m
             instrument = Campbell Scientific CS616
             long_name = Soil water content
-            serial_number = ""
+            serial_number = 
             standard_name = not defined
             units = m^3/m^3
             group_name = soil
@@ -494,7 +494,7 @@ of Samantha Connor was supported by a summer scholarship from the National Progr
             height = -0.15m
             instrument = Campbell Scientific CS616
             long_name = Soil water content
-            serial_number = ""
+            serial_number = 
             standard_name = not defined
             units = m^3/m^3
             group_name = soil
@@ -507,7 +507,7 @@ of Samantha Connor was supported by a summer scholarship from the National Progr
             height = -0.45m
             instrument = Campbell Scientific CS616
             long_name = Soil water content
-            serial_number = ""
+            serial_number = 
             standard_name = not defined
             units = m^3/m^3
             group_name = soil
@@ -520,7 +520,7 @@ of Samantha Connor was supported by a summer scholarship from the National Progr
             height = -0.70m
             instrument = Campbell Scientific CS616
             long_name = Soil water content
-            serial_number = ""
+            serial_number = 
             standard_name = not defined
             units = m^3/m^3
             group_name = soil
@@ -533,7 +533,7 @@ of Samantha Connor was supported by a summer scholarship from the National Progr
             height = -1.00m
             instrument = Campbell Scientific CS616
             long_name = Soil water content
-            serial_number = ""
+            serial_number = 
             standard_name = not defined
             units = m^3/m^3
             group_name = soil
@@ -546,7 +546,7 @@ of Samantha Connor was supported by a summer scholarship from the National Progr
             height = -0.02m
             instrument = Campbell Scientific 105T
             long_name = Soil temperature
-            serial_number = ""
+            serial_number = 
             standard_name = not defined
             units = degC
             group_name = soil
@@ -559,7 +559,7 @@ of Samantha Connor was supported by a summer scholarship from the National Progr
             height = -0.02m
             instrument = Campbell Scientific 105T
             long_name = Soil temperature
-            serial_number = ""
+            serial_number = 
             standard_name = not defined
             units = degC
             group_name = soil
@@ -572,7 +572,7 @@ of Samantha Connor was supported by a summer scholarship from the National Progr
             height = -0.02m
             instrument = Campbell Scientific 105T
             long_name = Soil temperature
-            serial_number = ""
+            serial_number = 
             standard_name = not defined
             units = degC
             group_name = soil
@@ -585,7 +585,7 @@ of Samantha Connor was supported by a summer scholarship from the National Progr
             height = -0.02m
             instrument = Campbell Scientific 105T
             long_name = Soil temperature
-            serial_number = ""
+            serial_number = 
             standard_name = not defined
             units = degC
             group_name = soil
@@ -598,7 +598,7 @@ of Samantha Connor was supported by a summer scholarship from the National Progr
             height = -0.06m
             instrument = Campbell Scientific 105T
             long_name = Soil temperature
-            serial_number = ""
+            serial_number = 
             standard_name = not defined
             units = degC
             group_name = soil
@@ -611,7 +611,7 @@ of Samantha Connor was supported by a summer scholarship from the National Progr
             height = -0.06m
             instrument = Campbell Scientific 105T
             long_name = Soil temperature
-            serial_number = ""
+            serial_number = 
             standard_name = not defined
             units = degC
             group_name = soil
@@ -624,7 +624,7 @@ of Samantha Connor was supported by a summer scholarship from the National Progr
             height = -0.06m
             instrument = Campbell Scientific 105T
             long_name = Soil temperature
-            serial_number = ""
+            serial_number = 
             standard_name = not defined
             units = degC
             group_name = soil
@@ -637,7 +637,7 @@ of Samantha Connor was supported by a summer scholarship from the National Progr
             height = -0.06m
             instrument = Campbell Scientific 105T
             long_name = Soil temperature
-            serial_number = ""
+            serial_number = 
             standard_name = not defined
             units = degC
             group_name = soil
@@ -650,7 +650,7 @@ of Samantha Connor was supported by a summer scholarship from the National Progr
             height = -0.15m
             instrument = Campbell Scientific 105T
             long_name = Soil temperature
-            serial_number = ""
+            serial_number = 
             standard_name = not defined
             units = degC
             group_name = soil
@@ -663,7 +663,7 @@ of Samantha Connor was supported by a summer scholarship from the National Progr
             height = -0.45m
             instrument = Campbell Scientific 105T
             long_name = Soil temperature
-            serial_number = ""
+            serial_number = 
             standard_name = not defined
             units = degC
             group_name = soil
@@ -676,7 +676,7 @@ of Samantha Connor was supported by a summer scholarship from the National Progr
             height = -0.70m
             instrument = Campbell Scientific 105T
             long_name = Soil temperature
-            serial_number = ""
+            serial_number = 
             standard_name = not defined
             units = degC
             group_name = soil
@@ -689,7 +689,7 @@ of Samantha Connor was supported by a summer scholarship from the National Progr
             height = -1.00m
             instrument = Campbell Scientific 105T
             long_name = Soil temperature
-            serial_number = ""
+            serial_number = 
             standard_name = not defined
             units = degC
             group_name = soil
@@ -702,7 +702,7 @@ of Samantha Connor was supported by a summer scholarship from the National Progr
             height = 5.5m
             instrument = TE525MM
             long_name = Rainfall
-            serial_number = ""
+            serial_number = 
             standard_name = not defined
             units = mm
             group_name = meteorology
@@ -715,10 +715,10 @@ of Samantha Connor was supported by a summer scholarship from the National Progr
             height = 0m
             instrument = sprinkler
             long_name = Irrigation, 30 minute total
-            serial_number = ""
+            serial_number = 
             standard_name = not defined
             units = mm
-            group_name = ""
+            group_name = 
     [[Wd_034B_Av]]
         [[[xl]]]
             sheet = slow_flux
@@ -727,7 +727,7 @@ of Samantha Connor was supported by a summer scholarship from the National Progr
             height = 10m
             instrument = WindSet 034B
             long_name = Wind direction
-            serial_number = ""
+            serial_number = 
             standard_name = wind_from_direction
             units = degrees
             group_name = meteorology
@@ -740,7 +740,7 @@ of Samantha Connor was supported by a summer scholarship from the National Progr
             height = 10m
             instrument = WindSet 034B
             long_name = Wind speed
-            serial_number = ""
+            serial_number = 
             standard_name = wind_speed
             units = m/s
             group_name = meteorology
@@ -831,7 +831,7 @@ of Samantha Connor was supported by a summer scholarship from the National Progr
             height = 1.20m
             instrument = CS100
             long_name = Surface air pressure
-            serial_number = ""
+            serial_number = 
             standard_name = surface_air_pressure
             units = hPa
             group_name = meteorology
@@ -847,7 +847,7 @@ of Samantha Connor was supported by a summer scholarship from the National Progr
             serial_number = FM007120
             standard_name = not defined
             units = none
-            group_name = ""
+            group_name = 
     [[Diag_IRGA]]
         [[[xl]]]
             sheet = slow_flux
@@ -859,7 +859,7 @@ of Samantha Connor was supported by a summer scholarship from the National Progr
             serial_number = FM007121
             standard_name = not defined
             units = none
-            group_name = ""
+            group_name = 
     [[AGC_IRGA]]
         [[[xl]]]
             sheet = slow_flux
@@ -871,7 +871,7 @@ of Samantha Connor was supported by a summer scholarship from the National Progr
             serial_number = FM007121
             standard_name = not defined
             units = none
-            group_name = ""
+            group_name = 
     [[PAR]]
         [[[xl]]]
             sheet = slow_flux
@@ -880,7 +880,7 @@ of Samantha Connor was supported by a summer scholarship from the National Progr
             height = 10m
             instrument = Li190SB
             long_name = Photosynthetically active radiation
-            serial_number = ""
+            serial_number = 
             standard_name = not defined
             units = umol/m^2/s
             group_name = radiation
@@ -893,10 +893,10 @@ of Samantha Connor was supported by a summer scholarship from the National Progr
             height = 10m
             instrument = BF3/Delta-T Devices
             long_name = global radiation
-            serial_number = ""
+            serial_number = 
             standard_name = not defined
             units = W/m^2
-            group_name = ""
+            group_name = 
     [[rad_diffuse]]
         [[[xl]]]
             sheet = slow_flux
@@ -905,10 +905,10 @@ of Samantha Connor was supported by a summer scholarship from the National Progr
             height = 10m
             instrument = BF3/Delta-T Devices
             long_name = diffuse radiation
-            serial_number = ""
+            serial_number = 
             standard_name = not defined
             units = W/m^2
-            group_name = ""
+            group_name = 
     [[Vbat]]
         [[[xl]]]
             sheet = slow_flux
@@ -916,11 +916,11 @@ of Samantha Connor was supported by a summer scholarship from the National Progr
         [[[Attr]]]
             instrument = Campbell Scientific CR5000 logger
             long_name = Battery voltage at logger
-            serial_number = ""
+            serial_number = 
             standard_name = not defined
             units = V
-            group_name = ""
-            height = ""
+            group_name = 
+            height = 
     [[Tpanel]]
         [[[xl]]]
             sheet = slow_flux
@@ -928,11 +928,11 @@ of Samantha Connor was supported by a summer scholarship from the National Progr
         [[[Attr]]]
             instrument = Campbell Scientific CR5000 logger
             long_name = Panel temperature at logger
-            serial_number = ""
+            serial_number = 
             standard_name = not defined
             units = degC
-            group_name = ""
-            height = ""
+            group_name = 
+            height = 
     [[ustar_EP]]
         [[[xl]]]
             sheet = eddy_pro
@@ -970,7 +970,7 @@ of Samantha Connor was supported by a summer scholarship from the National Progr
             serial_number = FM007120
             standard_name = not defined
             units = unit
-            group_name = ""
+            group_name = 
     [[Fh_EP]]
         [[[xl]]]
             sheet = eddy_pro
@@ -995,7 +995,7 @@ of Samantha Connor was supported by a summer scholarship from the National Progr
             serial_number = FM007120 and FM007121
             standard_name = not defined
             units = unit
-            group_name = ""
+            group_name = 
     [[Fe_EP]]
         [[[xl]]]
             sheet = eddy_pro
@@ -1020,7 +1020,7 @@ of Samantha Connor was supported by a summer scholarship from the National Progr
             serial_number = FM007120 and FM007121
             standard_name = not defined
             units = unit
-            group_name = ""
+            group_name = 
     [[Fco2_EP]]
         [[[xl]]]
             sheet = eddy_pro
@@ -1045,7 +1045,7 @@ of Samantha Connor was supported by a summer scholarship from the National Progr
             serial_number = FM007120 and FM007121
             standard_name = not defined
             units = unit
-            group_name = ""
+            group_name = 
     [[Fco2_profile]]
         [[[xl]]]
             sheet = dummy
@@ -1054,7 +1054,7 @@ of Samantha Connor was supported by a summer scholarship from the National Progr
             height = 0.5m to 10m
             instrument = dummy profile
             long_name = CO2 flux
-            serial_number = ""
+            serial_number = 
             standard_name = not defined
             units = umol/m^2/s
             group_name = flux

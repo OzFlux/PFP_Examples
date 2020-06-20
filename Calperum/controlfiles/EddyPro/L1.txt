@@ -1,6 +1,6 @@
 level = L1
 [Files]
-    file_path = ../PFP_examples/Calperum/Data/EddyPro/2016/
+    file_path = ../PFP3_examples/Calperum/Data/EddyPro/2016/
     in_filename = Calperum_2016_L1.xls
     in_headerrow = 2
     in_firstdatarow = 4
@@ -27,7 +27,7 @@ level = L1
     tower_height = 20m
     vegetation = Mallee
     altitude = 62m
-    history = "Cleaned by cleanup_netcdf_files.py"
+    history = Cleaned by cleanup_netcdf_files.py
 [Variables]
     [[Fn]]
         [[[xl]]]
@@ -108,7 +108,7 @@ level = L1
         [[[Attr]]]
             instrument = SONIC
             long_name = Momentum flux quality control flag
-            units = 
+            units = none
             group_name = 
             height = 
             standard_name = 
@@ -131,7 +131,7 @@ level = L1
         [[[Attr]]]
             instrument = SONIC
             long_name = Sensible heat flux quality control flag
-            units = 
+            units = none
             group_name = 
             height = 
             standard_name = 
@@ -154,7 +154,7 @@ level = L1
         [[[Attr]]]
             instrument = SONIC/IRGA
             long_name = Latent heat flux quality control flag
-            units = 
+            units = none
             group_name = 
             height = 
             standard_name = 
@@ -177,7 +177,7 @@ level = L1
         [[[Attr]]]
             instrument = SONIC/IRGA
             long_name = Carbon dioxide flux quality control flag
-            units = 
+            units = none
             group_name = 
             height = 
             standard_name = 
