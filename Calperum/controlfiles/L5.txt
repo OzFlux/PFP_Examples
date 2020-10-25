@@ -8,7 +8,7 @@ level = L5
 [Options]
     MaxGapInterpolate = 3
     FilterList = Fco2
-    TurbulenceFilter = ustar
+    TurbulenceFilter = ustar (basic)
     DayNightFilter = Fsd
     AcceptDayTimes = Yes
 [Fluxes]
