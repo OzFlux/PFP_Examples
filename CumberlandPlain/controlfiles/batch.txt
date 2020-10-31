@@ -1,0 +1,44 @@
+level = batch
+[Options]
+    levels = L1,L2,L3,concatenate
+[Levels]
+    [[L1]]
+        0 = ../PFP3_examples/CumberlandPlain/controlfiles/2014/L1.txt
+        1 = ../PFP3_examples/CumberlandPlain/controlfiles/2015/L1.txt
+        2 = ../PFP3_examples/CumberlandPlain/controlfiles/2016/L1.txt
+        3 = ../PFP3_examples/CumberlandPlain/controlfiles/2017/L1.txt
+        4 = ../PFP3_examples/CumberlandPlain/controlfiles/2018/L1.txt
+        5 = ../PFP3_examples/CumberlandPlain/controlfiles/2019/L1.txt
+        6 = ../PFP3_examples/CumberlandPlain/controlfiles/2020/L1.txt
+    [[L2]]
+        0 = ../PFP3_examples/CumberlandPlain/controlfiles/2014/L2.txt
+        1 = ../PFP3_examples/CumberlandPlain/controlfiles/2015/L2.txt
+        2 = ../PFP3_examples/CumberlandPlain/controlfiles/2016/L2.txt
+        3 = ../PFP3_examples/CumberlandPlain/controlfiles/2017/L2.txt
+        4 = ../PFP3_examples/CumberlandPlain/controlfiles/2018/L2.txt
+        5 = ../PFP3_examples/CumberlandPlain/controlfiles/2019/L2.txt
+        6 = ../PFP3_examples/CumberlandPlain/controlfiles/2020/L2.txt
+    [[L3]]
+        0 = ../PFP3_examples/CumberlandPlain/controlfiles/2014/L3.txt
+        1 = ../PFP3_examples/CumberlandPlain/controlfiles/2015/L3.txt
+        2 = ../PFP3_examples/CumberlandPlain/controlfiles/2016/L3.txt
+        3 = ../PFP3_examples/CumberlandPlain/controlfiles/2017/L3.txt
+        4 = ../PFP3_examples/CumberlandPlain/controlfiles/2018/L3.txt
+        5 = ../PFP3_examples/CumberlandPlain/controlfiles/2019/L3.txt
+        6 = ../PFP3_examples/CumberlandPlain/controlfiles/2020/L3.txt
+    [[concatenate]]
+        0 = ../PFP3_examples/CumberlandPlain/controlfiles/concatenate.txt
+    [[climatology]]
+        0 = Right click to browse
+    [[cpd_mchugh]]
+        0 = Right click to browse
+    [[cpd_barr]]
+        0 = Right click to browse
+    [[mpt]]
+        0 = Right click to browse
+    [[L4]]
+        0 = Right click to browse
+    [[L5]]
+        0 = Right click to browse
+    [[L6]]
+        0 = Right click to browse

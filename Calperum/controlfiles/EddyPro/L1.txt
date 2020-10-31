@@ -300,7 +300,7 @@ level = L1
             statistic_type = average
             units = K
         [[[Function]]]
-            func = Convert_K_to_C(Ta_HMP_2m)
+            func = K_to_C(Ta_HMP_2m)
         [[[xl]]]
             name = TA_1_1_1
             sheet = biomet
@@ -314,7 +314,7 @@ level = L1
             statistic_type = average
             units = K
         [[[Function]]]
-            func = Convert_K_to_C(Ts)
+            func = K_to_C(Ts)
         [[[xl]]]
             name = TS_1_1_1
             sheet = biomet
@@ -328,7 +328,7 @@ level = L1
             statistic_type = average
             units = K
         [[[Function]]]
-            func = Convert_K_to_C(Tv_SONIC_Av)
+            func = K_to_C(Tv_SONIC_Av)
         [[[xl]]]
             name = sonic_temperature
             sheet = full_output
@@ -474,7 +474,7 @@ level = L1
             statistic_type = average
             units = Pa
         [[[Function]]]
-            func = Convert_Pa_to_kPa(ps)
+            func = Pa_to_kPa(ps)
         [[[xl]]]
             name = air_pressure
             sheet = full_output

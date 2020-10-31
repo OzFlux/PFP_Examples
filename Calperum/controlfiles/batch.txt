@@ -1,0 +1,29 @@
+level = batch
+[Options]
+    levels = L1,L2,L3
+[Levels]
+    [[L1]]
+        0 = ../PFP3_examples/Calperum/controlfiles/OzFlux/L1.txt
+        1 = ../PFP3_examples/Calperum/controlfiles/EddyPro/L1.txt
+    [[L2]]
+        0 = ../PFP3_examples/Calperum/controlfiles/OzFlux/L2.txt
+        1 = ../PFP3_examples/Calperum/controlfiles/EddyPro/L2.txt
+    [[L3]]
+        0 = ../PFP3_examples/Calperum/controlfiles/OzFlux/L3.txt
+        1 = ../PFP3_examples/Calperum/controlfiles/EddyPro/L3.txt
+    [[concatenate]]
+        0 = Right click to browse
+    [[climatology]]
+        0 = Right click to browse
+    [[cpd_mchugh]]
+        0 = Right click to browse
+    [[cpd_barr]]
+        0 = Right click to browse
+    [[mpt]]
+        0 = Right click to browse
+    [[L4]]
+        0 = Right click to browse
+    [[L5]]
+        0 = Right click to browse
+    [[L6]]
+        0 = Right click to browse

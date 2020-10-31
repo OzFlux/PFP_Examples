@@ -1,0 +1,17 @@
+level = cpd_barr
+[Files]
+    file_path = /home/peter/WD2TB/OzFlux/Sites/CumberlandPlain/Data/Tower/
+    in_filename = CumberlandPlain_L3_EP.nc
+    out_filename = CumberlandPlain_L3_EP_CPD_Barr.xls
+[Options]
+    Fsd_threshold = 5
+    Num_bootstraps = 100
+[Variables]
+    [[Fc]]
+        name = Fc
+    [[Ta]]
+        name = Ta
+    [[ustar]]
+        name = ustar
+    [[Fsd]]
+        name = Fsd
