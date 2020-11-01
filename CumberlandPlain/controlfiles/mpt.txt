@@ -1,8 +1,8 @@
 level = mpt
 [Files]
-    file_path = /home/peter/WD2TB/OzFlux/Sites/CumberlandPlain/Data/Tower/
-    in_filename = CumberlandPlain_L3_EP.nc
-    out_filename = CumberlandPlain_L3_EP_MPT.xls
+    file_path = ../PFP3_examples/CumberlandPlain/Data/Tower/
+    in_filename = CumberlandPlain_L3.nc
+    out_filename = CumberlandPlain_L3_MPT.xls
 [Options]
     hourly = No
     percentile = 90
@@ -29,7 +29,7 @@ level = mpt
     threshold_check = 1
 [Variables]
     [[NEE]]
-        name = Fc
+        name = Fco2
     [[VPD]]
         name = VPD
     [[USTAR]]

@@ -1,13 +1,13 @@
 level = L4
 [Files]
-    file_path = /home/peter/WD2TB/OzFlux/Sites/CumberlandPlain/Data/Tower/
-    in_filename = CumberlandPlain_L3_EP.nc
-    out_filename = CumberlandPlain_L4_EP.nc
-    plot_path = /home/peter/WD2TB/OzFlux/Sites/CumberlandPlain/Plots/
-    aws = /home/peter/WD2TB/OzFlux/Sites/CumberlandPlain/Data/AWS/CumberlandPlain_AWS.nc
-    access = /home/peter/WD2TB/OzFlux/Sites/CumberlandPlain/Data/ACCESS/CumberlandPlain_ACCESS.nc
-    era5 = /home/peter/WD2TB/OzFlux/Sites/CumberlandPlain/Data/ERA5/CumberlandPlain_ERA5.nc
-    climatology = /home/peter/WD2TB/OzFlux/Sites/CumberlandPlain/Data/Tower/CumberlandPlain_L3_EP_Climatology.xls
+    file_path = ../PFP3_examples/CumberlandPlain/Data/Tower/
+    in_filename = CumberlandPlain_L3.nc
+    out_filename = CumberlandPlain_L4.nc
+    plot_path = ../PFP3_examples/CumberlandPlain/Plots/
+    aws = ../PFP3_examples/CumberlandPlain/Data/AWS/CumberlandPlain_AWS.nc
+    access = ../PFP3_examples/CumberlandPlain/Data/ACCESS/CumberlandPlain_ACCESS.nc
+    era5 = ../PFP3_examples/CumberlandPlain/Data/ERA5/CumberlandPlain_ERA5.nc
+    climatology = ../PFP3_examples/CumberlandPlain/Data/Tower/CumberlandPlain_L3_Climatology.xls
 [Options]
     MaxGapInterpolate = 3
 [GUI]
@@ -23,19 +23,19 @@ level = L4
         show_plots = no
         start_date = ""
 [Drivers]
-    [[Ah]]
+    [[AH]]
         [[[GapFillFromAlternate]]]
-            [[[[Ah_aws]]]]
+            [[[[AH_aws]]]]
                 source = AWS
-            [[[[Ah_access]]]]
+            [[[[AH_access]]]]
                 source = ACCESS
-            [[[[Ah_era5]]]]
+            [[[[AH_era5]]]]
                 source = ERA5
         [[[GapFillFromClimatology]]]
-            [[[[Ah_cli]]]]
+            [[[[AH_cli]]]]
                 method = interpolated daily
         [[[MergeSeries]]]
-            source = Ah,Ah_aws,Ah_access,Ah_era5,Ah_cli
+            source = AH,AH_aws,AH_access,AH_era5,AH_cli
     [[CO2]]
         [[[GapFillFromClimatology]]]
             [[[[CO2_cli]]]]
