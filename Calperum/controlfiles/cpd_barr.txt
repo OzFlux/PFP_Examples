@@ -1,0 +1,17 @@
+level = cpd_barr
+[Files]
+    file_path = ../PFP3_examples/Calperum/Data/Portal/
+    in_filename = Calperum_L3.nc
+    out_filename = Calperum_L3_CPD_Barr.xls
+[Options]
+    Fsd_threshold = 5
+    Num_bootstraps = 100
+[Variables]
+    [[Fco2]]
+        name = Fco2
+    [[Ta]]
+        name = Ta
+    [[ustar]]
+        name = ustar
+    [[Fsd]]
+        name = Fsd
