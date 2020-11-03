@@ -11,6 +11,23 @@ level = L5
     TurbulenceFilter = ustar (basic)
     DayNightFilter = Fsd
     AcceptDayTimes = Yes
+[GUI]
+    [[GapFillUsingSOLO]]
+        auto_complete = yes
+        end_date = ""
+        iterations = 500
+        learning_rate = 0.001
+        min_percent = 25
+        nda_factor = 5
+        nodes = auto
+        number_days = 60
+        number_months = 2
+        overwrite = no
+        period_option = days
+        show_all = no
+        show_plots = no
+        start_date = ""
+        training = 500
 [Fluxes]
     [[ustar]]
         [[[GapFillUsingSOLO]]]

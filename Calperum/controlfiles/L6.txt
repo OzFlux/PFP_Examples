@@ -9,6 +9,23 @@ level = L6
 would like to acknowledge the financial support of the Australian Federal Government via
 the National Collaborative Research Infrastructure Scheme and the Education Investment
 Fund.'''
+[GUI]
+    [[ERUsingSOLO]]
+        auto_complete = yes
+        end_date = ""
+        iterations = 500
+        learning_rate = 0.001
+        min_percent = 5
+        nda_factor = 5
+        nodes = 1
+        number_days = 90
+        number_months = 3
+        overwrite = no
+        period_option = manual
+        show_all = no
+        show_plots = no
+        start_date = ""
+        training = 500
 [EcosystemRespiration]
     [[ER_SOLO]]
         [[[ERUsingSOLO]]]

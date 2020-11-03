@@ -10,6 +10,18 @@ level = L4
     climatology = ../PFP3_examples/Calperum/Data/Portal/Calperum_L3_Climatology.xls
 [Options]
     MaxGapInterpolate = 3
+[GUI]
+    [[GapFillFromAlternate]]
+        auto_complete = yes
+        end_date = ""
+        min_percent = 30
+        number_days = 90
+        number_months = 3
+        overwrite = no
+        period_option = days
+        show_all = no
+        show_plots = no
+        start_date = ""
 [Drivers]
     [[AH]]
         [[[GapFillFromAlternate]]]
