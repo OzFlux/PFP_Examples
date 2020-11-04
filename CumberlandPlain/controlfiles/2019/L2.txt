@@ -1,9 +1,9 @@
 level = L2
 [Files]
-    file_path = ../PFP3_examples/CumberlandPlain/Data/Tower/2019/
+    file_path = ../PFP_examples/CumberlandPlain/Data/Tower/2019/
     in_filename = CumberlandPlain_2019_L1.nc
     out_filename = CumberlandPlain_2019_L2.nc
-    plot_path = ../PFP3_examples/CumberlandPlain/Plots/
+    plot_path = ../PFP_examples/CumberlandPlain/Plots/
 [Options]
     irga_type = Li-7500A
 [Variables]

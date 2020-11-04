@@ -1,6 +1,6 @@
 level = cpd_mchugh
 [Files]
-    file_path = ../PFP3_examples/CumberlandPlain/Data/Tower/
+    file_path = ../PFP_examples/CumberlandPlain/Data/Tower/
     in_filename = CumberlandPlain_L3.nc
     out_filename = CumberlandPlain_L3_CPD_McHugh.xls
 [Options]

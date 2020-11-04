@@ -1,9 +1,9 @@
 level = L3
 [Files]
-    file_path = ../PFP3_examples/Calperum/Data/EddyPro/2016/
+    file_path = ../PFP_examples/Calperum/Data/EddyPro/2016/
     in_filename = Calperum_2016_L2.nc
     out_filename = Calperum_2016_L3.nc
-    plot_path = ../PFP3_examples/Calperum/Plots/
+    plot_path = ../PFP_examples/Calperum/Plots/
 [Options]
     UseL2Fluxes = Yes
     zms = 20
@@ -16,66 +16,66 @@ level = L3
     SwsDefault = 0.1
     SwsSeries = Sws
 [Variables]
-    [[Fn]]
-        [[[MergeSeries]]]
-            source = Fn_4cmpt,Fn
-        [[[RangeCheck]]]
-            lower = -150
-            upper = 1100
-    [[Ta]]
-        [[[MergeSeries]]]
-            source = Ta_HMP_2m,Ta_SONIC_Av
-        [[[RangeCheck]]]
-            lower = -10
-            upper = 50
-    [[RH]]
-        [[[MergeSeries]]]
-            source = RH_HMP_2m,RH_IRGA_Av
-        [[[RangeCheck]]]
-            upper = 100
-            lower = 0
-    [[H2O]]
-        [[[MergeSeries]]]
-            source = H2O_IRGA_Av
-        [[[RangeCheck]]]
-            upper = 3000
-            lower = 0
     [[CO2]]
         [[[MergeSeries]]]
             source = CO2_IRGA_Av
         [[[RangeCheck]]]
             lower = 250
             upper = 900
-    [[Ws]]
-        [[[MergeSeries]]]
-            source = Ws_RMY_10m,Ws_SONIC_Av
-        [[[RangeCheck]]]
-            lower = 0
-            upper = 20
-    [[Wd]]
-        [[[MergeSeries]]]
-            source = Wd_RMY_10m,Wd_SONIC_Av
-        [[[RangeCheck]]]
-            lower = 0
-            upper = 360
     [[Fg]]
         [[[AverageSeries]]]
             source = Fg
         [[[RangeCheck]]]
             lower = -300
             upper = 300
+    [[Fn]]
+        [[[MergeSeries]]]
+            source = Fn_4cmpt,Fn
+        [[[RangeCheck]]]
+            lower = -150
+            upper = 1100
+    [[H2O]]
+        [[[MergeSeries]]]
+            source = H2O_IRGA_Av
+        [[[RangeCheck]]]
+            lower = 0
+            upper = 3000
+    [[RH]]
+        [[[MergeSeries]]]
+            source = RH_HMP_2m,RH_IRGA_Av
+        [[[RangeCheck]]]
+            lower = 0
+            upper = 100
     [[Sws]]
         [[[AverageSeries]]]
             source = Sws
         [[[RangeCheck]]]
             lower = 0
             upper = 0.5
+    [[Ta]]
+        [[[MergeSeries]]]
+            source = Ta_HMP_2m,Ta_SONIC_Av
+        [[[RangeCheck]]]
+            lower = -10
+            upper = 50
     [[Ts]]
         [[[AverageSeries]]]
             source = Ts
         [[[RangeCheck]]]
             lower = 0
             upper = 60
+    [[Wd]]
+        [[[MergeSeries]]]
+            source = Wd_RMY_10m,Wd_SONIC_Av
+        [[[RangeCheck]]]
+            lower = 0
+            upper = 360
+    [[Ws]]
+        [[[MergeSeries]]]
+            source = Ws_RMY_10m,Ws_SONIC_Av
+        [[[RangeCheck]]]
+            lower = 0
+            upper = 20
 [Plots]
     [[Radiative fluxes]]
         variables = Fsd,Fsu,Fld,Flu,Fn

@@ -1,7 +1,7 @@
 level = L6
 [Files]
-    plot_path = ../PFP3_examples/CumberlandPlain/Plots/
-    file_path = ../PFP3_examples/CumberlandPlain/Data/Tower/
+    plot_path = ../PFP_examples/CumberlandPlain/Plots/
+    file_path = ../PFP_examples/CumberlandPlain/Data/Tower/
     in_filename = CumberlandPlain_L5.nc
     out_filename = CumberlandPlain_L6.nc
 [Global]

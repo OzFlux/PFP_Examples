@@ -3,27 +3,27 @@ level = batch
     levels = L1,L2,L3,concatenate,climatology,cpd_mchugh,cpd_barr,mpt,L4,L5,L6
 [Levels]
     [[L1]]
-        0 = ../PFP3_examples/Calperum/controlfiles/OzFlux/L1.txt
-        1 = ../PFP3_examples/Calperum/controlfiles/EddyPro/L1.txt
+        0 = ../PFP_examples/Calperum/controlfiles/OzFlux/L1.txt
+        1 = ../PFP_examples/Calperum/controlfiles/EddyPro/L1.txt
     [[L2]]
-        0 = ../PFP3_examples/Calperum/controlfiles/OzFlux/L2.txt
-        1 = ../PFP3_examples/Calperum/controlfiles/EddyPro/L2.txt
+        0 = ../PFP_examples/Calperum/controlfiles/OzFlux/L2.txt
+        1 = ../PFP_examples/Calperum/controlfiles/EddyPro/L2.txt
     [[L3]]
-        0 = ../PFP3_examples/Calperum/controlfiles/OzFlux/L3.txt
-        1 = ../PFP3_examples/Calperum/controlfiles/EddyPro/L3.txt
+        0 = ../PFP_examples/Calperum/controlfiles/OzFlux/L3.txt
+        1 = ../PFP_examples/Calperum/controlfiles/EddyPro/L3.txt
     [[concatenate]]
-        0 = ../PFP3_examples/Calperum/controlfiles/concatenate.txt
+        0 = ../PFP_examples/Calperum/controlfiles/concatenate.txt
     [[climatology]]
-        0 = ../PFP3_examples/Calperum/controlfiles/climatology.txt
+        0 = ../PFP_examples/Calperum/controlfiles/climatology.txt
     [[cpd_mchugh]]
-        0 = ../PFP3_examples/Calperum/controlfiles/cpd_mchugh.txt
+        0 = ../PFP_examples/Calperum/controlfiles/cpd_mchugh.txt
     [[cpd_barr]]
-        0 = ../PFP3_examples/Calperum/controlfiles/cpd_barr.txt
+        0 = ../PFP_examples/Calperum/controlfiles/cpd_barr.txt
     [[mpt]]
-        0 = ../PFP3_examples/Calperum/controlfiles/mpt.txt
+        0 = ../PFP_examples/Calperum/controlfiles/mpt.txt
     [[L4]]
-        0 = ../PFP3_examples/Calperum/controlfiles/L4.txt
+        0 = ../PFP_examples/Calperum/controlfiles/L4.txt
     [[L5]]
-        0 = ../PFP3_examples/Calperum/controlfiles/L5.txt
+        0 = ../PFP_examples/Calperum/controlfiles/L5.txt
     [[L6]]
-        0 = ../PFP3_examples/Calperum/controlfiles/L6.txt
+        0 = ../PFP_examples/Calperum/controlfiles/L6.txt

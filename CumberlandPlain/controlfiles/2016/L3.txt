@@ -1,9 +1,9 @@
 level = L3
 [Files]
-    file_path = ../PFP3_examples/CumberlandPlain/Data/Tower/2016/
+    file_path = ../PFP_examples/CumberlandPlain/Data/Tower/2016/
     in_filename = CumberlandPlain_2016_L2.nc
     out_filename = CumberlandPlain_2016_L3.nc
-    plot_path = ../PFP3_examples/CumberlandPlain/Plots/
+    plot_path = ../PFP_examples/CumberlandPlain/Plots/
 [Options]
     CO2Units = umol/mol
     Fco2Units = umol/m^2/s

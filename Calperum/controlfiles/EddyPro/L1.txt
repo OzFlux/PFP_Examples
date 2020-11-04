@@ -1,6 +1,6 @@
 level = L1
 [Files]
-    file_path = ../PFP3_examples/Calperum/Data/EddyPro/2016/
+    file_path = ../PFP_examples/Calperum/Data/EddyPro/2016/
     in_filename = Calperum_2016_L1.xls
     in_headerrow = 2
     in_firstdatarow = 4
@@ -47,7 +47,7 @@ level = L1
             height = 20m
             instrument = Li-7500A
             long_name = CO2 concentration
-            standard_name = 
+            standard_name = ""
             statistic_type = variance
             units = umol^2/mol^2
         [[[xl]]]
@@ -67,11 +67,11 @@ level = L1
             sheet = full_output
     [[Fco2_EPFlag]]
         [[[Attr]]]
-            group_name = 
-            height = 
+            group_name = ""
+            height = ""
             instrument = SONIC/IRGA
             long_name = Carbon dioxide flux quality control flag
-            standard_name = 
+            standard_name = ""
             units = none
         [[[xl]]]
             name = qc_co2_flux
@@ -82,7 +82,7 @@ level = L1
             height = 20m
             instrument = SONIC/IRGA
             long_name = Latent heat flux
-            standard_name = 
+            standard_name = ""
             statistic_type = average
             units = W/m^2
         [[[xl]]]
@@ -90,11 +90,11 @@ level = L1
             sheet = full_output
     [[Fe_EPFlag]]
         [[[Attr]]]
-            group_name = 
-            height = 
+            group_name = ""
+            height = ""
             instrument = SONIC/IRGA
             long_name = Latent heat flux quality control flag
-            standard_name = 
+            standard_name = ""
             units = none
         [[[xl]]]
             name = qc_LE
@@ -117,7 +117,7 @@ level = L1
             height = 20m
             instrument = SONIC
             long_name = Sensible heat flux
-            standard_name = 
+            standard_name = ""
             statistic_type = average
             units = W/m^2
         [[[xl]]]
@@ -125,11 +125,11 @@ level = L1
             sheet = full_output
     [[Fh_EPFlag]]
         [[[Attr]]]
-            group_name = 
-            height = 
+            group_name = ""
+            height = ""
             instrument = SONIC
             long_name = Sensible heat flux quality control flag
-            standard_name = 
+            standard_name = ""
             units = none
         [[[xl]]]
             name = qc_H
@@ -164,7 +164,7 @@ level = L1
             height = 20m
             instrument = SONIC
             long_name = Momentum flux
-            standard_name = 
+            standard_name = ""
             statistic_type = average
             units = kg/m/s^2
         [[[xl]]]
@@ -172,11 +172,11 @@ level = L1
             sheet = full_output
     [[Fm_EPFlag]]
         [[[Attr]]]
-            group_name = 
-            height = 
+            group_name = ""
+            height = ""
             instrument = SONIC
             long_name = Momentum flux quality control flag
-            standard_name = 
+            standard_name = ""
             units = none
         [[[xl]]]
             name = qc_Tau
@@ -235,7 +235,7 @@ level = L1
             height = 20m
             instrument = Li-7500A
             long_name = H2O concentration
-            standard_name = 
+            standard_name = ""
             statistic_type = variance
             units = mmol^2/mol^2
         [[[xl]]]
@@ -272,7 +272,7 @@ level = L1
             instrument = Li-7500A
             long_name = Relative humidity
             serial_number = relative_humidity
-            standard_name = 
+            standard_name = ""
             statistic_type = average
             units = percent
         [[[xl]]]
@@ -338,7 +338,7 @@ level = L1
             height = 20m
             instrument = SONIC
             long_name = Virtual temperature
-            standard_name = 
+            standard_name = ""
             statistic_type = variance
             units = K^2
         [[[xl]]]
@@ -362,7 +362,7 @@ level = L1
             height = 20m
             instrument = SONIC
             long_name = Along wind velocity component
-            standard_name = 
+            standard_name = ""
             statistic_type = variance
             units = m^2/s^2
         [[[xl]]]
@@ -386,7 +386,7 @@ level = L1
             height = 20m
             instrument = SONIC
             long_name = Across wind velocity component
-            standard_name = 
+            standard_name = ""
             statistic_type = variance
             units = m^2/s^2
         [[[xl]]]
@@ -398,7 +398,7 @@ level = L1
             height = 20m
             instrument = SONIC
             long_name = Vertical wind velocity component
-            standard_name = 
+            standard_name = ""
             statistic_type = average
             units = m/s
         [[[xl]]]
@@ -410,7 +410,7 @@ level = L1
             height = 20m
             instrument = SONIC
             long_name = Vertical wind velocity component
-            standard_name = 
+            standard_name = ""
             statistic_type = variance
             units = m^2/s^2
         [[[xl]]]
@@ -484,7 +484,7 @@ level = L1
             height = 20m
             instrument = SONIC
             long_name = Friction velocity
-            standard_name = 
+            standard_name = ""
             statistic_type = average
             units = m/s
         [[[xl]]]

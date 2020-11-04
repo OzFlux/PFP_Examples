@@ -1,6 +1,6 @@
 level = L1
 [Files]
-    file_path = ../PFP3_examples/CumberlandPlain/Data/Tower/2016/
+    file_path = ../PFP_examples/CumberlandPlain/Data/Tower/2016/
     in_filename = CumberlandPlain_2016_L1.xls
     in_headerrow = 1
     in_firstdatarow = 2
