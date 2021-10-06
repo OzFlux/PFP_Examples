@@ -2,6 +2,7 @@ level = concatenate
 [Options]
     MaxGapInterpolate = 0
 [Files]
+    plot_path = plots/
     [[Out]]
         ncFileName = ../PFP_examples/CumberlandPlain/Data/Tower/CumberlandPlain_L3.nc
     [[In]]

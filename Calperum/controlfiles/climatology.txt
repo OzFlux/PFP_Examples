@@ -2,6 +2,7 @@ level = climatology
 [Files]
     file_path = ../PFP_examples/Calperum/Data/Portal/
     in_filename = Calperum_L3.nc
+    plot_path = plots/
 [Variables]
     [[Ta]]
         name = Ta

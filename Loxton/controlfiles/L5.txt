@@ -4,7 +4,7 @@ level = L5
     file_path = ../PFP_examples/Loxton/Data/Tower/
     in_filename = Loxton_L4.nc
     out_filename = Loxton_L5.nc
-    cpd_filename = Loxton_L3_CPD_McHugh.xls
+    cpd_filename = Loxton_L3_CPD_McHugh.xlsx
 [Options]
     MaxGapInterpolate = 3
     FilterList = Fco2

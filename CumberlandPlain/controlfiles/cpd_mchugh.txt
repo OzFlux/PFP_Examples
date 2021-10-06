@@ -3,6 +3,7 @@ level = cpd_mchugh
     file_path = ../PFP_examples/CumberlandPlain/Data/Tower/
     in_filename = CumberlandPlain_L3.nc
     out_filename = CumberlandPlain_L3_CPD_McHugh.xls
+    plot_path = plots/
 [Options]
     Fsd_threshold = 10
     Num_bootstraps = 100

@@ -1,7 +1,11 @@
 level = concatenate
 [Options]
     MaxGapInterpolate = 0
+    Truncate = Yes
+    TruncateThreshold = 50
+    SeriesToCheck = Fco2,Fe,Fh,Fm
 [Files]
+    plot_path = plots/
     [[Out]]
         ncFileName = ../PFP_examples/Calperum/Data/Portal/Calperum_L3.nc
     [[In]]
@@ -15,3 +19,4 @@ level = concatenate
         7 = ../PFP_examples/Calperum/Data/Portal/Calperum_2017_L3.nc
         8 = ../PFP_examples/Calperum/Data/Portal/Calperum_2018_L3.nc
         9 = ../PFP_examples/Calperum/Data/Portal/Calperum_2019_L3.nc
+        10 = ../PFP_examples/Calperum/Data/Portal/Calperum_2020_L3.nc

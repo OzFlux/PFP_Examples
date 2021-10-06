@@ -2,7 +2,8 @@ level = cpd_mchugh
 [Files]
     file_path = ../PFP_examples/Calperum/Data/Portal/
     in_filename = Calperum_L3.nc
-    out_filename = Calperum_L3_CPD_McHugh.xls
+    out_filename = Calperum_L3_CPD_McHugh.xlsx
+    plot_path = plots/
 [Options]
     Fsd_threshold = 10
     Num_bootstraps = 100

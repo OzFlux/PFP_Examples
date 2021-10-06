@@ -1,6 +1,6 @@
 level = batch
 [Options]
-    levels = L1,L2,L3,concatenate,climatology,cpd_mchugh,cpd_barr,mpt,L4,L5,L6
+    levels = L1,L2,L3,concatenate,climatology,cpd_mchugh,cpd_mcnew,cpd_barr,mpt,L4,L5,L6
 [Levels]
     [[L1]]
         0 = ../PFP_examples/CumberlandPlain/controlfiles/2014/L1.txt
@@ -32,6 +32,8 @@ level = batch
         0 = ../PFP_examples/CumberlandPlain/controlfiles/climatology.txt
     [[cpd_mchugh]]
         0 = ../PFP_examples/CumberlandPlain/controlfiles/cpd_mchugh.txt
+    [[cpd_mcnew]]
+        0 = ../PFP_examples/CumberlandPlain/controlfiles/cpd_mcnew.txt
     [[cpd_barr]]
         0 = ../PFP_examples/CumberlandPlain/controlfiles/cpd_barr.txt
     [[mpt]]

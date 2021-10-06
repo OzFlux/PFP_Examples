@@ -5,51 +5,51 @@ level = L1
     in_headerrow = 1
     in_firstdatarow = 2
     out_filename = CumberlandPlain_2016_L1.nc
+    plot_path = plots/
 [Global]
-    contact = e.pendall@uws.edu.au
+    Conventions = CF-1.8
+    altitude = 27 m
     canopy_height = 23 m
     comment = CF metadata, OzFlux standard variable names
-    data_url = http://data.ozflux.org.au/
-    history = Cleaned by cleanup_netcdf_files.py
+    contact = e.pendall@uws.edu.au
+    data_link = http://data.ozflux.org.au/
+    fluxnet_id = AU-Cum
+    history = June 2021 processing
     institution = HIE, UWS
     latitude = -33.615278
-    license_type = CC BY 4.0
-    license_url = https://creativecommons.org/licenses/by/4.0/
+    license = https://creativecommons.org/licenses/by/4.0/
+    license_name = CC BY 4.0
     longitude = 150.723611
-    metadata_url = http://http://www.ozflux.org.au/monitoringsites/CumberlandPlain/index.html
-    ozflux_url = http://ozflux.org.au/
+    metadata_link = http://http://www.ozflux.org.au/monitoringsites/CumberlandPlain/index.html
+    ozflux_link = http://ozflux.org.au/
+    publisher_name = TERN Ecosystem Processes,OzFlux
     references = None
-    site_name = CUP_EC
-    site_pi = Elise
+    site_name = Cumberland Plain
+    site_pi = Elise Pendall
     soil = ""
     source = 30m flux tower plus array of soil sensors
-    title = Flux tower data set from the CUP site for the calendar year 2016
     time_step = 30
     time_zone = Australia/Sydney
+    title = Flux tower data set from the CUP site for the calendar year 2016
     tower_height = 30 m
     vegetation = Dry sclerophyll forest
-    altitude = 27 m
 [Variables]
     [[AGC_IRGA]]
         [[[Attr]]]
-            group_name = diagnostics
             height = 30m
             instrument = Li-7500
             long_name = IRGA automatic gain control value
-            serial_number = ""
-            standard_name = ""
             statistic_type = average
-            units = none
+            units = 1
         [[[xl]]]
             name = AGC_7500_Avg
             sheet = slow_flux
     [[AH_HMP_30m]]
         [[[Attr]]]
-            group_name = meteorology
             height = 30m
             instrument = HMP45C
             long_name = Absolute humidity
-            standard_name = none
+            standard_name = mass_concentration_of_water_vapor_in_air
             statistic_type = average
             units = g/m^3
         [[[xl]]]
@@ -57,12 +57,10 @@ level = L1
             sheet = slow_met
     [[AH_HMP_7m]]
         [[[Attr]]]
-            group_name = meteorology
             height = 7m
             instrument = HMP45C
             long_name = Absolute humidity
-            serial_number = ""
-            standard_name = not defined
+            standard_name = mass_concentration_of_water_vapor_in_air
             statistic_type = average
             units = g/m^3
         [[[xl]]]
@@ -70,12 +68,10 @@ level = L1
             sheet = slow_met
     [[AH_IRGA_Av]]
         [[[Attr]]]
-            group_name = meteorology
             height = 30m
             instrument = Li-7500
             long_name = Absolute humidity
-            serial_number = ""
-            standard_name = not defined
+            standard_name = mass_concentration_of_water_vapor_in_air
             statistic_type = average
             units = g/m^3
         [[[xl]]]
@@ -83,11 +79,9 @@ level = L1
             sheet = slow_met
     [[AH_IRGA_Vr]]
         [[[Attr]]]
-            group_name = meteorology
             height = 30m
             instrument = Li-7500
             long_name = Absolute humidity
-            standard_name = none
             statistic_type = variance
             units = g^2/m^6
         [[[xl]]]
@@ -95,23 +89,20 @@ level = L1
             sheet = slow_flux
     [[CO2_IRGA_Av]]
         [[[Attr]]]
-            group_name = none
             height = 30m
             instrument = Li-7500
-            long_name = CO2 concentration, average
-            serial_number = ""
-            standard_name = not defined
+            long_name = CO2 concentration
+            standard_name = mass_concentration_of_carbon_dioxide_in_air
+            statistic_type = average
             units = mg/m^3
         [[[xl]]]
             name = Cc_7500_Avg
             sheet = slow_met
     [[CO2_IRGA_Vr]]
         [[[Attr]]]
-            group_name = meteorology
             height = 30m
             instrument = Li-7500
             long_name = CO2 concentration
-            standard_name = none
             statistic_type = variance
             units = mg^2/m^6
         [[[Function]]]
@@ -121,50 +112,40 @@ level = L1
             sheet = slow_flux
     [[Diag_IRGA]]
         [[[Attr]]]
-            group_name = diagnostics
             height = 30m
             instrument = Li-7500
             long_name = IRGA diagnostic value
-            serial_number = ""
-            standard_name = not defined
             statistic_type = average
-            units = none
+            units = 1
         [[[xl]]]
             name = X7500_Warn
             sheet = slow_flux
     [[Diag_SONIC]]
         [[[Attr]]]
-            group_name = diagnostics
             height = 30m
             instrument = CSAT
             long_name = Sonic diagnostic value
-            serial_number = ""
-            standard_name = not defined
             statistic_type = average
-            units = none
+            units = 1
         [[[xl]]]
             name = CSAT_Warn
             sheet = slow_flux
     [[DiffuseSS]]
         [[[Attr]]]
-            group_name = none
             height = 30m
             instrument = Sunshine Sensor
             long_name = Diffuse Sunshine
-            serial_number = ""
-            standard_name = ""
             units = umol/m^2/s
+            statistic_type = average
         [[[xl]]]
             name = DiffuseSS
             sheet = slow_met
     [[Fco2_EP]]
         [[[Attr]]]
-            group_name = flux
             height = 30m
             instrument = Li-7500
             long_name = CO2 flux
-            serial_number = ""
-            standard_name = not defined
+            standard_name = surface_upward_mole_flux_of_carbon_dioxide
             statistic_type = average
             units = umol/m^2/s
         [[[xl]]]
@@ -172,24 +153,20 @@ level = L1
             sheet = EddyPro_QC
     [[Fco2_EPFlag]]
         [[[Attr]]]
-            group_name = none
             height = 30m
             instrument = Li-7500
             long_name = Stationarity and turbulence development
-            serial_number = ""
-            standard_name = not defined
-            units = none
+            statistic_type = average
+            units = 1
         [[[xl]]]
             name = qc_co2_flux
             sheet = EddyPro_QC
     [[Fco2_profile]]
         [[[Attr]]]
-            group_name = flux
             height = 30m
             instrument = Li-840
             long_name = CO2 flux
-            serial_number = ""
-            standard_name = not defined
+            standard_name = surface_upward_mole_flux_of_carbon_dioxide
             statistic_type = average
             units = umol/m^2/s
         [[[xl]]]
@@ -197,12 +174,10 @@ level = L1
             sheet = EddyPro_QC
     [[Fe_EP]]
         [[[Attr]]]
-            group_name = flux
             height = 30m
             instrument = Li-7500
             long_name = Latent heat flux
-            serial_number = ""
-            standard_name = not defined
+            standard_name = surface_upward_latent_heat_flux
             statistic_type = average
             units = W/m^2
         [[[xl]]]
@@ -210,24 +185,20 @@ level = L1
             sheet = EddyPro_QC
     [[Fe_EPFlag]]
         [[[Attr]]]
-            group_name = none
             height = 30m
             instrument = Li-7500
             long_name = Stationarity and turbulence development
-            serial_number = ""
-            standard_name = not defined
-            units = none
+            statistic_type = average
+            units = 1
         [[[xl]]]
             name = qc_LE
             sheet = EddyPro_QC
     [[Fg_8cma]]
         [[[Attr]]]
-            group_name = soil
             height = -0.08m
             instrument = Huskeflux HFP01
             long_name = Ground heat flux
-            serial_number = ""
-            standard_name = not defined
+            standard_name = downward_heat_flux_at_ground_level_in_soil
             statistic_type = average
             units = W/m^2
         [[[xl]]]
@@ -235,12 +206,10 @@ level = L1
             sheet = slow_flux
     [[Fh_EP]]
         [[[Attr]]]
-            group_name = flux
             height = 30m
             instrument = Li-7500
             long_name = Sensible heat flux
-            serial_number = ""
-            standard_name = not defined
+            standard_name = surface_upward_sensible_heat_flux
             statistic_type = average
             units = W/m^2
         [[[xl]]]
@@ -248,23 +217,19 @@ level = L1
             sheet = EddyPro_QC
     [[Fh_EPFlag]]
         [[[Attr]]]
-            group_name = none
             height = 30m
             instrument = Li-7500
             long_name = Stationarity and turbulence development
-            serial_number = ""
-            standard_name = not defined
-            units = none
+            statistic_type = average
+            units = 1
         [[[xl]]]
             name = qc_H
             sheet = EddyPro_QC
     [[Fld]]
         [[[Attr]]]
-            group_name = radiation
             height = 30m
             instrument = Kipp and Zonen CNR4
             long_name = Down-welling longwave radiation
-            serial_number = ""
             standard_name = surface_downwelling_longwave_flux_in_air
             statistic_type = average
             units = W/m^2
@@ -273,11 +238,9 @@ level = L1
             sheet = slow_rad
     [[Flu]]
         [[[Attr]]]
-            group_name = radiation
             height = 30m
             instrument = Kipp and Zonen CNR4
             long_name = Up-welling longwave radiation
-            serial_number = ""
             standard_name = surface_upwelling_longwave_flux_in_air
             statistic_type = average
             units = W/m^2
@@ -286,12 +249,10 @@ level = L1
             sheet = slow_rad
     [[Fm_EP]]
         [[[Attr]]]
-            group_name = flux
             height = 30m
             instrument = CSAT3B
             long_name = Momentum flux
-            serial_number = ""
-            standard_name = not defined
+            standard_name = magnitude_of_surface_downward_stress
             statistic_type = average
             units = kg/m/s^2
         [[[xl]]]
@@ -299,24 +260,20 @@ level = L1
             sheet = EddyPro_QC
     [[Fm_EPFlag]]
         [[[Attr]]]
-            group_name = none
             height = 30m
             instrument = Li-7500
             long_name = Stationarity and turbulence development
-            serial_number = ""
-            standard_name = not defined
-            units = none
+            statistic_type = average
+            units = 1
         [[[xl]]]
             name = qc_Tau
             sheet = EddyPro_QC
     [[Fn_NR]]
         [[[Attr]]]
-            group_name = radiation
             height = 30m
             instrument = Hukseflux NR01
             long_name = Net radiation
-            serial_number = ""
-            standard_name = not defined
+            standard_name = surface_net_downward_radiative_flux
             statistic_type = average
             units = W/m^2
         [[[xl]]]
@@ -324,11 +281,9 @@ level = L1
             sheet = slow_rad
     [[Fsd]]
         [[[Attr]]]
-            group_name = radiation
             height = 30m
             instrument = Kipp and Zonen CNR4
             long_name = Down-welling shortwave radiation
-            serial_number = ""
             standard_name = surface_downwelling_shortwave_flux_in_air
             statistic_type = average
             units = W/m^2
@@ -337,11 +292,9 @@ level = L1
             sheet = slow_rad
     [[Fsu]]
         [[[Attr]]]
-            group_name = radiation
             height = 30m
             instrument = Kipp and Zonen CNR4
             long_name = Up-welling shortwave radiation
-            serial_number = ""
             standard_name = surface_upwelling_shortwave_flux_in_air
             statistic_type = average
             units = W/m^2
@@ -350,57 +303,49 @@ level = L1
             sheet = slow_rad
     [[H2O_HMP_30m]]
         [[[Attr]]]
-            group_name = meteorology
             height = 30m
             instrument = HMP45C
             long_name = H2O concentration
-            standard_name = none
+            standard_name = mole_fraction_of_water_vapor_in_air
             statistic_type = average
             units = mmol/mol
         [[[Function]]]
             func = gH2Opm3_to_mmolpmol(AH_HMP_30m,Ta_HMP_30m,ps)
     [[H2O_HMP_7m]]
         [[[Attr]]]
-            group_name = meteorology
             height = 7m
             instrument = HMP45C
             long_name = H2O concentration
-            standard_name = none
+            standard_name = mole_fraction_of_water_vapor_in_air
             statistic_type = average
             units = mmol/mol
         [[[Function]]]
             func = gH2Opm3_to_mmolpmol(AH_HMP_7m,Ta_HMP_7m,ps)
     [[H2O_IRGA_Av]]
         [[[Attr]]]
-            group_name = meteorology
             height = 30m
             instrument = Li-7500
             long_name = H2O concentration
-            serial_number = ""
-            standard_name = ""
+            standard_name = mole_fraction_of_water_vapor_in_air
             statistic_type = average
             units = mmol/mol
         [[[Function]]]
             func = gH2Opm3_to_mmolpmol(AH_IRGA_Av,Ta_HMP_30m,ps)
     [[H2O_IRGA_Vr]]
         [[[Attr]]]
-            group_name = meteorology
             height = 30m
             instrument = Li-7500
             long_name = H2O concentration
-            standard_name = none
             statistic_type = variance
             units = mmol^2/m^6
         [[[Function]]]
             func = gH2Opm3_to_mmolpm3(AH_IRGA_Vr)
     [[Precip]]
         [[[Attr]]]
-            group_name = meteorology
             height = 0.6m
             instrument = Hydrological Services CS7000
             long_name = Rainfall
-            serial_number = ""
-            standard_name = not defined
+            standard_name = thickness_of_rainfall_amount
             statistic_type = sum
             units = mm
         [[[xl]]]
@@ -408,45 +353,40 @@ level = L1
             sheet = slow_misc
     [[RH_HMP_30m]]
         [[[Attr]]]
-            group_name = meteorology
             height = 30m
             instrument = HMP45C
             long_name = Relative humidity
-            standard_name = none
+            standard_name = relative_humidity
             statistic_type = average
             units = percent
         [[[Function]]]
             func = gH2Opm3_to_percent(AH_HMP_30m,Ta_HMP_30m)
     [[RH_HMP_7m]]
         [[[Attr]]]
-            group_name = meteorology
             height = 7m
             instrument = HMP45C
             long_name = Relative humidity
-            standard_name = none
+            standard_name = relative_humidity
             statistic_type = average
             units = percent
         [[[Function]]]
             func = gH2Opm3_to_percent(AH_HMP_7m,Ta_HMP_7m)
     [[RH_IRGA_Av]]
         [[[Attr]]]
-            group_name = meteorology
             height = 30m
             instrument = Li-7500
             long_name = Relative humidity
-            standard_name = none
+            standard_name = relative_humidity
             statistic_type = average
             units = percent
         [[[Function]]]
             func = gH2Opm3_to_percent(AH_IRGA_Av,Ta_HMP_30m)
     [[Sws_20cma]]
         [[[Attr]]]
-            group_name = soil
             height = -0.08m vertically
             instrument = Campbell Scientific CS616
             long_name = Soil water content
-            serial_number = ""
-            standard_name = not defined
+            standard_name = volume_fraction_of_condensed_water_in_soil
             statistic_type = average
             units = m^3/m^3
         [[[xl]]]
@@ -454,12 +394,10 @@ level = L1
             sheet = slow_met
     [[Sws_20cmb]]
         [[[Attr]]]
-            group_name = soil
             height = -0.08m vertically
             instrument = Campbell Scientific CS616
             long_name = Soil water content
-            serial_number = ""
-            standard_name = not defined
+            standard_name = volume_fraction_of_condensed_water_in_soil
             statistic_type = average
             units = m^3/m^3
         [[[xl]]]
@@ -467,12 +405,10 @@ level = L1
             sheet = slow_met
     [[Sws_8cma]]
         [[[Attr]]]
-            group_name = soil
             height = -<.08m
             instrument = Campbell Scientific CS616
             long_name = Soil water content
-            serial_number = ""
-            standard_name = not defined
+            standard_name = volume_fraction_of_condensed_water_in_soil
             statistic_type = average
             units = m^3/m^3
         [[[xl]]]
@@ -480,12 +416,10 @@ level = L1
             sheet = slow_met
     [[Sws_8cmb]]
         [[[Attr]]]
-            group_name = soil
             height = -0.08m horizontally in soil next to heat flux plate
             instrument = Campbell Scientific CS616
             long_name = Soil water content
-            serial_number = ""
-            standard_name = not defined
+            standard_name = volume_fraction_of_condensed_water_in_soil
             statistic_type = average
             units = m^3/m^3
         [[[xl]]]
@@ -493,12 +427,10 @@ level = L1
             sheet = slow_met
     [[Ta_HMP_30m]]
         [[[Attr]]]
-            group_name = meteorology
             height = 30m
             instrument = HMP45C
             long_name = Air temperature
-            serial_number = ""
-            standard_name = not defined
+            standard_name = air_temperature
             statistic_type = average
             units = degC
         [[[xl]]]
@@ -506,12 +438,10 @@ level = L1
             sheet = slow_met
     [[Ta_HMP_7m]]
         [[[Attr]]]
-            group_name = meteorology
             height = 7m
             instrument = HMP45C
             long_name = Air temperature
-            serial_number = ""
-            standard_name = not defined
+            standard_name = air_temperature
             statistic_type = average
             units = degC
         [[[xl]]]
@@ -519,24 +449,20 @@ level = L1
             sheet = slow_met
     [[TotalSS]]
         [[[Attr]]]
-            group_name = none
             height = 30m
             instrument = Sunshine Sensor
             long_name = Total Sunshine
-            serial_number = ""
-            standard_name = ""
             units = umol/m^2/s
+            statistic_type = average
         [[[xl]]]
             name = TotalSS
             sheet = slow_met
     [[Ts_20cma]]
         [[[Attr]]]
-            group_name = soil
             height = -0.07m, -0.14m, -0.21m, -0.37m
             instrument = Campbell Scientific TCAV
             long_name = Soil temperature
-            serial_number = ""
-            standard_name = not defined
+            standard_name = soil_temperature
             statistic_type = average
             units = degC
         [[[xl]]]
@@ -544,12 +470,10 @@ level = L1
             sheet = slow_met
     [[Ts_20cmb]]
         [[[Attr]]]
-            group_name = soil
             height = -0.07m, -0.14m, -0.21m, -0.37m
             instrument = Campbell Scientific TCAV
             long_name = Soil temperature
-            serial_number = ""
-            standard_name = not defined
+            standard_name = soil_temperature
             statistic_type = average
             units = degC
         [[[xl]]]
@@ -557,25 +481,21 @@ level = L1
             sheet = slow_met
     [[Ts_4cma]]
         [[[Attr]]]
-            group_name = soil
             height = -0.04m
             instrument = Campbell Scientific TCAV
             long_name = Soil temperature
-            serial_number = ""
-            standard_name = not defined
             statistic_type = average
             units = degC
+            standard_name = soil_temperature
         [[[xl]]]
             name = Ts_TCAV_04_Avg
             sheet = slow_met
     [[Ts_8cma]]
         [[[Attr]]]
-            group_name = soil
             height = -0.08m
             instrument = Campbell Scientific TCAV
             long_name = Soil temperature
-            serial_number = ""
-            standard_name = not defined
+            standard_name = soil_temperature
             statistic_type = average
             units = degC
         [[[xl]]]
@@ -583,12 +503,10 @@ level = L1
             sheet = slow_met
     [[Tv_SONIC_Av]]
         [[[Attr]]]
-            group_name = meteorology
             height = 30m
             instrument = CSAT
             long_name = Virtual temperature
-            serial_number = ""
-            standard_name = not defined
+            standard_name = virtual_temperature
             statistic_type = average
             units = degC
         [[[xl]]]
@@ -596,11 +514,9 @@ level = L1
             sheet = slow_met
     [[Tv_SONIC_Vr]]
         [[[Attr]]]
-            group_name = meteorology
             height = 30m
             instrument = CSAT
             long_name = Virtual temperature
-            standard_name = none
             statistic_type = variance
             units = degC^2
         [[[xl]]]
@@ -608,12 +524,9 @@ level = L1
             sheet = slow_flux
     [[UxA]]
         [[[Attr]]]
-            group_name = covariances
             height = 30m
             instrument = CSAT3, Li-7500
             long_name = Covariance of Ux and H2O
-            serial_number = ""
-            standard_name = not defined
             statistic_type = average
             units = g/m^2/s
         [[[xl]]]
@@ -621,12 +534,9 @@ level = L1
             sheet = slow_flux
     [[UxC]]
         [[[Attr]]]
-            group_name = covariances
             height = 30m
             instrument = CSAT3, Li-7500
             long_name = Covariance of Ux and CO2
-            serial_number = ""
-            standard_name = not defined
             statistic_type = average
             units = mg/m^2/s
         [[[xl]]]
@@ -634,24 +544,19 @@ level = L1
             sheet = slow_flux
     [[UxT]]
         [[[Attr]]]
-            group_name = none
             height = 30m
             instrument = CSAT3
             long_name = Covariance of Ux and T
-            serial_number = ""
-            standard_name = not defined
             units = m.degC/s
+            statistic_type = average
         [[[xl]]]
             name = covUxTv
             sheet = slow_flux
     [[UxUy]]
         [[[Attr]]]
-            group_name = covariances
             height = 30m
             instrument = CSAT
             long_name = Covariance of Ux and Uy
-            serial_number = ""
-            standard_name = not defined
             statistic_type = average
             units = m^2/s^2
         [[[xl]]]
@@ -659,12 +564,9 @@ level = L1
             sheet = slow_flux
     [[UxUz]]
         [[[Attr]]]
-            group_name = covariances
             height = 30m
             instrument = CSAT3
             long_name = Covariance of Ux and Uz
-            serial_number = ""
-            standard_name = not defined
             statistic_type = average
             units = m^2/s^2
         [[[xl]]]
@@ -672,12 +574,9 @@ level = L1
             sheet = slow_flux
     [[Ux_SONIC_Av]]
         [[[Attr]]]
-            group_name = meteorology
             height = 30m
             instrument = CSAT
             long_name = Longitudinal wind velocity component, sonic coordinates
-            serial_number = ""
-            standard_name = not defined
             statistic_type = average
             units = m/s
         [[[xl]]]
@@ -685,11 +584,9 @@ level = L1
             sheet = slow_met
     [[Ux_SONIC_Vr]]
         [[[Attr]]]
-            group_name = meteorology
             height = 30m
             instrument = CSAT
             long_name = Longitudinal wind velocity component, sonic coordinates
-            standard_name = none
             statistic_type = variance
             units = m^2/s^2
         [[[xl]]]
@@ -697,12 +594,9 @@ level = L1
             sheet = slow_flux
     [[UyA]]
         [[[Attr]]]
-            group_name = covariances
             height = 30m
             instrument = CSAT3, Li-7500
             long_name = Covariance of Uy and H2O
-            serial_number = ""
-            standard_name = not defined
             statistic_type = average
             units = g/m^2/s
         [[[xl]]]
@@ -710,12 +604,9 @@ level = L1
             sheet = slow_flux
     [[UyC]]
         [[[Attr]]]
-            group_name = covariances
             height = 30m
             instrument = CSAT3, Li-7500
             long_name = Covariance of Uy and CO2
-            serial_number = ""
-            standard_name = not defined
             statistic_type = average
             units = mg/m^2/s
         [[[xl]]]
@@ -723,24 +614,19 @@ level = L1
             sheet = slow_flux
     [[UyT]]
         [[[Attr]]]
-            group_name = none
             height = 30m
             instrument = CSAT3
             long_name = Covariance of Uy and T
-            serial_number = ""
-            standard_name = not defined
             units = m.degC/s
+            statistic_type = average
         [[[xl]]]
             name = covUyTv
             sheet = slow_flux
     [[UyUz]]
         [[[Attr]]]
-            group_name = covariances
             height = 30m
             instrument = CSAT3
             long_name = Covariance of Uy and Uz
-            serial_number = ""
-            standard_name = not defined
             statistic_type = average
             units = m^2/s^2
         [[[xl]]]
@@ -748,12 +634,9 @@ level = L1
             sheet = slow_flux
     [[Uy_SONIC_Av]]
         [[[Attr]]]
-            group_name = meteorology
             height = 30m
             instrument = CSAT
             long_name = Lateral wind velocity component, sonic coordinates
-            serial_number = ""
-            standard_name = not defined
             statistic_type = average
             units = m/s
         [[[xl]]]
@@ -761,12 +644,9 @@ level = L1
             sheet = slow_met
     [[Uy_SONIC_Vr]]
         [[[Attr]]]
-            group_name = meteorology
             height = 30m
             instrument = CSAT
             long_name = Lateral wind velocity component, sonic coordinates
-            serial_number = ""
-            standard_name = not defined
             statistic_type = variance
             units = m^2/s^2
         [[[xl]]]
@@ -774,12 +654,9 @@ level = L1
             sheet = slow_flux
     [[UzA]]
         [[[Attr]]]
-            group_name = covariances
             height = 30m
             instrument = CSAT3, Li-7500
             long_name = Covariance of Uz and H2O
-            serial_number = ""
-            standard_name = not defined
             statistic_type = average
             units = g/m^2/s
         [[[xl]]]
@@ -787,12 +664,9 @@ level = L1
             sheet = slow_flux
     [[UzC]]
         [[[Attr]]]
-            group_name = covariances
             height = 30m
             instrument = CSAT3, Li-7500
             long_name = Covariance of Uz and CO2
-            serial_number = ""
-            standard_name = not defined
             statistic_type = average
             units = mg/m^2/s
         [[[xl]]]
@@ -800,24 +674,19 @@ level = L1
             sheet = slow_flux
     [[UzT]]
         [[[Attr]]]
-            group_name = none
             height = 30m
             instrument = CSAT3
             long_name = Covariance of Uz and T
-            serial_number = ""
-            standard_name = not defined
             units = m.degC/s
+            statistic_type = average
         [[[xl]]]
             name = covUzTv
             sheet = slow_flux
     [[Uz_SONIC_Av]]
         [[[Attr]]]
-            group_name = meteorology
             height = 30m
             instrument = CSAT
             long_name = Vertical wind velocity component, sonic coordinates
-            serial_number = ""
-            standard_name = not defined
             statistic_type = average
             units = m/s
         [[[xl]]]
@@ -825,12 +694,9 @@ level = L1
             sheet = slow_met
     [[Uz_SONIC_Vr]]
         [[[Attr]]]
-            group_name = meteorology
             height = 30m
             instrument = CSAT
             long_name = Vertical wind velocity component, sonic coordinates
-            serial_number = ""
-            standard_name = not defined
             statistic_type = variance
             units = m^2/s^2
         [[[xl]]]
@@ -838,11 +704,9 @@ level = L1
             sheet = slow_flux
     [[Wd_SONIC_Av]]
         [[[Attr]]]
-            group_name = meteorology
             height = 30m
             instrument = CSAT
             long_name = Wind direction
-            serial_number = ""
             standard_name = wind_from_direction
             statistic_type = average
             units = degrees
@@ -851,11 +715,9 @@ level = L1
             sheet = slow_met
     [[Wd_WS4_Av]]
         [[[Attr]]]
-            group_name = meteorology
             height = heightm
             instrument = WindSonic4
             long_name = Wind direction
-            serial_number = ""
             standard_name = wind_from_direction
             statistic_type = average
             units = degrees
@@ -864,11 +726,9 @@ level = L1
             sheet = slow_met
     [[Ws_SONIC_Av]]
         [[[Attr]]]
-            group_name = meteorology
             height = 30m
             instrument = CSAT
             long_name = Wind speed
-            serial_number = ""
             standard_name = wind_speed
             statistic_type = average
             units = m/s
@@ -877,11 +737,9 @@ level = L1
             sheet = slow_met
     [[Ws_WS4_Av]]
         [[[Attr]]]
-            group_name = meteorology
             height = heightm
             instrument = WindSonic4
             long_name = Wind speed
-            serial_number = ""
             standard_name = wind_speed
             statistic_type = average
             units = m/s
@@ -890,11 +748,9 @@ level = L1
             sheet = slow_met
     [[ps]]
         [[[Attr]]]
-            group_name = meteorology
             height = 30m
             instrument = Li-7500
             long_name = Surface air pressure
-            serial_number = ""
             standard_name = surface_air_pressure
             statistic_type = average
             units = kPa
@@ -903,24 +759,19 @@ level = L1
             sheet = slow_met
     [[qc_Sc]]
         [[[Attr]]]
-            group_name = none
             height = 30m
             instrument = Li-7500
             long_name = Quality control for profile data
-            serial_number = ""
-            standard_name = not defined
-            units = none
+            statistic_type = average
+            units = 1
         [[[xl]]]
             name = qc_Sc
             sheet = EddyPro_QC
     [[ustar_EP]]
         [[[Attr]]]
-            group_name = flux
             height = 30m
             instrument = CSAT3B
             long_name = Friction velocity
-            serial_number = ""
-            standard_name = ""
             statistic_type = average
             units = m/s
         [[[xl]]]

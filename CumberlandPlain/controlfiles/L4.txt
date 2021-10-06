@@ -214,5 +214,5 @@ level = L4
         [[[MergeSeries]]]
             source = Precip,Precip_aws,Precip_era5,Precip_access
         [[[RangeCheck]]]
-            lower = 0
-            upper = 50
+            lower = 0.0
+            upper = 50.0

@@ -4,7 +4,7 @@ level = L5
     in_filename = Calperum_L4.nc
     out_filename = Calperum_L5.nc
     plot_path = ../PFP_examples/Calperum/Plots/
-    cpd_filename = Calperum_L3_CPD_McHugh.xls
+    cpd_filename = Calperum_L3_CPD_McHugh.xlsx
 [Options]
     MaxGapInterpolate = 3
     FilterList = Fco2
