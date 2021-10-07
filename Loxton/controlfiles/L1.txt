@@ -5,7 +5,6 @@ level = L1
     in_firstdatarow = 5
     in_headerrow = 2
     out_filename = Loxton_L1.nc
-    plot_path = plots/
 [Global]
     Conventions = CF-1.8
     acknowledgement = '''This work used eddy covariance data collected by SARDI the South Australian Research and 
@@ -131,11 +130,11 @@ of Samantha Connor was supported by a summer scholarship from the National Progr
         [[[xl]]]
             name = co2_flux
             sheet = eddy_pro
-    [[Fco2_EPFlag]]
+    [[Fco2_EP_QC]]
         [[[Attr]]]
             height = 10m
             instrument = CSAT3 and Li-7500
-            long_name = QC CO2 flux from 10Hz data
+            long_name = Carbon dioxide flux EddyPro QC flag
             statistic_type = average
             units = 1
         [[[xl]]]
@@ -163,13 +162,13 @@ of Samantha Connor was supported by a summer scholarship from the National Progr
         [[[xl]]]
             name = LE
             sheet = eddy_pro
-    [[Fe_EPFlag]]
+    [[Fe_EP_QC]]
         [[[Attr]]]
             height = 10m
             instrument = CSAT3 and Li-7500
-            long_name = QC latent heat flux from 10Hz data
-            units = 1
+            long_name = Latent heat flux EddyPro QC flag
             statistic_type = average
+            units = 1
         [[[xl]]]
             name = qc_LE
             sheet = eddy_pro
@@ -261,13 +260,13 @@ of Samantha Connor was supported by a summer scholarship from the National Progr
         [[[xl]]]
             name = H
             sheet = eddy_pro
-    [[Fh_EPFlag]]
+    [[Fh_EP_QC]]
         [[[Attr]]]
             height = 10m
             instrument = CSAT3 and Li-7500
-            long_name = QC sensible heat flux from 10Hz data
-            units = 1
+            long_name = Sensible heat flux EddyPro QC flag
             statistic_type = average
+            units = 1
         [[[xl]]]
             name = qc_H
             sheet = eddy_pro
@@ -304,13 +303,13 @@ of Samantha Connor was supported by a summer scholarship from the National Progr
         [[[xl]]]
             name = Tau
             sheet = eddy_pro
-    [[Fm_EPFlag]]
+    [[Fm_EP_QC]]
         [[[Attr]]]
             height = 10m
             instrument = CSAT3
-            long_name = QC Tau from 10Hz data
-            units = 1
+            long_name = Momentum flux EddyPro QC flag
             statistic_type = average
+            units = 1
         [[[xl]]]
             name = qc_Tau
             sheet = eddy_pro
