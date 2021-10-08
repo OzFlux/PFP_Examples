@@ -49,13 +49,13 @@ level = L2
             upper = 2500.0
     [[Fco2_EP]]
         [[[DependencyCheck]]]
-            source = AGC_IRGA,Fco2_EPFlag,Uz_SONIC_Vr,CO2_IRGA_Sd,AH_IRGA_Sd
+            source = AGC_IRGA,Fco2_EP_QC,Uz_SONIC_Vr,CO2_IRGA_Sd,AH_IRGA_Sd
         [[[DiurnalCheck]]]
             numsd = 3.0
         [[[RangeCheck]]]
             lower = -50.0
             upper = 50.0
-    [[Fco2_EPFlag]]
+    [[Fco2_EP_QC]]
         [[[RangeCheck]]]
             lower = -0.5
             upper = 1.5
@@ -69,11 +69,11 @@ level = L2
             upper = 20.0
     [[Fe_EP]]
         [[[DependencyCheck]]]
-            source = AGC_IRGA,Fe_EPFlag,Uz_SONIC_Vr,CO2_IRGA_Sd,AH_IRGA_Sd
+            source = AGC_IRGA,Fe_EP_QC,Uz_SONIC_Vr,CO2_IRGA_Sd,AH_IRGA_Sd
         [[[RangeCheck]]]
             lower = -50.0
             upper = 800.0
-    [[Fe_EPFlag]]
+    [[Fe_EP_QC]]
         [[[RangeCheck]]]
             lower = -0.5
             upper = 1.5
@@ -83,11 +83,11 @@ level = L2
             upper = 100.0
     [[Fh_EP]]
         [[[DependencyCheck]]]
-            source = AGC_IRGA,Fh_EPFlag,Uz_SONIC_Vr,Tv_SONIC_Vr
+            source = AGC_IRGA,Fh_EP_QC,Uz_SONIC_Vr,Tv_SONIC_Vr
         [[[RangeCheck]]]
             lower = -100.0
             upper = 800.0
-    [[Fh_EPFlag]]
+    [[Fh_EP_QC]]
         [[[RangeCheck]]]
             lower = -0.5
             upper = 1.5
@@ -101,23 +101,23 @@ level = L2
             upper = 700.0
     [[Fm_EP]]
         [[[DependencyCheck]]]
-            source = Fm_EPFlag,Uz_SONIC_Vr,Ux_SONIC_Vr,Uy_SONIC_Vr
+            source = Fm_EP_QC,Uz_SONIC_Vr,Ux_SONIC_Vr,Uy_SONIC_Vr
         [[[RangeCheck]]]
             lower = -1.0
             upper = 10.0
-    [[Fm_EPFlag]]
+    [[Fm_EP_QC]]
         [[[RangeCheck]]]
             lower = -0.5
             upper = 1.5
     [[Fn_NR]]
         [[[ExcludeHours]]]
-            0 = 2014-01-0100:00,2014-01-2923:30,13:30,14:00,14:30,15:00,15:30
+            0 = 2014-01-01 00:00,2014-01-29 23:30,13:30,14:00,14:30,15:00,15:30
         [[[RangeCheck]]]
             lower = -100.0
             upper = 1000.0
     [[Fsd]]
         [[[ExcludeHours]]]
-            0 = 2014-01-0100:00,2014-01-2923:30,13:30,14:00,14:30,15:00,15:30
+            0 = 2014-01-01 00:00,2014-01-29 23:30,13:30,14:00,14:30,15:00,15:30
         [[[RangeCheck]]]
             lower = -10.0
             upper = 1500.0
@@ -313,7 +313,7 @@ level = L2
             upper = 1.5
     [[ustar_EP]]
         [[[DependencyCheck]]]
-            source = Fm_EPFlag,Uz_SONIC_Vr,Ux_SONIC_Vr,Uy_SONIC_Vr
+            source = Fm_EP_QC,Uz_SONIC_Vr,Ux_SONIC_Vr,Uy_SONIC_Vr
         [[[RangeCheck]]]
             lower = 0.0
             upper = 3.0
@@ -339,12 +339,12 @@ level = L2
     [[CO2 Storage]]
         variables = Fco2_profile,qc_Sc
     [[IRGA diagnostics]]
-        variables = AGC_IRGA,Fco2_EPFlag,CO2_IRGA_Sd,H2O_IRGA_Sd,Precip
+        variables = AGC_IRGA,Fco2_EP_QC,CO2_IRGA_Sd,H2O_IRGA_Sd,Precip
     [[Fc diagnostics]]
         variables = UzC,Fco2_EP,AGC_IRGA,CO2_IRGA_Sd,H2O_IRGA_Sd,Precip
     [[Fe diagnostics]]
         variables = UzA,Fe_EP,AGC_IRGA,CO2_IRGA_Sd,H2O_IRGA_Sd,Precip
     [[Fh diagnostics]]
-        variables = UzT,Fh_EP,Fh_EPFlag,Uz_SONIC_Sd,Tv_SONIC_Sd
+        variables = UzT,Fh_EP,Fh_EP_QC,Uz_SONIC_Sd,Tv_SONIC_Sd
     [[Fc_profile diagnostics]]
         variables = Fco2_profile,qc_Sc,CO2_IRGA_Sd,H2O_IRGA_Sd

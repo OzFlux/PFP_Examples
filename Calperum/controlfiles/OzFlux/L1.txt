@@ -1,11 +1,10 @@
 level = L1
 [Files]
-    file_path = ../PFP_examples/Calperum/Data/Tower/2016/
+    file_path = ../PFP_examples/Calperum/Data/OzFlux/2016/
     in_filename = Calperum_2016_L1.xls
     in_firstdatarow = 5
     in_headerrow = 2
     out_filename = Calperum_2016_L1.nc
-    plot_path = plots/
 [Global]
     Conventions = CF-1.8
     canopy_height = 3m eucalyptus, 0.7 grass
@@ -668,11 +667,11 @@ level = L1
             sheet = slow_flux
     [[Ux_SONIC_Av]]
         [[[Attr]]]
+            height = 20m
             instrument = CSAT
             long_name = Longitudinal wind velocity component, sonic coordinates
             statistic_type = average
             units = m/s
-            height = 20m
         [[[xl]]]
             name = Ux_CSAT_Avg
             sheet = slow_met
@@ -728,11 +727,11 @@ level = L1
             sheet = slow_flux
     [[Uy_SONIC_Av]]
         [[[Attr]]]
+            height = 20m
             instrument = CSAT
             long_name = Lateral wind velocity component, sonic coordinates
             statistic_type = average
             units = m/s
-            height = 20m
         [[[xl]]]
             name = Uy_CSAT_Avg
             sheet = slow_met
@@ -778,11 +777,11 @@ level = L1
             sheet = slow_flux
     [[Uz_SONIC_Av]]
         [[[Attr]]]
+            height = 20m
             instrument = CSAT
             long_name = Vertical wind velocity component, sonic coordinates
             statistic_type = average
             units = m/s
-            height = 20m
         [[[xl]]]
             name = Uz_CSAT_Avg
             sheet = slow_met
@@ -829,12 +828,12 @@ level = L1
             sheet = slow_extras
     [[Wd_SONIC_Av]]
         [[[Attr]]]
+            height = 20m
             instrument = CSAT
             long_name = Wind direction
             standard_name = wind_from_direction
             statistic_type = average
             units = degrees
-            height = 20m
         [[[xl]]]
             name = WD_CSAT_correction_(degrees)
             sheet = slow_met
@@ -862,23 +861,23 @@ level = L1
             sheet = slow_extras
     [[Ws_SONIC_Av]]
         [[[Attr]]]
+            height = 20m
             instrument = CSAT
             long_name = Wind speed
             standard_name = wind_speed
             statistic_type = average
             units = m/s
-            height = 20m
         [[[xl]]]
             name = WS_CSAT_Avg
             sheet = slow_met
     [[ps]]
         [[[Attr]]]
+            height = 20m
             instrument = Li-7500
             long_name = Surface air pressure
             standard_name = surface_air_pressure
             statistic_type = average
             units = kPa
-            height = 20m
         [[[xl]]]
             name = ps_7500_Avg
             sheet = slow_met

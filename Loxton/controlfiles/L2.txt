@@ -49,27 +49,27 @@ level = L2
             upper = 20.5
     [[Fco2_EP]]
         [[[DependencyCheck]]]
-            source = Fco2_EPFlag
+            source = Fco2_EP_QC
         [[[RangeCheck]]]
             lower = -50.0
             upper = 50.0
-    [[Fco2_EPFlag]]
+    [[Fco2_EP_QC]]
         [[[RangeCheck]]]
             lower = -0.5
             upper = 0.5
     [[Fco2_profile]]
         [[[DependencyCheck]]]
-            source = Fco2_EPFlag
+            source = Fco2_EP_QC
         [[[RangeCheck]]]
             lower = -50.0
             upper = 50.0
     [[Fe_EP]]
         [[[DependencyCheck]]]
-            source = Fe_EPFlag
+            source = Fe_EP_QC
         [[[RangeCheck]]]
             lower = -200.0
             upper = 1500.0
-    [[Fe_EPFlag]]
+    [[Fe_EP_QC]]
         [[[RangeCheck]]]
             lower = -0.5
             upper = 0.5
@@ -103,11 +103,11 @@ level = L2
             upper = 150.0
     [[Fh_EP]]
         [[[DependencyCheck]]]
-            source = Fh_EPFlag
+            source = Fh_EP_QC
         [[[RangeCheck]]]
             lower = -800.0
             upper = 800.0
-    [[Fh_EPFlag]]
+    [[Fh_EP_QC]]
         [[[RangeCheck]]]
             lower = -0.5
             upper = 0.5
@@ -121,11 +121,11 @@ level = L2
             upper = 700.0
     [[Fm_EP]]
         [[[DependencyCheck]]]
-            source = Fm_EPFlag
+            source = Fm_EP_QC
         [[[RangeCheck]]]
             lower = -10.0
             upper = 10.0
-    [[Fm_EPFlag]]
+    [[Fm_EP_QC]]
         [[[RangeCheck]]]
             lower = -0.5
             upper = 0.5
@@ -363,8 +363,8 @@ level = L2
     [[Soil heat flux]]
         variables = Fg_10cma,Fg_10cmb,Fg_10cmc,Fg_10cmd,Fg_10cme,Fg_10cmf,Fg_10cmg
     [[Diagnostics (Fh)]]
-        variables = UzT,Fh_EP,Fh_EPFlag,Diag_SONIC
+        variables = UzT,Fh_EP,Fh_EP_QC,Diag_SONIC
     [[Diagnostics (Fe)]]
-        variables = UzA,Fe_EP,Fe_EPFlag,Diag_IRGA,AGC_IRGA,AH_IRGA_Sd,CO2_IRGA_Sd
+        variables = UzA,Fe_EP,Fe_EP_QC,Diag_IRGA,AGC_IRGA,AH_IRGA_Sd,CO2_IRGA_Sd
     [[Diagnostics (Fc)]]
-        variables = UzC,Fco2_EP,Fco2_EPFlag,Diag_IRGA,AGC_IRGA,AH_IRGA_Sd,CO2_IRGA_Sd
+        variables = UzC,Fco2_EP,Fco2_EP_QC,Diag_IRGA,AGC_IRGA,AH_IRGA_Sd,CO2_IRGA_Sd

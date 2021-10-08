@@ -26,7 +26,7 @@ level = L1
     references = None
     site_name = Cumberland Plain
     site_pi = Elise Pendall
-    soil = ""
+    soil = 
     source = 30m flux tower plus array of soil sensors
     time_step = 30
     time_zone = Australia/Sydney
@@ -151,11 +151,11 @@ level = L1
         [[[xl]]]
             name = co2_flux
             sheet = EddyPro_QC
-    [[Fco2_EPFlag]]
+    [[Fco2_EP_QC]]
         [[[Attr]]]
             height = 30m
             instrument = Li-7500
-            long_name = Stationarity and turbulence development
+            long_name = Carbon dioxide flux EddyPro QC flag
             statistic_type = average
             units = 1
         [[[xl]]]
@@ -183,11 +183,11 @@ level = L1
         [[[xl]]]
             name = LE
             sheet = EddyPro_QC
-    [[Fe_EPFlag]]
+    [[Fe_EP_QC]]
         [[[Attr]]]
             height = 30m
             instrument = Li-7500
-            long_name = Stationarity and turbulence development
+            long_name = Latent heat flux EddyPro QC flag
             statistic_type = average
             units = 1
         [[[xl]]]
@@ -215,11 +215,11 @@ level = L1
         [[[xl]]]
             name = H
             sheet = EddyPro_QC
-    [[Fh_EPFlag]]
+    [[Fh_EP_QC]]
         [[[Attr]]]
             height = 30m
             instrument = Li-7500
-            long_name = Stationarity and turbulence development
+            long_name = Sensible heat flux EddyPro QC flag
             statistic_type = average
             units = 1
         [[[xl]]]
@@ -258,11 +258,11 @@ level = L1
         [[[xl]]]
             name = Tau
             sheet = EddyPro_QC
-    [[Fm_EPFlag]]
+    [[Fm_EP_QC]]
         [[[Attr]]]
             height = 30m
             instrument = Li-7500
-            long_name = Stationarity and turbulence development
+            long_name = Momentum flux EddyPro QC flag
             statistic_type = average
             units = 1
         [[[xl]]]
