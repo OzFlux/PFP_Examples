@@ -1,6 +1,6 @@
 level = batch
 [Options]
-    levels = L1,L2,L3,climatology,cpd_mcnew,cpd_barr,mpt,L4,L5,L6
+    levels = L1,L2,L3,climatology,cpd_mchugh,cpd_mcnew,cpd_barr,mpt,L4,L5,L6
 [Levels]
     [[L1]]
         0 = ../PFP_examples/Loxton/controlfiles/L1.txt

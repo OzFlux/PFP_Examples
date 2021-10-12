@@ -2,8 +2,8 @@ level = mpt
 [Files]
     file_path = ../PFP_examples/CumberlandPlain/Data/Tower/
     in_filename = CumberlandPlain_L3.nc
-    out_filename = CumberlandPlain_L3_MPT.xls
-    plot_path = plots/
+    out_filename = CumberlandPlain_L3_MPT.xlsx
+    plot_path = ./PFP_examples/CumberlandPlain/Plots/
 [Options]
     hourly = No
     percentile = 90

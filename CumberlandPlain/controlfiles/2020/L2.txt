@@ -41,13 +41,13 @@ level = L2
             upper = 2500.0
     [[Fco2_EP]]
         [[[DependencyCheck]]]
-            source = Signal_CO2,Fco2_EPFlag,W_SONIC_Sd,H2O_IRGA_Sd,CO2_IRGA_Sd
+            source = Signal_CO2,Fco2_EP_QC,W_SONIC_Sd,H2O_IRGA_Sd,CO2_IRGA_Sd
         [[[DiurnalCheck]]]
             numsd = 3.0
         [[[RangeCheck]]]
             lower = -50.0
             upper = 50.0
-    [[Fco2_EPFlag]]
+    [[Fco2_EP_QC]]
         [[[RangeCheck]]]
             lower = -0.5
             upper = 1.5
@@ -59,11 +59,11 @@ level = L2
             upper = 20.0
     [[Fe_EP]]
         [[[DependencyCheck]]]
-            source = Signal_CO2,Fe_EPFlag,W_SONIC_Sd,H2O_IRGA_Sd,CO2_IRGA_Sd
+            source = Signal_CO2,Fe_EP_QC,W_SONIC_Sd,H2O_IRGA_Sd,CO2_IRGA_Sd
         [[[RangeCheck]]]
             lower = -50.0
             upper = 800.0
-    [[Fe_EPFlag]]
+    [[Fe_EP_QC]]
         [[[RangeCheck]]]
             lower = -0.5
             upper = 1.5
@@ -77,11 +77,11 @@ level = L2
             upper = 250.0
     [[Fh_EP]]
         [[[DependencyCheck]]]
-            source = Fh_EPFlag,W_SONIC_Sd,Tv_SONIC_Sd
+            source = Fh_EP_QC,W_SONIC_Sd,Tv_SONIC_Sd
         [[[RangeCheck]]]
             lower = -100.0
             upper = 800.0
-    [[Fh_EPFlag]]
+    [[Fh_EP_QC]]
         [[[RangeCheck]]]
             lower = -0.5
             upper = 1.5
@@ -95,11 +95,11 @@ level = L2
             upper = 700.0
     [[Fm_EP]]
         [[[DependencyCheck]]]
-            source = Fm_EPFlag,U_SONIC_Sd,V_SONIC_Sd,W_SONIC_Sd
+            source = Fm_EP_QC,U_SONIC_Sd,V_SONIC_Sd,W_SONIC_Sd
         [[[RangeCheck]]]
             lower = -1.0
             upper = 2.0
-    [[Fm_EPFlag]]
+    [[Fm_EP_QC]]
         [[[RangeCheck]]]
             lower = -0.5
             upper = 1.5
@@ -245,7 +245,7 @@ level = L2
             upper = 105.0
     [[ustar_EP]]
         [[[DependencyCheck]]]
-            source = Fm_EPFlag,U_SONIC_Sd,V_SONIC_Sd,W_SONIC_Sd
+            source = Fm_EP_QC,U_SONIC_Sd,V_SONIC_Sd,W_SONIC_Sd
         [[[RangeCheck]]]
             lower = 0.0
             upper = 3.0
@@ -265,12 +265,12 @@ level = L2
     [[CO2 storage]]
         variables = Fco2_profile
     [[IRGA diagnostics]]
-        variables = Fco2_EPFlag,CO2_IRGA_Sd,H2O_IRGA_Sd,Signal_CO2,Precip
+        variables = Fco2_EP_QC,CO2_IRGA_Sd,H2O_IRGA_Sd,Signal_CO2,Precip
     [[Fc diagnostics]]
-        variables = Fco2_EP,Fco2_EPFlag,Signal_CO2,CO2_IRGA_Sd,H2O_IRGA_Sd,Precip
+        variables = Fco2_EP,Fco2_EP_QC,Signal_CO2,CO2_IRGA_Sd,H2O_IRGA_Sd,Precip
     [[Fe diagnostics]]
-        variables = Fe_EP,Fe_EPFlag,Signal_CO2,CO2_IRGA_Sd,H2O_IRGA_Sd,Precip
+        variables = Fe_EP,Fe_EP_QC,Signal_CO2,CO2_IRGA_Sd,H2O_IRGA_Sd,Precip
     [[Fh diagnostics]]
-        variables = Fh_EP,Fh_EPFlag,W_SONIC_Sd,Tv_SONIC_Sd
+        variables = Fh_EP,Fh_EP_QC,W_SONIC_Sd,Tv_SONIC_Sd
     [[Fc_profile diagnostics]]
         variables = Fco2_profile,Signal_CO2,CO2_IRGA_Sd,H2O_IRGA_Sd

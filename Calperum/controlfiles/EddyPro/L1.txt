@@ -5,7 +5,6 @@ level = L1
     in_firstdatarow = 4
     in_headerrow = 2
     out_filename = Calperum_2016_L1.nc
-    plot_path = plots/
 [Global]
     Conventions = CF-1.8
     altitude = 62m
@@ -63,10 +62,10 @@ level = L1
         [[[xl]]]
             name = co2_flux
             sheet = full_output
-    [[Fco2_EPFlag]]
+    [[Fco2_EP_QC]]
         [[[Attr]]]
             instrument = SONIC/IRGA
-            long_name = Carbon dioxide flux quality control flag
+            long_name = Carbon dioxide flux EddyPro QC flag
             statistic_type = average
             units = 1
         [[[xl]]]
@@ -83,10 +82,10 @@ level = L1
         [[[xl]]]
             name = LE
             sheet = full_output
-    [[Fe_EPFlag]]
+    [[Fe_EP_QC]]
         [[[Attr]]]
             instrument = SONIC/IRGA
-            long_name = Latent heat flux quality control flag
+            long_name = Latent heat flux EddyPro QC flag
             statistic_type = average
             units = 1
         [[[xl]]]
@@ -114,10 +113,10 @@ level = L1
         [[[xl]]]
             name = H
             sheet = full_output
-    [[Fh_EPFlag]]
+    [[Fh_EP_QC]]
         [[[Attr]]]
             instrument = SONIC
-            long_name = Sensible heat flux quality control flag
+            long_name = Sensible heat flux EddyPro QC flag
             statistic_type = average
             units = 1
         [[[xl]]]
@@ -156,10 +155,10 @@ level = L1
         [[[xl]]]
             name = Tau
             sheet = full_output
-    [[Fm_EPFlag]]
+    [[Fm_EP_QC]]
         [[[Attr]]]
             instrument = SONIC
-            long_name = Momentum flux quality control flag
+            long_name = Momentum flux EddyPro QC flag
             statistic_type = average
             units = 1
         [[[xl]]]

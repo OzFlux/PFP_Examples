@@ -2,10 +2,9 @@ level = L1
 [Files]
     file_path = ../PFP_examples/CumberlandPlain/Data/Tower/2015/
     in_filename = CumberlandPlain_2015_L1.xls
-    in_headerrow = 1
     in_firstdatarow = 2
+    in_headerrow = 1
     out_filename = CumberlandPlain_2015_L1.nc
-    plot_path = plots/
 [Global]
     Conventions = CF-1.8
     altitude = 27 m
@@ -135,8 +134,8 @@ level = L1
             height = 30m
             instrument = Sunshine Sensor
             long_name = Diffuse Sunshine
-            units = umol/m^2/s
             statistic_type = average
+            units = umol/m^2/s
         [[[xl]]]
             name = DiffuseSS
             sheet = slow_met
@@ -151,11 +150,11 @@ level = L1
         [[[xl]]]
             name = co2_flux
             sheet = EddyPro_QC
-    [[Fco2_EPFlag]]
+    [[Fco2_EP_QC]]
         [[[Attr]]]
             height = 30m
             instrument = Li-7500
-            long_name = Stationarity and turbulence development
+            long_name = Carbon dioxide flux EddyPro QC flag
             statistic_type = average
             units = 1
         [[[xl]]]
@@ -183,11 +182,11 @@ level = L1
         [[[xl]]]
             name = LE
             sheet = EddyPro_QC
-    [[Fe_EPFlag]]
+    [[Fe_EP_QC]]
         [[[Attr]]]
             height = 30m
             instrument = Li-7500
-            long_name = Stationarity and turbulence development
+            long_name = Latent heat flux EddyPro QC flag
             statistic_type = average
             units = 1
         [[[xl]]]
@@ -215,11 +214,11 @@ level = L1
         [[[xl]]]
             name = H
             sheet = EddyPro_QC
-    [[Fh_EPFlag]]
+    [[Fh_EP_QC]]
         [[[Attr]]]
             height = 30m
             instrument = Li-7500
-            long_name = Stationarity and turbulence development
+            long_name = Sensible heat flux EddyPro QC flag
             statistic_type = average
             units = 1
         [[[xl]]]
@@ -258,11 +257,11 @@ level = L1
         [[[xl]]]
             name = Tau
             sheet = EddyPro_QC
-    [[Fm_EPFlag]]
+    [[Fm_EP_QC]]
         [[[Attr]]]
             height = 30m
             instrument = Li-7500
-            long_name = Stationarity and turbulence development
+            long_name = Momentum flux EddyPro QC flag
             statistic_type = average
             units = 1
         [[[xl]]]
@@ -452,8 +451,8 @@ level = L1
             height = 30m
             instrument = Sunshine Sensor
             long_name = Total Sunshine
-            units = umol/m^2/s
             statistic_type = average
+            units = umol/m^2/s
         [[[xl]]]
             name = TotalSS
             sheet = slow_met
@@ -547,8 +546,8 @@ level = L1
             height = 30m
             instrument = CSAT3
             long_name = Covariance of Ux and T
-            units = m.degC/s
             statistic_type = average
+            units = m.degC/s
         [[[xl]]]
             name = covUxTv
             sheet = slow_flux
@@ -617,8 +616,8 @@ level = L1
             height = 30m
             instrument = CSAT3
             long_name = Covariance of Uy and T
-            units = m.degC/s
             statistic_type = average
+            units = m.degC/s
         [[[xl]]]
             name = covUyTv
             sheet = slow_flux
@@ -677,8 +676,8 @@ level = L1
             height = 30m
             instrument = CSAT3
             long_name = Covariance of Uz and T
-            units = m.degC/s
             statistic_type = average
+            units = m.degC/s
         [[[xl]]]
             name = covUzTv
             sheet = slow_flux

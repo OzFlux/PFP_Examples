@@ -1,6 +1,6 @@
 level = batch
 [Options]
-    levels = concatenate,climatology,cpd_mchugh,cpd_barr,mpt,L4,L5,L6
+    levels = L1,L2,L3,concatenate,climatology,cpd_barr,cpd_mchugh,cpd_mcnew,mpt,L4,L5,L6
 [Levels]
     [[L1]]
         0 = ../PFP_examples/Calperum/controlfiles/OzFlux/L1.txt

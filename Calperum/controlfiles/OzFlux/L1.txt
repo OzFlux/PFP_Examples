@@ -38,6 +38,7 @@ level = L1
             long_name = IRGA automatic gain control value
             statistic_type = average
             units = 1
+            height = 20m
         [[[xl]]]
             name = AGC_7500_Avg
             sheet = slow_flux

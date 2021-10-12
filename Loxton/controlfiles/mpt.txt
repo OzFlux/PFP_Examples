@@ -3,7 +3,7 @@ level = mpt
     file_path = ../PFP_examples/Loxton/Data/Tower/
     in_filename = Loxton_L3.nc
     out_filename = Loxton_L3_MPT.xlsx
-    plot_path = plots/
+    plot_path = ../PFP_examples/Loxton/Data/Plots/
 [Options]
     hourly = No
     percentile = 90

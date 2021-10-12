@@ -2,7 +2,7 @@ level = climatology
 [Files]
     file_path = ../PFP_examples/CumberlandPlain/Data/Tower/
     in_filename = CumberlandPlain_L3.nc
-    plot_path = plots/
+    plot_path = ../PFP_examples/CumberlandPlain/Plots/
 [Variables]
     [[Ta]]
         name = Ta

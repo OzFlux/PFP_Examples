@@ -5,7 +5,6 @@ level = L1
     in_firstdatarow = 2
     in_headerrow = 1
     out_filename = CumberlandPlain_2019_L1.nc
-    plot_path = plots/
 [Global]
     Conventions = CF-1.8
     altitude = 27 m
@@ -26,7 +25,7 @@ level = L1
     references = None
     site_name = Cumberland Plain
     site_pi = Elise Pendall
-    soil = ""
+    soil = 
     source = 30m flux tower plus array of soil sensors
     time_step = 30
     time_zone = Australia/Sydney
@@ -123,11 +122,11 @@ level = L1
         [[[xl]]]
             name = co2_flux
             sheet = SmartFlux
-    [[Fco2_EPFlag]]
+    [[Fco2_EP_QC]]
         [[[Attr]]]
             height = 30m
             instrument = Li-7500
-            long_name = Fc QC flag from EddyPro, used at L2
+            long_name = Carbon dioxide flux EddyPro QC flag
             statistic_type = average
             units = 1
         [[[xl]]]
@@ -155,11 +154,11 @@ level = L1
         [[[xl]]]
             name = LE
             sheet = SmartFlux
-    [[Fe_EPFlag]]
+    [[Fe_EP_QC]]
         [[[Attr]]]
             height = 30m
             instrument = Li-7500
-            long_name = Fe QC flag from EddyPro, used at L2
+            long_name = Latent heat flux EddyPro QC flag
             statistic_type = average
             units = 1
         [[[xl]]]
@@ -198,11 +197,11 @@ level = L1
         [[[xl]]]
             name = H
             sheet = SmartFlux
-    [[Fh_EPFlag]]
+    [[Fh_EP_QC]]
         [[[Attr]]]
             height = 30m
             instrument = Li-7500
-            long_name = Fh QC flag from EddyPro, used at L2
+            long_name = Sensible heat flux EddyPro QC flag
             statistic_type = average
             units = 1
         [[[xl]]]
@@ -241,11 +240,11 @@ level = L1
         [[[xl]]]
             name = Tau
             sheet = SmartFlux
-    [[Fm_EPFlag]]
+    [[Fm_EP_QC]]
         [[[Attr]]]
             height = 30m
             instrument = CSAT3B
-            long_name = Fm QC flag from EddyPro, used at L2
+            long_name = Momentum flux EddyPro QC flag
             statistic_type = average
             units = 1
         [[[xl]]]
@@ -389,8 +388,8 @@ level = L1
             height = 30m
             instrument = Li-7500
             long_name = CO2 signal strength
-            units = 1
             statistic_type = average
+            units = 1
         [[[xl]]]
             name = co2_signal_strength_7500_mean
             sheet = SmartFlux

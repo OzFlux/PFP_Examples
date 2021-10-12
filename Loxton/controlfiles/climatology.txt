@@ -1,8 +1,7 @@
 level = climatology
 [Files]
-    file_path = /home/peter/PFP_examples/Loxton/Data/Tower/
+    file_path = ../PFP_examples/Loxton/Data/Tower/
     in_filename = Loxton_L3.nc
-    plot_path = plots/
 [Variables]
     [[Ta]]
         name = Ta

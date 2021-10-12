@@ -17,21 +17,21 @@ level = L2
             upper = 1.5
     [[Fco2]]
         [[[DependencyCheck]]]
-            source = Fco2_EPFlag,W_SONIC_Vr,H2O_IRGA_Vr,CO2_IRGA_Vr
+            source = Fco2_EP_QC,W_SONIC_Vr,H2O_IRGA_Vr,CO2_IRGA_Vr
         [[[RangeCheck]]]
             lower = -50.0
             upper = 50.0
-    [[Fco2_EPFlag]]
+    [[Fco2_EP_QC]]
         [[[RangeCheck]]]
             lower = -0.5
             upper = 1.5
     [[Fe]]
         [[[DependencyCheck]]]
-            source = Fe_EPFlag,W_SONIC_Vr,H2O_IRGA_Vr,CO2_IRGA_Vr
+            source = Fe_EP_QC,W_SONIC_Vr,H2O_IRGA_Vr,CO2_IRGA_Vr
         [[[RangeCheck]]]
             lower = -200.0
             upper = 1000.0
-    [[Fe_EPFlag]]
+    [[Fe_EP_QC]]
         [[[RangeCheck]]]
             lower = -0.5
             upper = 1.5
@@ -41,11 +41,11 @@ level = L2
             upper = 250.0
     [[Fh]]
         [[[DependencyCheck]]]
-            source = Fh_EPFlag,W_SONIC_Vr,Tv_SONIC_Vr
+            source = Fh_EP_QC,W_SONIC_Vr,Tv_SONIC_Vr
         [[[RangeCheck]]]
             lower = -200.0
             upper = 600.0
-    [[Fh_EPFlag]]
+    [[Fh_EP_QC]]
         [[[RangeCheck]]]
             lower = -0.5
             upper = 1.5
@@ -59,11 +59,11 @@ level = L2
             upper = 700.0
     [[Fm]]
         [[[DependencyCheck]]]
-            source = Fm_EPFlag,U_SONIC_Vr,V_SONIC_Vr,W_SONIC_Vr
+            source = Fm_EP_QC,U_SONIC_Vr,V_SONIC_Vr,W_SONIC_Vr
         [[[RangeCheck]]]
             lower = -1.0
             upper = 1.0
-    [[Fm_EPFlag]]
+    [[Fm_EP_QC]]
         [[[RangeCheck]]]
             lower = -0.5
             upper = 1.5
@@ -165,7 +165,7 @@ level = L2
             upper = 105.0
     [[ustar]]
         [[[DependencyCheck]]]
-            source = Fm_EPFlag,U_SONIC_Vr,V_SONIC_Vr,W_SONIC_Vr
+            source = Fm_EP_QC,U_SONIC_Vr,V_SONIC_Vr,W_SONIC_Vr
         [[[RangeCheck]]]
             lower = 0.0
             upper = 3.0

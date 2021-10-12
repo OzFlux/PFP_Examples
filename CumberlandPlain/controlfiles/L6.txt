@@ -1,9 +1,9 @@
 level = L6
 [Files]
-    plot_path = ../PFP_examples/CumberlandPlain/Plots/
     file_path = ../PFP_examples/CumberlandPlain/Data/Tower/
     in_filename = CumberlandPlain_L5.nc
     out_filename = CumberlandPlain_L6.nc
+    plot_path = ../PFP_examples/CumberlandPlain/Plots/
 [Global]
     acknowledgement = '''This work used eddy covariance data collected by the TERN-OzFlux facility. OzFlux
 would like to acknowledge the financial support of the Australian Federal Government via
