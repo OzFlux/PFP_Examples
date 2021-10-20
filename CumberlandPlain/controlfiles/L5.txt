@@ -4,7 +4,6 @@ level = L5
     in_filename = CumberlandPlain_L4.nc
     out_filename = CumberlandPlain_L5.nc
     plot_path = ../PFP_examples/CumberlandPlain/Plots/
-    cpd_filename = CumberlandPlain_L3_CPD_McHugh.xls
 [Options]
     AcceptDayTimes = Yes
     DayNightFilter = Fsd
