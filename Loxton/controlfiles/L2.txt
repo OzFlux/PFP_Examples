@@ -366,5 +366,5 @@ level = L2
         variables = UzT,Fh_EP,Fh_EP_QC,Diag_SONIC
     [[Diagnostics (Fe)]]
         variables = UzA,Fe_EP,Fe_EP_QC,Diag_IRGA,AGC_IRGA,AH_IRGA_Sd,CO2_IRGA_Sd
-    [[Diagnostics (Fc)]]
+    [[Diagnostics (Fco2)]]
         variables = UzC,Fco2_EP,Fco2_EP_QC,Diag_IRGA,AGC_IRGA,AH_IRGA_Sd,CO2_IRGA_Sd

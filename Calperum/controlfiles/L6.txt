@@ -47,6 +47,16 @@ Fund.'''
                 output_plots = False
         [[[MergeSeries]]]
             source = ER,ER_LT_all
+    [[ER_LL]]
+        [[[ERUsingLasslop]]]
+            [[[[ER_LL_all]]]]
+                drivers = Fsd,VPD,Ta
+                target = ER
+                step_size_days = 5
+                window_size_days = 15
+                output_plots = False
+        [[[MergeSeries]]]
+            source = ER,ER_LL_all
 [NetEcosystemExchange]
     [[NEE_SOLO]]
         Fco2 = Fco2
@@ -54,6 +64,9 @@ Fund.'''
     [[NEE_LT]]
         Fco2 = Fco2
         ER = ER_LT
+    [[NEE_LL]]
+        Fco2 = Fco2
+        ER = ER_LL
 [GrossPrimaryProductivity]
     [[GPP_SOLO]]
         NEE = NEE_SOLO
@@ -61,3 +74,6 @@ Fund.'''
     [[GPP_LT]]
         NEE = NEE_LT
         ER = ER_LT
+    [[GPP_LL]]
+        NEE = NEE_LL
+        ER = ER_LL

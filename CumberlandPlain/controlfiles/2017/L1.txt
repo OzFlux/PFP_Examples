@@ -32,6 +32,11 @@ level = L1
     title = Flux tower data set from the CUP site for the calendar year 2017
     tower_height = 30 m
     vegetation = Dry sclerophyll forest
+    featureType = timeSeries
+    acknowledgement = '''This work used eddy covariance data collected by the TERN Ecosystem 
+Processes facility. Ecosystem Processes would like to acknowledge the financial support of the 
+Australian Federal Government via the National Collaborative Research Infrastructure Scheme 
+and the Education Investment Fund.'''
 [Variables]
     [[AGC_IRGA]]
         [[[Attr]]]
@@ -154,7 +159,7 @@ level = L1
         [[[Attr]]]
             height = 30m
             instrument = Li-7500
-            long_name = Carbon dioxide flux EddyPro QC flag
+            long_name = CO2 flux EddyPro QC flag
             statistic_type = average
             units = 1
         [[[xl]]]

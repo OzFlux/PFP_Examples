@@ -10,7 +10,7 @@ level = L1
     canopy_height = 3m eucalyptus, 0.7 grass
     comment = CF metadata, OzFlux standard variable names
     contact = ozfluxtech@adelaide.edu.au
-    data_link = http://ozflux.its.monash.edu.au/
+    data_link = http://data.ozflux.org.au/
     fluxnet_id = 
     history = June 2021 processing
     institution = University of Adelaide
@@ -31,6 +31,11 @@ level = L1
     title = Flux tower data set from the Calperum site for the calendar year 2016
     tower_height = 20m
     vegetation = Mallee
+    featureType = timeSeries
+    acknowledgement = '''This work used eddy covariance data collected by the TERN Ecosystem 
+Processes facility. Ecosystem Processes would like to acknowledge the financial support of the 
+Australian Federal Government via the National Collaborative Research Infrastructure Scheme 
+and the Education Investment Fund.'''
 [Variables]
     [[AGC_IRGA]]
         [[[Attr]]]
@@ -394,6 +399,7 @@ level = L1
             long_name = Panel temperature at logger
             statistics_type = average
             units = degC
+            statistic_type = average
         [[[xl]]]
             name = Tpanel_Avg
             sheet = slow_met

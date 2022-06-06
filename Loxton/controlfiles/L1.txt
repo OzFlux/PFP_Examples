@@ -7,10 +7,10 @@ level = L1
     out_filename = Loxton_L1.nc
 [Global]
     Conventions = CF-1.8
-    acknowledgement = '''This work used eddy covariance data collected by SARDI the South Australian Research and 
-Development Institute. OzFlux would like to acknowledge the financial support from the National Action Plan for 
-Salinity via the Centre for Natural Resource Management, and the River Murray Levy. The participation in the project 
-of Samantha Connor was supported by a summer scholarship from the National Program for Sustainable Irrigation.'''
+    acknowledgement = '''This work used eddy covariance data collected by the TERN Ecosystem 
+Processes facility. Ecosystem Processes would like to acknowledge the financial support of the 
+Australian Federal Government via the National Collaborative Research Infrastructure Scheme 
+and the Education Investment Fund.'''
     altitude = 40m
     canopy_height = 5.5m (Stevens et al. 2012)
     comment = CF metadata, OzFlux standard variable names
@@ -35,6 +35,7 @@ of Samantha Connor was supported by a summer scholarship from the National Progr
     title = Flux tower data set from the Loxton site for the time 19/08/2008 to 09/06/2009
     tower_height = 10m
     vegetation = Almond orchard, 5.5 m canopy height
+    featureType = timeSeries
 [Variables]
     [[AGC_IRGA]]
         [[[Attr]]]
@@ -73,7 +74,7 @@ of Samantha Connor was supported by a summer scholarship from the National Progr
             height = 10m
             instrument = Li-7500
             long_name = Absolute humidity
-            statistic_type = standard deviation
+            statistic_type = standard_deviation
             units = g/m^3
         [[[xl]]]
             name = stdev_h2o
@@ -94,7 +95,7 @@ of Samantha Connor was supported by a summer scholarship from the National Progr
             height = 10m
             instrument = Li-7500
             long_name = CO2 concentration
-            statistic_type = standard deviation
+            statistic_type = standard_deviation
             units = mg/m^3
         [[[xl]]]
             name = stdev_co2
@@ -134,7 +135,7 @@ of Samantha Connor was supported by a summer scholarship from the National Progr
         [[[Attr]]]
             height = 10m
             instrument = CSAT3 and Li-7500
-            long_name = Carbon dioxide flux EddyPro QC flag
+            long_name = CO2 flux EddyPro QC flag
             statistic_type = average
             units = 1
         [[[xl]]]
@@ -341,6 +342,7 @@ of Samantha Connor was supported by a summer scholarship from the National Progr
             instrument = sprinkler
             long_name = Irrigation, 30 minute total
             units = mm
+            statistic_type = average
         [[[xl]]]
             name = Irrigation
             sheet = extra
@@ -599,7 +601,7 @@ of Samantha Connor was supported by a summer scholarship from the National Progr
             height = 10m
             instrument = CSAT
             long_name = Virtual temperature
-            statistic_type = standard deviation
+            statistic_type = standard_deviation
             units = degC
         [[[xl]]]
             name = stdev_Ts
@@ -669,7 +671,7 @@ of Samantha Connor was supported by a summer scholarship from the National Progr
             height = 10m
             instrument = CSAT
             long_name = Longitudinal wind velocity component, sonic coordinates
-            statistic_type = standard deviation
+            statistic_type = standard_deviation
             units = m/s
         [[[xl]]]
             name = stdev_Ux
@@ -729,7 +731,7 @@ of Samantha Connor was supported by a summer scholarship from the National Progr
             height = 10m
             instrument = CSAT
             long_name = Lateral wind velocity component, sonic coordinates
-            statistic_type = standard deviation
+            statistic_type = standard_deviation
             units = m/s
         [[[xl]]]
             name = stdev_Uy
@@ -779,7 +781,7 @@ of Samantha Connor was supported by a summer scholarship from the National Progr
             height = 10m
             instrument = CSAT
             long_name = Vertical wind velocity component, sonic coordinates
-            statistic_type = standard deviation
+            statistic_type = standard_deviation
             units = m/s
         [[[xl]]]
             name = stdev_Uz
@@ -866,6 +868,7 @@ of Samantha Connor was supported by a summer scholarship from the National Progr
             long_name = diffuse radiation
             statistic_average = average
             units = W/m^2
+            statistic_type = average
         [[[xl]]]
             name = diffuse_rad_Avg
             sheet = slow_flux

@@ -10,7 +10,7 @@ level = L1
     altitude = 62m
     canopy_height = 3m eucalyptus, 0.7 grass
     contact = ozfluxtech@adelaide.edu.au
-    data_link = http://ozflux.its.monash.edu.au/
+    data_link = http://data.ozflux.org.au/
     fluxnet_id = 
     history = June 2021 processing
     institution = University of Adelaide
@@ -29,6 +29,12 @@ level = L1
     title = Flux tower data set from the Calperum site for the calendar year 2016
     tower_height = 20m
     vegetation = Mallee
+    featureType = timeSeries
+    ozflux_link = http://ozflux.org.au/
+    acknowledgement = '''This work used eddy covariance data collected by the TERN Ecosystem 
+Processes facility. Ecosystem Processes would like to acknowledge the financial support of the 
+Australian Federal Government via the National Collaborative Research Infrastructure Scheme 
+and the Education Investment Fund.'''
 [Variables]
     [[CO2_IRGA_Av]]
         [[[Attr]]]
@@ -65,7 +71,7 @@ level = L1
     [[Fco2_EP_QC]]
         [[[Attr]]]
             instrument = SONIC/IRGA
-            long_name = Carbon dioxide flux EddyPro QC flag
+            long_name = CO2 flux EddyPro QC flag
             statistic_type = average
             units = 1
         [[[xl]]]

@@ -127,5 +127,5 @@ level = L3
         variables = Fh,UzT,Diag_SONIC,Diag_IRGA,AGC_IRGA,AH_IRGA_Sd,CO2_IRGA_Sd
     [[Fe diagnostics]]
         variables = Fe,UzA,Diag_SONIC,Diag_IRGA,AGC_IRGA,AH_IRGA_Sd,CO2_IRGA_Sd
-    [[Fc diagnostics]]
+    [[Fco2 diagnostics]]
         variables = Fco2,UzC,Diag_SONIC,Diag_IRGA,AGC_IRGA,AH_IRGA_Sd,CO2_IRGA_Sd
