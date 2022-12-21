@@ -5,21 +5,24 @@ level = L3
     out_filename = Calperum_2016_L3.nc
     plot_path = ../PFP_examples/Calperum/Plots/
 [Options]
-    MassmanCorrection = Yes
     CO2Units = umol/mol
     Fco2Units = umol/m^2/s
+    MassmanCorrection = Yes
+    2DCoordRotation = Yes
+    CalculateFluxes = Yes
+    ApplyWPL = Yes
 [Soil]
-    FgDepth = 0.08
     BulkDensity = 1600
+    FgDepth = 0.08
     OrganicContent = 0.01
     SwsDefault = 0.1
     SwsSeries = Sws_10cma
 [Massman]
-    zmd = 18
-    z0 = 0.368
-    angle = 26.35
     CSATarm = 0.52
     IRGAarm = 0.38
+    angle = 26.35
+    z0 = 0.368
+    zmd = 18
 [Variables]
     [[AH]]
         [[[MergeSeries]]]

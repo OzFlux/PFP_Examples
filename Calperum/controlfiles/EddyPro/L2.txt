@@ -6,6 +6,9 @@ level = L2
     plot_path = ../PFP_examples/Calperum/Plots/
 [Options]
     irga_type = Li-7500A
+    sonic_type = CSAT3
+    SONIC_Check = Yes
+    IRGA_Check = Yes
 [Variables]
     [[CO2_IRGA_Av]]
         [[[RangeCheck]]]

@@ -11,6 +11,7 @@ level = L5
     TurbulenceFilter = ustar (basic)
     DayNightFilter = Fsd
     AcceptDayTimes = Yes
+    KeepIntermediateSeries = Yes
 [GUI]
     [[GapFillUsingSOLO]]
         auto_complete = yes

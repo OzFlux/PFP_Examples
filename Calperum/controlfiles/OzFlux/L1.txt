@@ -7,10 +7,15 @@ level = L1
     out_filename = Calperum_2016_L1.nc
 [Global]
     Conventions = CF-1.8
+    acknowledgement = '''This work used eddy covariance data collected by the TERN Ecosystem 
+Processes facility. Ecosystem Processes would like to acknowledge the financial support of the 
+Australian Federal Government via the National Collaborative Research Infrastructure Scheme 
+and the Education Investment Fund.'''
     canopy_height = 3m eucalyptus, 0.7 grass
     comment = CF metadata, OzFlux standard variable names
     contact = ozfluxtech@adelaide.edu.au
     data_link = http://data.ozflux.org.au/
+    featureType = timeSeries
     fluxnet_id = 
     history = June 2021 processing
     institution = University of Adelaide
@@ -31,19 +36,14 @@ level = L1
     title = Flux tower data set from the Calperum site for the calendar year 2016
     tower_height = 20m
     vegetation = Mallee
-    featureType = timeSeries
-    acknowledgement = '''This work used eddy covariance data collected by the TERN Ecosystem 
-Processes facility. Ecosystem Processes would like to acknowledge the financial support of the 
-Australian Federal Government via the National Collaborative Research Infrastructure Scheme 
-and the Education Investment Fund.'''
 [Variables]
     [[AGC_IRGA]]
         [[[Attr]]]
-            instrument = Li-7500
+            height = 20m
+            instrument = Li-7500A
             long_name = IRGA automatic gain control value
             statistic_type = average
             units = 1
-            height = 20m
         [[[xl]]]
             name = AGC_7500_Avg
             sheet = slow_flux
@@ -61,7 +61,7 @@ and the Education Investment Fund.'''
     [[AH_IRGA_Av]]
         [[[Attr]]]
             height = 20m
-            instrument = Li-7500
+            instrument = Li-7500A
             long_name = Absolute humidity
             standard_name = mass_concentration_of_water_vapor_in_air
             statistic_type = average
@@ -72,7 +72,7 @@ and the Education Investment Fund.'''
     [[AH_IRGA_Vr]]
         [[[Attr]]]
             height = 20m
-            instrument = Li-7500
+            instrument = Li-7500A
             long_name = Absolute humidity
             statistic_type = variance
             units = g^2/m^6
@@ -82,7 +82,7 @@ and the Education Investment Fund.'''
     [[CO2_IRGA_Av]]
         [[[Attr]]]
             height = 20m
-            instrument = Li-7500
+            instrument = Li-7500A
             long_name = CO2 concentration
             standard_name = mass_concentration_of_carbon_dioxide_in_air
             statistic_type = average
@@ -93,7 +93,7 @@ and the Education Investment Fund.'''
     [[CO2_IRGA_Vr]]
         [[[Attr]]]
             height = 20m
-            instrument = Li-7500
+            instrument = Li-7500A
             long_name = CO2 concentration
             statistic_type = variance
             units = mg^2/m^6
@@ -102,7 +102,7 @@ and the Education Investment Fund.'''
             sheet = slow_flux
     [[Diag_IRGA]]
         [[[Attr]]]
-            instrument = Li-7500
+            instrument = Li-7500A
             long_name = IRGA diagnostic value
             statistic_type = average
             units = 1
@@ -111,7 +111,7 @@ and the Education Investment Fund.'''
             sheet = slow_flux
     [[Diag_SONIC]]
         [[[Attr]]]
-            instrument = CSAT
+            instrument = CSAT3
             long_name = Sonic diagnostic value
             statistic_type = average
             units = 1
@@ -397,9 +397,9 @@ and the Education Investment Fund.'''
         [[[Attr]]]
             instrument = Campbell Scientific CR3000 logger
             long_name = Panel temperature at logger
+            statistic_type = average
             statistics_type = average
             units = degC
-            statistic_type = average
         [[[xl]]]
             name = Tpanel_Avg
             sheet = slow_met
@@ -604,7 +604,7 @@ and the Education Investment Fund.'''
     [[Tv_SONIC_Av]]
         [[[Attr]]]
             height = 20m
-            instrument = CSAT
+            instrument = CSAT3
             long_name = Virtual temperature
             standard_name = virtual_temperature
             statistic_type = average
@@ -615,7 +615,7 @@ and the Education Investment Fund.'''
     [[Tv_SONIC_Vr]]
         [[[Attr]]]
             height = 20m
-            instrument = CSAT
+            instrument = CSAT3
             long_name = Virtual temperature
             statistic_type = variance
             units = degC^2
@@ -625,7 +625,7 @@ and the Education Investment Fund.'''
     [[UxA]]
         [[[Attr]]]
             height = 20m
-            instrument = CSAT3, Li-7500
+            instrument = CSAT3, Li-7500A
             long_name = Covariance of Ux and H2O
             statistic_type = average
             units = g/m^2/s
@@ -635,7 +635,7 @@ and the Education Investment Fund.'''
     [[UxC]]
         [[[Attr]]]
             height = 20m
-            instrument = CSAT3, Li-7500
+            instrument = CSAT3, Li-7500A
             long_name = Covariance of Ux and CO2
             statistic_type = average
             units = mg/m^2/s
@@ -675,7 +675,7 @@ and the Education Investment Fund.'''
     [[Ux_SONIC_Av]]
         [[[Attr]]]
             height = 20m
-            instrument = CSAT
+            instrument = CSAT3
             long_name = Longitudinal wind velocity component, sonic coordinates
             statistic_type = average
             units = m/s
@@ -695,7 +695,7 @@ and the Education Investment Fund.'''
     [[UyA]]
         [[[Attr]]]
             height = 20m
-            instrument = CSAT3, Li-7500
+            instrument = CSAT3, Li-7500A
             long_name = Covariance of Uy and H2O
             statistic_type = average
             units = g/m^2/s
@@ -705,7 +705,7 @@ and the Education Investment Fund.'''
     [[UyC]]
         [[[Attr]]]
             height = 20m
-            instrument = CSAT3, Li-7500
+            instrument = CSAT3, Li-7500A
             long_name = Covariance of Uy and CO2
             statistic_type = average
             units = mg/m^2/s
@@ -735,7 +735,7 @@ and the Education Investment Fund.'''
     [[Uy_SONIC_Av]]
         [[[Attr]]]
             height = 20m
-            instrument = CSAT
+            instrument = CSAT3
             long_name = Lateral wind velocity component, sonic coordinates
             statistic_type = average
             units = m/s
@@ -755,7 +755,7 @@ and the Education Investment Fund.'''
     [[UzA]]
         [[[Attr]]]
             height = 20m
-            instrument = CSAT3, Li-7500
+            instrument = CSAT3, Li-7500A
             long_name = Covariance of Uz and H2O
             statistic_type = average
             units = g/m^2/s
@@ -765,7 +765,7 @@ and the Education Investment Fund.'''
     [[UzC]]
         [[[Attr]]]
             height = 20m
-            instrument = CSAT3, Li-7500
+            instrument = CSAT3, Li-7500A
             long_name = Covariance of Uz and CO2
             statistic_type = average
             units = mg/m^2/s
@@ -785,7 +785,7 @@ and the Education Investment Fund.'''
     [[Uz_SONIC_Av]]
         [[[Attr]]]
             height = 20m
-            instrument = CSAT
+            instrument = CSAT3
             long_name = Vertical wind velocity component, sonic coordinates
             statistic_type = average
             units = m/s
@@ -836,7 +836,7 @@ and the Education Investment Fund.'''
     [[Wd_SONIC_Av]]
         [[[Attr]]]
             height = 20m
-            instrument = CSAT
+            instrument = CSAT3
             long_name = Wind direction
             standard_name = wind_from_direction
             statistic_type = average
@@ -869,7 +869,7 @@ and the Education Investment Fund.'''
     [[Ws_SONIC_Av]]
         [[[Attr]]]
             height = 20m
-            instrument = CSAT
+            instrument = CSAT3
             long_name = Wind speed
             standard_name = wind_speed
             statistic_type = average

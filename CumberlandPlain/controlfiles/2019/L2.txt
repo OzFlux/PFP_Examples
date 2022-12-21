@@ -51,7 +51,7 @@ level = L2
         [[[RangeCheck]]]
             lower = -0.5
             upper = 1.5
-    [[Fco2_profile]]
+    [[Sco2_profile]]
         [[[DiurnalCheck]]]
             numsd = 3.0
         [[[RangeCheck]]]
@@ -265,7 +265,7 @@ level = L2
     [[Pressure, wind speed, wind direction & rainfall]]
         variables = ps,Ws_SONIC_Av,U_SONIC_Av,V_SONIC_Av,W_SONIC_Av,Wd_SONIC_Av,Precip
     [[CO2 storage]]
-        variables = Fco2_profile
+        variables = Sco2_profile
     [[IRGA diagnostics]]
         variables = Fco2_EP_QC,CO2_IRGA_Sd,H2O_IRGA_Sd,Signal_CO2,Precip
     [[Fc diagnostics]]
@@ -275,4 +275,4 @@ level = L2
     [[Fh diagnostics]]
         variables = Fh_EP,Fh_EP_QC,W_SONIC_Sd,Tv_SONIC_Sd
     [[Fc_profile diagnostics]]
-        variables = Fco2_profile,Signal_CO2,CO2_IRGA_Sd,H2O_IRGA_Sd
+        variables = Sco2_profile,Signal_CO2,CO2_IRGA_Sd,H2O_IRGA_Sd

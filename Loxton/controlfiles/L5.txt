@@ -12,6 +12,7 @@ level = L5
     DayNightFilter = Fsd
     AcceptDayTimes = Yes
     TruncateToImports = Yes
+    KeepIntermediateSeries = Yes
 [GUI]
     [[GapFillUsingSOLO]]
         auto_complete = yes

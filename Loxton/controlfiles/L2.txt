@@ -6,6 +6,9 @@ level = L2
     plot_path = ../PFP_examples/Loxton/Plots/
 [Options]
     irga_type = Li-7500
+    sonic_type = CSAT3
+    IRGA_Check = Yes
+    SONIC_Check = Yes
 [Variables]
     [[AGC_IRGA]]
         [[[RangeCheck]]]
@@ -57,7 +60,7 @@ level = L2
         [[[RangeCheck]]]
             lower = -0.5
             upper = 0.5
-    [[Fco2_profile]]
+    [[Sco2_profile]]
         [[[DependencyCheck]]]
             source = Fco2_EP_QC
         [[[RangeCheck]]]

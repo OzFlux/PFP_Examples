@@ -6,6 +6,9 @@ level = L2
     plot_path = ../PFP_examples/CumberlandPlain/Plots/
 [Options]
     irga_type = Li-7500
+    sonic_type = CSAT3
+    SONIC_Check = Yes
+    IRGA_Check = Yes
 [Variables]
     [[AGC_IRGA]]
         [[[RangeCheck]]]
@@ -59,7 +62,7 @@ level = L2
         [[[RangeCheck]]]
             lower = -0.5
             upper = 1.5
-    [[Fco2_profile]]
+    [[Sco2_profile]]
         [[[DependencyCheck]]]
             source = qc_Sc
         [[[DiurnalCheck]]]
@@ -333,7 +336,7 @@ level = L2
     [[Wind speed and direction]]
         variables = Ws_SONIC_Av,Ws_WS4_Av,Wd_SONIC_Av,Wd_WS4_Av
     [[CO2 Storage]]
-        variables = Fco2_profile,qc_Sc
+        variables = Sco2_profile,qc_Sc
     [[IRGA diagnostics]]
         variables = AGC_IRGA,Fco2_EP_QC,CO2_IRGA_Sd,AH_IRGA_Sd,Precip
     [[Fc diagnostics]]
@@ -343,4 +346,4 @@ level = L2
     [[Fh diagnostics]]
         variables = UzT,Fh_EP,Fh_EP_QC,Uz_SONIC_Sd,Tv_SONIC_Sd
     [[Fc_profile diagnostics]]
-        variables = Fco2_profile,qc_Sc,CO2_IRGA_Sd,AH_IRGA_Sd
+        variables = Sco2_profile,qc_Sc,CO2_IRGA_Sd,AH_IRGA_Sd

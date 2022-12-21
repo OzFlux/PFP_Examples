@@ -5,19 +5,23 @@ level = L3
     out_filename = CumberlandPlain_2014_L3.nc
     plot_path = ../PFP_examples/CumberlandPlain/Plots/
 [Options]
-    CO2Units = umol/mol
-    Fco2Units = umol/m^2/s
-    zms = 29
+    2DCoordRotation = Yes
     ApplyFco2Storage = Yes
+    ApplyWPL = Yes
+    CO2Units = umol/mol
+    CalculateFluxes = Yes
+    Fco2Units = umol/m^2/s
+    MassmanCorrection = Yes
+    zms = 29
 [Soil]
-    FgDepth = 0.08
     BulkDensity = 1900
+    FgDepth = 0.08
     OrganicContent = 0.05
     SwsDefault = 0.08
     SwsSeries = Sws_8cmb
 [Massman]
-    north_separation = 0.0
     east_separation = 0.11
+    north_separation = 0.0
     z0 = 2.82
     zmd = 13.7
 [Variables]
@@ -30,9 +34,6 @@ level = L3
     [[Fco2]]
         [[[MergeSeries]]]
             source = Fco2_EP,Fco2_PFP
-    [[Fco2_storage]]
-        [[[MergeSeries]]]
-            source = Fco2_profile,Fco2_single
     [[Fe]]
         [[[MergeSeries]]]
             source = Fe_EP,Fe_PFP
@@ -54,6 +55,9 @@ level = L3
     [[RH]]
         [[[MergeSeries]]]
             source = RH_HMP_30m,RH_HMP_7m,RH_IRGA_Av
+    [[Sco2]]
+        [[[MergeSeries]]]
+            source = Sco2_profile,Sco2_single
     [[Sws]]
         [[[AverageSeries]]]
             source = Sws_8cma,Sws_8cmb
@@ -88,7 +92,7 @@ level = L3
     [[Radiative fluxes]]
         variables = Fsd,Fsu,Fld,Flu,Fn
     [[Turbulent fluxes]]
-        variables = Fh,Fe,Fco2,Fco2_storage,ustar
+        variables = Fh,Fe,Fco2,Sco2,ustar
     [[Fh diagnostics]]
         variables = Fh,UzT,Diag_SONIC,Diag_IRGA,AH_IRGA_Sd,CO2_IRGA_Sd
     [[Fe diagnostics]]

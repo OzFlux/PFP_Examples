@@ -16,6 +16,7 @@ and the Education Investment Fund.'''
     comment = CF metadata, OzFlux standard variable names
     contact = Cacilia.Ewenz@internode.on.net
     data_link = http://data.ozflux.org.au/
+    featureType = timeSeries
     fluxnet_id = AU-Lox
     history = June 2021 processing
     institution = South Australian Research and Development Institute/Flinders University/Airborne Research Australia
@@ -35,7 +36,6 @@ and the Education Investment Fund.'''
     title = Flux tower data set from the Loxton site for the time 19/08/2008 to 09/06/2009
     tower_height = 10m
     vegetation = Almond orchard, 5.5 m canopy height
-    featureType = timeSeries
 [Variables]
     [[AGC_IRGA]]
         [[[Attr]]]
@@ -113,7 +113,7 @@ and the Education Investment Fund.'''
     [[Diag_SONIC]]
         [[[Attr]]]
             height = 10m
-            instrument = CSAT
+            instrument = CSAT3
             long_name = Sonic diagnostic value
             statistic_type = average
             units = 1
@@ -123,7 +123,7 @@ and the Education Investment Fund.'''
     [[Fco2_EP]]
         [[[Attr]]]
             height = 10m
-            instrument = CSAT3 and Li-7500
+            instrument = CSAT3,Li-7500
             long_name = CO2 flux
             standard_name = surface_upward_mole_flux_of_carbon_dioxide
             statistic_type = average
@@ -134,28 +134,17 @@ and the Education Investment Fund.'''
     [[Fco2_EP_QC]]
         [[[Attr]]]
             height = 10m
-            instrument = CSAT3 and Li-7500
+            instrument = CSAT3,Li-7500
             long_name = CO2 flux EddyPro QC flag
             statistic_type = average
             units = 1
         [[[xl]]]
             name = qc_co2_flux
             sheet = eddy_pro
-    [[Fco2_profile]]
-        [[[Attr]]]
-            height = 0.5m to 10m
-            instrument = dummy profile
-            long_name = CO2 flux
-            standard_name = surface_upward_mole_flux_of_carbon_dioxide
-            statistic_type = average
-            units = umol/m^2/s
-        [[[xl]]]
-            name = Fc_profile
-            sheet = dummy
     [[Fe_EP]]
         [[[Attr]]]
             height = 10m
-            instrument = CSAT3 and Li-7500
+            instrument = CSAT3,Li-7500
             long_name = Latent heat flux
             standard_name = surface_upward_latent_heat_flux
             statistic_type = average
@@ -166,7 +155,7 @@ and the Education Investment Fund.'''
     [[Fe_EP_QC]]
         [[[Attr]]]
             height = 10m
-            instrument = CSAT3 and Li-7500
+            instrument = CSAT3,Li-7500
             long_name = Latent heat flux EddyPro QC flag
             statistic_type = average
             units = 1
@@ -253,7 +242,7 @@ and the Education Investment Fund.'''
     [[Fh_EP]]
         [[[Attr]]]
             height = 10m
-            instrument = CSAT3 and Li-7500
+            instrument = CSAT3
             long_name = Sensible heat flux
             standard_name = surface_upward_sensible_heat_flux
             statistic_type = average
@@ -264,7 +253,7 @@ and the Education Investment Fund.'''
     [[Fh_EP_QC]]
         [[[Attr]]]
             height = 10m
-            instrument = CSAT3 and Li-7500
+            instrument = CSAT3
             long_name = Sensible heat flux EddyPro QC flag
             statistic_type = average
             units = 1
@@ -341,8 +330,8 @@ and the Education Investment Fund.'''
             height = 0m
             instrument = sprinkler
             long_name = Irrigation, 30 minute total
-            units = mm
             statistic_type = average
+            units = mm
         [[[xl]]]
             name = Irrigation
             sheet = extra
@@ -368,6 +357,17 @@ and the Education Investment Fund.'''
         [[[xl]]]
             name = precip_Tot
             sheet = slow_flux
+    [[Sco2_profile]]
+        [[[Attr]]]
+            height = 0.5m to 10m
+            instrument = None
+            long_name = CO2 flux
+            standard_name = surface_upward_mole_flux_of_carbon_dioxide
+            statistic_type = average
+            units = umol/m^2/s
+        [[[xl]]]
+            name = Fc_profile
+            sheet = dummy
     [[Sws_005cm]]
         [[[Attr]]]
             height = -0.05m
@@ -588,7 +588,7 @@ and the Education Investment Fund.'''
     [[Tv_SONIC_Av]]
         [[[Attr]]]
             height = 10m
-            instrument = CSAT
+            instrument = CSAT3
             long_name = Virtual temperature
             standard_name = virtual_temperature
             statistic_type = average
@@ -599,7 +599,7 @@ and the Education Investment Fund.'''
     [[Tv_SONIC_Sd]]
         [[[Attr]]]
             height = 10m
-            instrument = CSAT
+            instrument = CSAT3
             long_name = Virtual temperature
             statistic_type = standard_deviation
             units = degC
@@ -639,7 +639,7 @@ and the Education Investment Fund.'''
     [[UxUy]]
         [[[Attr]]]
             height = 10m
-            instrument = CSAT
+            instrument = CSAT3
             long_name = Covariance of Ux and Uy
             statistic_type = average
             units = m^2/s^2
@@ -659,7 +659,7 @@ and the Education Investment Fund.'''
     [[Ux_SONIC_Av]]
         [[[Attr]]]
             height = 10m
-            instrument = CSAT
+            instrument = CSAT3
             long_name = Longitudinal wind velocity component, sonic coordinates
             statistic_type = average
             units = m/s
@@ -669,7 +669,7 @@ and the Education Investment Fund.'''
     [[Ux_SONIC_Sd]]
         [[[Attr]]]
             height = 10m
-            instrument = CSAT
+            instrument = CSAT3
             long_name = Longitudinal wind velocity component, sonic coordinates
             statistic_type = standard_deviation
             units = m/s
@@ -719,7 +719,7 @@ and the Education Investment Fund.'''
     [[Uy_SONIC_Av]]
         [[[Attr]]]
             height = 10m
-            instrument = CSAT
+            instrument = CSAT3
             long_name = Lateral wind velocity component, sonic coordinates
             statistic_type = average
             units = m/s
@@ -729,7 +729,7 @@ and the Education Investment Fund.'''
     [[Uy_SONIC_Sd]]
         [[[Attr]]]
             height = 10m
-            instrument = CSAT
+            instrument = CSAT3
             long_name = Lateral wind velocity component, sonic coordinates
             statistic_type = standard_deviation
             units = m/s
@@ -769,7 +769,7 @@ and the Education Investment Fund.'''
     [[Uz_SONIC_Av]]
         [[[Attr]]]
             height = 10m
-            instrument = CSAT
+            instrument = CSAT3
             long_name = Vertical wind velocity component, sonic coordinates
             statistic_type = average
             units = m/s
@@ -779,7 +779,7 @@ and the Education Investment Fund.'''
     [[Uz_SONIC_Sd]]
         [[[Attr]]]
             height = 10m
-            instrument = CSAT
+            instrument = CSAT3
             long_name = Vertical wind velocity component, sonic coordinates
             statistic_type = standard_deviation
             units = m/s
@@ -809,7 +809,7 @@ and the Education Investment Fund.'''
     [[Wd_SONIC_Av]]
         [[[Attr]]]
             height = 10m
-            instrument = CSAT
+            instrument = CSAT3
             long_name = Wind direction
             standard_name = wind_from_direction
             statistic_type = average
@@ -831,7 +831,7 @@ and the Education Investment Fund.'''
     [[Ws_SONIC_Av]]
         [[[Attr]]]
             height = 10m
-            instrument = CSAT
+            instrument = CSAT3
             long_name = Wind speed
             standard_name = wind_speed
             statistic_type = average
@@ -867,8 +867,8 @@ and the Education Investment Fund.'''
             instrument = BF3/Delta-T Devices
             long_name = diffuse radiation
             statistic_average = average
-            units = W/m^2
             statistic_type = average
+            units = W/m^2
         [[[xl]]]
             name = diffuse_rad_Avg
             sheet = slow_flux

@@ -7,11 +7,16 @@ level = L1
     out_filename = CumberlandPlain_2017_L1.nc
 [Global]
     Conventions = CF-1.8
+    acknowledgement = '''This work used eddy covariance data collected by the TERN Ecosystem 
+Processes facility. Ecosystem Processes would like to acknowledge the financial support of the 
+Australian Federal Government via the National Collaborative Research Infrastructure Scheme 
+and the Education Investment Fund.'''
     altitude = 27 m
     canopy_height = 23 m
     comment = CF metadata, OzFlux standard variable names
     contact = e.pendall@uws.edu.au
     data_link = http://data.ozflux.org.au/
+    featureType = timeSeries
     fluxnet_id = AU-Cum
     history = June 2021 processing
     institution = HIE, UWS
@@ -25,18 +30,13 @@ level = L1
     references = None
     site_name = Cumberland Plain
     site_pi = Elise Pendall
-    soil = ""
+    soil = 
     source = 30m flux tower plus array of soil sensors
     time_step = 30
     time_zone = Australia/Sydney
     title = Flux tower data set from the CUP site for the calendar year 2017
     tower_height = 30 m
     vegetation = Dry sclerophyll forest
-    featureType = timeSeries
-    acknowledgement = '''This work used eddy covariance data collected by the TERN Ecosystem 
-Processes facility. Ecosystem Processes would like to acknowledge the financial support of the 
-Australian Federal Government via the National Collaborative Research Infrastructure Scheme 
-and the Education Investment Fund.'''
 [Variables]
     [[AGC_IRGA]]
         [[[Attr]]]
@@ -127,7 +127,7 @@ and the Education Investment Fund.'''
     [[Diag_SONIC]]
         [[[Attr]]]
             height = 30m
-            instrument = CSAT
+            instrument = CSAT3
             long_name = Sonic diagnostic value
             statistic_type = average
             units = 1
@@ -147,7 +147,7 @@ and the Education Investment Fund.'''
     [[Fco2_EP]]
         [[[Attr]]]
             height = 30m
-            instrument = Li-7500
+            instrument = CSAT3,Li-7500
             long_name = CO2 flux
             standard_name = surface_upward_mole_flux_of_carbon_dioxide
             statistic_type = average
@@ -158,28 +158,17 @@ and the Education Investment Fund.'''
     [[Fco2_EP_QC]]
         [[[Attr]]]
             height = 30m
-            instrument = Li-7500
+            instrument = CSAT3,Li-7500
             long_name = CO2 flux EddyPro QC flag
             statistic_type = average
             units = 1
         [[[xl]]]
             name = qc_co2_flux
             sheet = EddyPro_QC
-    [[Fco2_profile]]
-        [[[Attr]]]
-            height = 30m
-            instrument = Li-840
-            long_name = CO2 flux
-            standard_name = surface_upward_mole_flux_of_carbon_dioxide
-            statistic_type = average
-            units = umol/m^2/s
-        [[[xl]]]
-            name = Sc
-            sheet = EddyPro_QC
     [[Fe_EP]]
         [[[Attr]]]
             height = 30m
-            instrument = Li-7500
+            instrument = CSAT3,Li-7500
             long_name = Latent heat flux
             standard_name = surface_upward_latent_heat_flux
             statistic_type = average
@@ -190,7 +179,7 @@ and the Education Investment Fund.'''
     [[Fe_EP_QC]]
         [[[Attr]]]
             height = 30m
-            instrument = Li-7500
+            instrument = CSAT3,Li-7500
             long_name = Latent heat flux EddyPro QC flag
             statistic_type = average
             units = 1
@@ -211,7 +200,7 @@ and the Education Investment Fund.'''
     [[Fh_EP]]
         [[[Attr]]]
             height = 30m
-            instrument = Li-7500
+            instrument = CSAT3
             long_name = Sensible heat flux
             standard_name = surface_upward_sensible_heat_flux
             statistic_type = average
@@ -222,7 +211,7 @@ and the Education Investment Fund.'''
     [[Fh_EP_QC]]
         [[[Attr]]]
             height = 30m
-            instrument = Li-7500
+            instrument = CSAT3
             long_name = Sensible heat flux EddyPro QC flag
             statistic_type = average
             units = 1
@@ -254,7 +243,7 @@ and the Education Investment Fund.'''
     [[Fm_EP]]
         [[[Attr]]]
             height = 30m
-            instrument = CSAT3B
+            instrument = CSAT3
             long_name = Momentum flux
             standard_name = magnitude_of_surface_downward_stress
             statistic_type = average
@@ -265,7 +254,7 @@ and the Education Investment Fund.'''
     [[Fm_EP_QC]]
         [[[Attr]]]
             height = 30m
-            instrument = Li-7500
+            instrument = CSAT3
             long_name = Momentum flux EddyPro QC flag
             statistic_type = average
             units = 1
@@ -385,6 +374,17 @@ and the Education Investment Fund.'''
             units = percent
         [[[Function]]]
             func = gH2Opm3_to_percent(AH_IRGA_Av,Ta_HMP_30m)
+    [[Sco2_profile]]
+        [[[Attr]]]
+            height = 30m
+            instrument = Li-840
+            long_name = CO2 flux
+            standard_name = surface_upward_mole_flux_of_carbon_dioxide
+            statistic_type = average
+            units = umol/m^2/s
+        [[[xl]]]
+            name = Sc
+            sheet = EddyPro_QC
     [[Sws_20cma]]
         [[[Attr]]]
             height = -0.08m vertically
@@ -508,7 +508,7 @@ and the Education Investment Fund.'''
     [[Tv_SONIC_Av]]
         [[[Attr]]]
             height = 30m
-            instrument = CSAT
+            instrument = CSAT3
             long_name = Virtual temperature
             standard_name = virtual_temperature
             statistic_type = average
@@ -519,7 +519,7 @@ and the Education Investment Fund.'''
     [[Tv_SONIC_Vr]]
         [[[Attr]]]
             height = 30m
-            instrument = CSAT
+            instrument = CSAT3
             long_name = Virtual temperature
             statistic_type = variance
             units = degC^2
@@ -559,7 +559,7 @@ and the Education Investment Fund.'''
     [[UxUy]]
         [[[Attr]]]
             height = 30m
-            instrument = CSAT
+            instrument = CSAT3
             long_name = Covariance of Ux and Uy
             statistic_type = average
             units = m^2/s^2
@@ -579,7 +579,7 @@ and the Education Investment Fund.'''
     [[Ux_SONIC_Av]]
         [[[Attr]]]
             height = 30m
-            instrument = CSAT
+            instrument = CSAT3
             long_name = Longitudinal wind velocity component, sonic coordinates
             statistic_type = average
             units = m/s
@@ -589,7 +589,7 @@ and the Education Investment Fund.'''
     [[Ux_SONIC_Vr]]
         [[[Attr]]]
             height = 30m
-            instrument = CSAT
+            instrument = CSAT3
             long_name = Longitudinal wind velocity component, sonic coordinates
             statistic_type = variance
             units = m^2/s^2
@@ -639,7 +639,7 @@ and the Education Investment Fund.'''
     [[Uy_SONIC_Av]]
         [[[Attr]]]
             height = 30m
-            instrument = CSAT
+            instrument = CSAT3
             long_name = Lateral wind velocity component, sonic coordinates
             statistic_type = average
             units = m/s
@@ -649,7 +649,7 @@ and the Education Investment Fund.'''
     [[Uy_SONIC_Vr]]
         [[[Attr]]]
             height = 30m
-            instrument = CSAT
+            instrument = CSAT3
             long_name = Lateral wind velocity component, sonic coordinates
             statistic_type = variance
             units = m^2/s^2
@@ -689,7 +689,7 @@ and the Education Investment Fund.'''
     [[Uz_SONIC_Av]]
         [[[Attr]]]
             height = 30m
-            instrument = CSAT
+            instrument = CSAT3
             long_name = Vertical wind velocity component, sonic coordinates
             statistic_type = average
             units = m/s
@@ -699,7 +699,7 @@ and the Education Investment Fund.'''
     [[Uz_SONIC_Vr]]
         [[[Attr]]]
             height = 30m
-            instrument = CSAT
+            instrument = CSAT3
             long_name = Vertical wind velocity component, sonic coordinates
             statistic_type = variance
             units = m^2/s^2
@@ -709,7 +709,7 @@ and the Education Investment Fund.'''
     [[Wd_SONIC_Av]]
         [[[Attr]]]
             height = 30m
-            instrument = CSAT
+            instrument = CSAT3
             long_name = Wind direction
             standard_name = wind_from_direction
             statistic_type = average
@@ -731,7 +731,7 @@ and the Education Investment Fund.'''
     [[Ws_SONIC_Av]]
         [[[Attr]]]
             height = 30m
-            instrument = CSAT
+            instrument = CSAT3
             long_name = Wind speed
             standard_name = wind_speed
             statistic_type = average
