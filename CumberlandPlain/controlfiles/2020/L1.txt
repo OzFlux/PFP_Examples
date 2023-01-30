@@ -30,7 +30,7 @@ and the Education Investment Fund.'''
     references = None
     site_name = Cumberland Plain
     site_pi = Elise Pendall
-    soil = ""
+    soil = 
     source = 30m flux tower plus array of soil sensors
     time_step = 30
     time_zone = Australia/Sydney

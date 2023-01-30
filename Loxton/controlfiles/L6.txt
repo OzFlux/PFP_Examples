@@ -28,7 +28,7 @@ Fund.'''
         training = 500
 [Options]
     Fsd_threshold = 10
-    PlotRawData = No
+    PlotRawData = Yes
 [EcosystemRespiration]
     [[ER_SOLO]]
         [[[ERUsingSOLO]]]
